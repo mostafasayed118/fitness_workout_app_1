@@ -4,6 +4,7 @@ import 'package:fitness_workout_app_1/view/on_boarding/looding.dart';
 import 'package:fitness_workout_app_1/view/on_boarding/splash.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:fitness_workout_app_1/view/on_boarding/splash_1.dart';
 
 import 'package:flutter/material.dart';
 
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Fitness 3 in 1',
+      title: 'NutriFix',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: TColor.primaryColor1,
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
       //   primaryColor: TColor.primaryColor4,
       //   fontFamily: "Hind",
       // ),
-      home: const SplashScreen(),
+      home: const Splash1(),
     );
   }
 }

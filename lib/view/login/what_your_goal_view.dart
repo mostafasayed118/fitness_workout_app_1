@@ -54,6 +54,7 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                               colors: TColor.primaryG1,
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight),
+                          // border: Border.all(color: TColor.primaryColor1),
                           borderRadius: BorderRadius.circular(25),
                         ),
                         padding: EdgeInsets.symmetric(
@@ -121,7 +122,7 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
               child: Column(
                 children: [
                   SizedBox(
-                    height: media.width * 0.05,
+                    height: media.width * 0.03,
                   ),
                   Text(
                     'What is Your Goal ?',
@@ -161,18 +162,6 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                     borderColor: TColor.primaryColor1,
                     fontSize: 32,
                   ),
-
-                  // RoundButton(
-                  //   title: "Confirm",
-                  //   onPressed: () {
-                  //     Navigator.push(
-                  //         context,
-                  //         MaterialPageRoute(
-                  //             builder: (context) => const WelcomeView()));
-                  //   },
-                  //   fontSize: 32,
-                  //   fontWeight: FontWeight.w700,
-                  // ),
                   SizedBox(
                     height: media.width * 0.05,
                   ),
