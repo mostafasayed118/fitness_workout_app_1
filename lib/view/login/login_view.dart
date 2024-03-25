@@ -1,4 +1,6 @@
 import 'package:fitness_workout_app_1/common/colo_extension.dart';
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 // import 'package:fitness_workout_app_1/common_widget/round_button.dart';
 // import 'package:fitness_workout_app_1/view/login/complete_profile_view.dart';
 import 'package:fitness_workout_app_1/forget_password/password_forget_page_one.dart';
@@ -27,7 +29,7 @@ class LoginView extends StatelessWidget {
               children: [
                 SizedBox(height: media.width * 0.1),
                 Text(
-                  "Hey there,",
+                  AppString.heyThere,
                   style: TextStyle(
                     color: AppColor.primaryColor2,
                     fontSize: 16,
@@ -36,7 +38,7 @@ class LoginView extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "Welcome Back",
+                  AppString.welcomeBack,
                   style: TextStyle(
                     color: AppColor.primaryColor1,
                     fontSize: 20,
@@ -46,31 +48,31 @@ class LoginView extends StatelessWidget {
                 ),
                 SizedBox(height: media.width * 0.05),
                 Image.asset(
-                  'assets/img/logo_1.png',
+                  AppAssets.logo,
                   width: 100,
                   height: 100,
                 ),
                 SizedBox(height: media.width * 0.05),
                 SizedBox(height: media.width * 0.08),
-                RoundTextfield(
-                  hitText: 'Email',
-                  iconPath: 'assets/img/email.png',
+                const RoundTextfield(
+                  hitText: AppString.emailHint,
+                  iconPath: AppAssets.emailIcon,
                   keyboardType: TextInputType.emailAddress,
                 ),
                 SizedBox(height: media.width * 0.04),
                 RoundTextfield(
-                  hitText: 'Password',
+                  hitText: AppString.passwordHint,
                   obscureText: true,
-                  iconPath: 'assets/img/lock.png',
+                  iconPath: AppAssets.passwordIcon,
                   keyboardType: TextInputType.visiblePassword,
-                  rigticon: TextButton(
+                  righticon: TextButton(
                     onPressed: () {},
                     child: Container(
                       alignment: Alignment.center,
                       width: 20,
                       height: 20,
                       child: Image.asset(
-                        'assets/img/show_password.png',
+                        AppAssets.passwordEyeIcon,
                         width: 20,
                         height: 20,
                         fit: BoxFit.contain,
@@ -94,7 +96,7 @@ class LoginView extends StatelessWidget {
                         );
                       },
                       child: Text(
-                        "Forgot Your Password?",
+                        AppString.forgotPassword,
                         style: TextStyle(
                           color: AppColor.primaryColor2,
                           fontSize: 12,
@@ -109,7 +111,7 @@ class LoginView extends StatelessWidget {
                 SizedBox(height: media.width * 0.25),
                 NormalButton(
                   textColor: AppColor.white,
-                  text: 'Login',
+                  text: AppString.login,
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -134,7 +136,7 @@ class LoginView extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      ' Or ',
+                      AppString.or,
                       style: TextStyle(
                         color: AppColor.primaryColor2,
                         fontSize: 14,
@@ -155,7 +157,9 @@ class LoginView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+
+                      },
                       child: Container(
                         width: 50,
                         height: 50,
@@ -164,7 +168,7 @@ class LoginView extends StatelessWidget {
                           color: AppColor.white,
                         ),
                         child: Image.asset(
-                          'assets/img/google1.png',
+                          AppAssets.googleIcon,
                           width: 40,
                           height: 40,
                         ),
@@ -181,7 +185,7 @@ class LoginView extends StatelessWidget {
                           color: AppColor.white,
                         ),
                         child: Image.asset(
-                          'assets/img/facebook1.png',
+                          AppAssets.facebookIcon,
                           width: 40,
                           height: 40,
                         ),
@@ -198,7 +202,7 @@ class LoginView extends StatelessWidget {
                           color: AppColor.white,
                         ),
                         child: Image.asset(
-                          'assets/img/x.png',
+                          AppAssets.twitterIcon,
                           width: 40,
                           height: 40,
                         ),
@@ -220,7 +224,7 @@ class LoginView extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        "Don't have an account yet? ",
+                        AppString.dontHaveAccount,
                         style: TextStyle(
                           color: AppColor.primaryColor1,
                           fontSize: 14,
@@ -229,7 +233,7 @@ class LoginView extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        'Register',
+                        AppString.register,
                         style: TextStyle(
                           color: AppColor.primaryColor2,
                           fontSize: 14,

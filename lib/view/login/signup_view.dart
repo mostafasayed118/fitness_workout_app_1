@@ -102,7 +102,7 @@ class _SignUpViewState extends State<SignUpView> {
                   obscureText: true,
                   iconPath: 'assets/img/Lock.png',
                   keyboardType: TextInputType.visiblePassword,
-                  rigticon: TextButton(
+                  righticon: TextButton(
                     onPressed: () {},
                     child: Container(
                       alignment: Alignment.center,
@@ -126,7 +126,7 @@ class _SignUpViewState extends State<SignUpView> {
                   obscureText: true,
                   iconPath: 'assets/img/Lock.png',
                   keyboardType: TextInputType.visiblePassword,
-                  rigticon: TextButton(
+                  righticon: TextButton(
                     onPressed: () {},
                     child: Container(
                       alignment: Alignment.center,

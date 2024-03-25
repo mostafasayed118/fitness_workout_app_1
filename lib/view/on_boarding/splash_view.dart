@@ -12,7 +12,7 @@ class SplashScreen extends StatelessWidget {
     return AnimatedSplashScreen(
       splash: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Image.asset(AppAssets.logo),
+          Image.asset(AppAssets.logoSplash),
           const SizedBox(
             height: 20,
           ),

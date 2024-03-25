@@ -1,6 +1,7 @@
 class AppAssets {
   // global
-  static const String logo = '${basePathImage}logo.png';
+  static const String logo = '${basePathImage}logo_1.png';
+  static const String logoSplash = '${basePathImage}logo_splash.png';
 
   static const String basePathAnimation = 'assets/Animation/';
   static const String animation = '${basePathAnimation}Animation.json';
@@ -10,27 +11,31 @@ class AppAssets {
   static const String basePathIcon = 'assets/icons/';
 
   static const String arrow = '${basePathIcon}arrow.png';
+  // login page and register page
+  static const String emailIcon = '${basePathIcon}email_icon.png';
+  static const String password = '${basePathIcon}lock_password_icon.png';
+  static const String passwordEyeIcon = '${basePathIcon}password_eye_icon.png';
+  static const String googleIcon = '${basePathIcon}google_icon.png';
+  static const String facebookIcon = '${basePathIcon}facebook_icon.png';
+  static const String twitterIcon = '${basePathIcon}x_icon.png';
 
   static const String basePathImage = 'assets/images/';
 
   //splash screen
   static const String splashScreen = '${basePathImage}splash_image.png';
 
+  //onboarding
   static const String onboarding1 = '${basePathImage}on_1.png';
   static const String onboarding2 = '${basePathImage}on_2.png';
   static const String onboarding3 = '${basePathImage}on_3.png';
   static const String onboarding4 = '${basePathImage}on_3.png';
 
-  static const String userNameIcon = '${basePathImage}user_name.png';
-  static const String emailIcon = '${basePathImage}email.png';
-  static const String passwordIcon = '${basePathImage}lock.png';
-  static const String passwordEyeIcon = '${basePathImage}eye_password.png';
+//create account
+  static const String createAccount = '${basePathImage}create_acc.png';
 
-  static const String googleIcon = '${basePathImage}google1.png';
-  static const String facebookIcon = '${basePathImage}facebook.png';
-  static const String twitterIcon = '${basePathImage}x.png';
+  static const String userNameIcon = '${basePathImage}user_name.png';
+  static const String passwordIcon = '${basePathImage}lock.png';
 
   static const String splashImage = '${basePathImage}splash.jpg';
   static const String loginImage = '${basePathImage}login.png';
-  static const String createAccount = '${basePathImage}create_acc.png';
 }

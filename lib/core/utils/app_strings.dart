@@ -1,13 +1,9 @@
 class AppString {
-  //global
-  static const String nutrifix = 'NutriFix';
-  static const String skip = 'Skip';
-
   //splash screen
   static const String welcomeIn = 'Welcome In';
   static const String getStarted = 'Get Started';
 
-//onboarding
+//onboarding screen
   static const String onboardingTitleOne = "Track Your Goal";
   static const String onboardingTitleTwo = "Get Burn";
   static const String onboardingTitleThree = "Eat Well";
@@ -22,6 +18,14 @@ class AppString {
   static const String onboardingSubTitleFour =
       "Water is essential for good health, Drinking water can help improve your mood and energy levels";
 
+//login screen and register screen
+  static const String heyThere = "Hey there,";
+  static const String welcomeBack = 'Welcome Back';
+  static const String forgotPassword = 'Forgot Your Password?';
+  static const String or = '  Or  ';
+    static const String dontHaveAccount = "Don't have an account yet? ";
+
+
   static const String searchHint = 'Enter City Name';
   static const String searchLabel = 'Search';
   static const String appBarTitleSearch = 'Search a city';
@@ -35,16 +39,7 @@ class AppString {
   static const String https = 'https:';
   static const String oopsMessage =
       'Oops! Something went wrong. Please try again.';
-  static const String heyThere = "Hey there,";
   static const String createAnAccount = "Create An Account";
-  static const String createAccount = 'Create Account';
-  static const String userNameHint = 'User Name';
-  static const String passwordHint = 'Password';
-  static const String emailHint = 'Email';
-
-  static const String register = 'Register';
-  static const String login = 'Login';
-  static const String loginTitle = 'Welcome Back';
 
   static const String successMessage = 'Successfully Registered';
   static const String errorMessage = 'something went wrong';
@@ -55,12 +50,10 @@ class AppString {
   static const String invalidEmailMessage =
       'The email address is badly formatted.';
   static const String vallationMessage = 'Please fill all fields';
-  static const String or = '  Or  ';
+
   static const String alreadyHaveAccount = 'Already have an account? ';
   static const String createAccountMessage = 'Create an account';
-  static const String forgotPassword = 'Forgot Password?';
 
-  static const String welcomeBack = 'Welcome Back';
   static const String weatherZ = 'Weather-Z';
 
   static const String successLogin = 'Successfully Logged In';
@@ -73,5 +66,18 @@ class AppString {
 
   static const String wrongPassword = 'Wrong password provided for that user.';
 
-  static const String dontHaveAccount = "Don't have an account yet? ";
+
+  //global
+  static const String nutrifix = 'NutriFix';
+  static const String skip = 'Skip';
+
+  //buttons
+  static const String createAccount = 'Create Account';
+  static const String register = 'Register';
+  static const String login = 'Login';
+
+  // hints
+  static const String userNameHint = 'User Name';
+  static const String passwordHint = 'Password';
+  static const String emailHint = 'Email';
 }

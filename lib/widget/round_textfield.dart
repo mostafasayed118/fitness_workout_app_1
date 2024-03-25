@@ -7,7 +7,7 @@ class RoundTextfield extends StatelessWidget {
   final String hitText;
   final String iconPath;
   final EdgeInsets? margin;
-  final Widget? rigticon;
+  final Widget? righticon;
   final bool obscureText;
 
   const RoundTextfield(
@@ -18,7 +18,7 @@ class RoundTextfield extends StatelessWidget {
       this.margin,
       this.keyboardType,
       this.obscureText = false,
-      this.rigticon})
+      this.righticon})
       : super(key: key);
 
   @override
@@ -44,7 +44,7 @@ class RoundTextfield extends StatelessWidget {
             fontWeight: FontWeight.w700,
             color: AppColor.primaryColor1,
           ),
-          suffixIcon: rigticon,
+          suffixIcon: righticon,
           prefixIcon: Container(
             alignment: Alignment.center,
             width: 25,
