@@ -23,23 +23,25 @@ class AppString {
   static const String welcomeBack = 'Welcome Back';
   static const String forgotPassword = 'Forgot Your Password?';
   static const String or = '  Or  ';
-    static const String dontHaveAccount = "Don't have an account yet? ";
+  static const String dontHaveAccount = "Don't have an account yet? ";
+  static const String createAnAccount = 'Create an account';
+  static const String alreadyHaveAccount = 'Already have an account? ';
 
+  // complete profile  screen
 
-  static const String searchHint = 'Enter City Name';
+  static const String completeProfileTitle = "Let's Complete Your Profile";
+  static const String completeProfileSubTitle =
+      "It will help us to know more about you!";
+
+  static const String searchHint = '';
   static const String searchLabel = 'Search';
-  static const String appBarTitleSearch = 'Search a city';
 
-  static const String welcomeTitleScreen =
-      'Now is your time to start your Weather journey';
   static const String welcome = 'Welcome';
   static const String welcomeSubTitleScreen =
       "You are all set now, let's reach your\n goals together with us ";
-  static const String goToHomeButton = 'Go To Home';
   static const String https = 'https:';
   static const String oopsMessage =
       'Oops! Something went wrong. Please try again.';
-  static const String createAnAccount = "Create An Account";
 
   static const String successMessage = 'Successfully Registered';
   static const String errorMessage = 'something went wrong';
@@ -51,11 +53,6 @@ class AppString {
       'The email address is badly formatted.';
   static const String vallationMessage = 'Please fill all fields';
 
-  static const String alreadyHaveAccount = 'Already have an account? ';
-  static const String createAccountMessage = 'Create an account';
-
-  static const String weatherZ = 'Weather-Z';
-
   static const String successLogin = 'Successfully Logged In';
 
   static const String successLogout = 'Successfully Logged Out';
@@ -66,7 +63,6 @@ class AppString {
 
   static const String wrongPassword = 'Wrong password provided for that user.';
 
-
   //global
   static const String nutrifix = 'NutriFix';
   static const String skip = 'Skip';
@@ -75,9 +71,23 @@ class AppString {
   static const String createAccount = 'Create Account';
   static const String register = 'Register';
   static const String login = 'Login';
+  static const String goToHome = 'Go To Home';
+  static const String next = 'Next Step';
 
   // hints
-  static const String userNameHint = 'User Name';
-  static const String passwordHint = 'Password';
+  static const String firstNameHint = 'First Name';
+  static const String lastNameHint = 'Last Name';
+  static const String phoneHint = 'Phone Number';
   static const String emailHint = 'Email';
+  static const String userNameHint = 'User Name';
+  static const String countryhint = 'Choose Country';
+  static const String passwordHint = 'Password';
+  static const String confirmPasswordHint = 'Confirm Password';
+
+  static const String chooseGenderHint = 'Choose Gender';
+  static const String dateOfBirthHint = 'Date of Birth';
+  static const String weightHint = 'Your Weight';
+  static const String kg = 'KG';
+  static const String heightHint = 'Your Height';
+  static const String cm = 'CM';
 }

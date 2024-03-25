@@ -4,7 +4,7 @@ import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 // import 'package:fitness_workout_app_1/common_widget/round_button.dart';
 // import 'package:fitness_workout_app_1/view/login/complete_profile_view.dart';
 import 'package:fitness_workout_app_1/forget_password/password_forget_page_one.dart';
-import 'package:fitness_workout_app_1/view/login/signup_view.dart';
+import 'package:fitness_workout_app_1/view/login/register_view.dart';
 import 'package:flutter/material.dart';
 
 import '../../widget/normal_button.dart';

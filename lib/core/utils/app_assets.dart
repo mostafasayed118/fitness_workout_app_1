@@ -12,12 +12,22 @@ class AppAssets {
 
   static const String arrow = '${basePathIcon}arrow.png';
   // login page and register page
+  static const String userIcon = '${basePathIcon}user_icon.png';
+  static const String phoneIcon = '${basePathIcon}phone_icon.png';
   static const String emailIcon = '${basePathIcon}email_icon.png';
-  static const String password = '${basePathIcon}lock_password_icon.png';
+  static const String countryIcon = '${basePathIcon}country_icon.png';
+  static const String passwordIcon = '${basePathIcon}lock_password_icon.png';
   static const String passwordEyeIcon = '${basePathIcon}password_eye_icon.png';
+
   static const String googleIcon = '${basePathIcon}google_icon.png';
   static const String facebookIcon = '${basePathIcon}facebook_icon.png';
   static const String twitterIcon = '${basePathIcon}x_icon.png';
+  // complete profile page
+  static const String genderIcon = '${basePathIcon}gender_icon.png';
+  static const String dateIcon = '${basePathIcon}calendar_icon.png';
+  static const String weightIcon = '${basePathIcon}weight_scale_icon.png';
+
+  static const String heightIcon = '${basePathIcon}swap_icon.png';
 
   static const String basePathImage = 'assets/images/';
 
@@ -33,9 +43,13 @@ class AppAssets {
 //create account
   static const String createAccount = '${basePathImage}create_acc.png';
 
-  static const String userNameIcon = '${basePathImage}user_name.png';
-  static const String passwordIcon = '${basePathImage}lock.png';
+//completeProfile screen
+
+  static const String completeProfile =
+      '${basePathImage}complete_profile_image.png';
 
   static const String splashImage = '${basePathImage}splash.jpg';
   static const String loginImage = '${basePathImage}login.png';
 }
+
+// act as  flutter developer to optimize this code

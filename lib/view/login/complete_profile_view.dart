@@ -1,4 +1,6 @@
 import 'package:fitness_workout_app_1/common/colo_extension.dart';
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../../widget/normal_button.dart';
@@ -28,28 +30,28 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
           child: Column(
             children: [
               Text(
-                "Let's Complete Your Profile",
+                AppString.completeProfileTitle,
                 style: TextStyle(
                   color: AppColor.primaryColor1,
                   fontSize: 24,
                   fontWeight: FontWeight.w700,
-                  fontFamily: 'Khand',
+                  fontFamily: 'Poppins',
                 ),
               ),
               Text(
-                "It will help us to know more about you!",
+                AppString.completeProfileSubTitle,
                 style: TextStyle(
                   color: AppColor.primaryColor2,
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
-                  fontFamily: 'Khand',
+                  fontFamily: 'Poppins',
                 ),
               ),
               SizedBox(
                 height: media.width * 0.05,
               ),
               Image.asset(
-                'assets/img/Profile_com1.png',
+                AppAssets.completeProfile,
                 width: media.width,
                 fit: BoxFit.fitWidth,
               ),
@@ -73,11 +75,11 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                             height: 50,
                             padding: const EdgeInsets.symmetric(horizontal: 15),
                             child: Image.asset(
-                              'assets/img/gender.png',
+                              AppAssets.genderIcon,
                               width: 20,
                               height: 20,
                               fit: BoxFit.contain,
-                              color: AppColor.gray,
+                              color: AppColor.primaryColor4,
                             ),
                           ),
                           Expanded(
@@ -92,7 +94,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                                               color: AppColor.gray,
                                               fontSize: 16,
                                               fontWeight: FontWeight.w500,
-                                              fontFamily: 'Khand',
+                                              fontFamily: 'Poppins',
                                             ),
                                           ),
                                         ))
@@ -100,9 +102,9 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                                 onChanged: (value) {},
                                 isExpanded: true,
                                 hint: Text(
-                                  'Choose Gender',
+                                  AppString.chooseGenderHint,
                                   style: TextStyle(
-                                    color: AppColor.gray,
+                                    color: AppColor.primaryColor1,
                                     fontSize: 16,
                                     fontWeight: FontWeight.w500,
                                     fontFamily: 'Hind',
@@ -121,8 +123,8 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                       height: media.width * 0.05,
                     ),
                     const RoundTextfield(
-                      hitText: 'Date of Birth',
-                      iconPath: 'assets/img/date.png',
+                      hitText: AppString.dateOfBirthHint,
+                      iconPath: AppAssets.dateIcon,
                     ),
                     SizedBox(
                       height: media.width * 0.05,
@@ -131,8 +133,8 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                       children: [
                         const Expanded(
                           child: RoundTextfield(
-                            hitText: 'Your Weight',
-                            iconPath: 'assets/img/weight.png',
+                            hitText: AppString.weightHint,
+                            iconPath: AppAssets.weightIcon,
                           ),
                         ),
                         const SizedBox(
@@ -149,7 +151,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                             borderRadius: BorderRadius.circular(15),
                           ),
                           child: Text(
-                            'KG',
+                            AppString.kg,
                             style: TextStyle(
                               color: AppColor.white,
                               fontSize: 12,
@@ -167,8 +169,8 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                       children: [
                         const Expanded(
                           child: RoundTextfield(
-                            hitText: 'Your Height',
-                            iconPath: 'assets/img/hight.png',
+                            hitText: AppString.heightHint,
+                            iconPath: AppAssets.heightIcon,
                           ),
                         ),
                         const SizedBox(
@@ -185,7 +187,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                             borderRadius: BorderRadius.circular(15),
                           ),
                           child: Text(
-                            'CM',
+                            AppString.cm,
                             style: TextStyle(
                               color: AppColor.white,
                               fontSize: 12,
@@ -201,7 +203,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                     ),
                     NormalButton(
                       textColor: AppColor.white,
-                      text: 'Next Step',
+                      text: AppString.next,
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -214,17 +216,6 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                       heightSize: 61,
                       borderColor: AppColor.primaryColor1,
                       fontSize: 30,
-                      // RoundButton(
-                      //   title: "Next Step",
-                      //   onPressed: () {
-                      //     Navigator.push(
-                      //         context,
-                      //         MaterialPageRoute(
-                      //             builder: (context) => const MainTabView()));
-                      //   },
-                      //   fontSize: 32,
-                      //   fontWeight: FontWeight.w700,
-                      // ),
                     ),
                   ],
                 ),
