@@ -1,15 +1,31 @@
 class AppString {
-  //splash screen
-  static const String appBarTitle = 'Weather App';
+  //global
+  static const String nutrifix = 'NutriFix';
+  static const String skip = 'Skip';
 
-  static const String noWeatherFound =
-      'there is no weather 😔. start searching now  ';
+  //splash screen
+  static const String welcomeIn = 'Welcome In';
+  static const String getStarted = 'Get Started';
+
+//onboarding
+  static const String onboardingTitleOne = "Track Your Goal";
+  static const String onboardingTitleTwo = "Get Burn";
+  static const String onboardingTitleThree = "Eat Well";
+  static const String onboardingTitleFour = "Drink Water";
+
+  static const String onboardingSubTitleOne =
+      "Don't worry if you have trouble determining your goals, We can help you determine your goals and track your goals";
+  static const String onboardingSubTitleTwo =
+      "Let’s keep burning, to achieve yours goals, it hurts only temporarily, if you give up now you will be in pain forever";
+  static const String onboardingSubTitleThree =
+      "Let's start a healthy lifestyle with us, we can determine your diet every day. healthy eating is fun";
+  static const String onboardingSubTitleFour =
+      "Water is essential for good health, Drinking water can help improve your mood and energy levels";
+
   static const String searchHint = 'Enter City Name';
   static const String searchLabel = 'Search';
   static const String appBarTitleSearch = 'Search a city';
 
-  static const String skip = 'Skip';
-  static const String title = 'NutriFix';
   static const String welcomeTitleScreen =
       'Now is your time to start your Weather journey';
   static const String welcome = 'Welcome';
@@ -43,22 +59,10 @@ class AppString {
   static const String alreadyHaveAccount = 'Already have an account? ';
   static const String createAccountMessage = 'Create an account';
   static const String forgotPassword = 'Forgot Password?';
-  static const String welcomeIn = 'Welcome In';
+
   static const String welcomeBack = 'Welcome Back';
   static const String weatherZ = 'Weather-Z';
 
-  static const String getStarted = 'Get Started';
-
-  static const String titleOne = "Your Ultimate Forecast Companion";
-  static const String titleTwo = "Navigate Your Day with Confidence";
-  static const String titleThree = "Your Personal Weather Wizard";
-
-  static const String subTitleOne =
-      "Dive into the world of WeatherWave, where every forecast is at your fingertips. With intuitive design and up-to-the-minute updates, never be caught off guard by the elements again.";
-  static const String subTitleTwo =
-      "The app that empowers you to conquer any weather condition. Whether you're planning a weekend getaway or just heading out for a stroll, SkySavvy delivers precise forecasts tailored to your location.";
-  static const String subTitleThree =
-      "Unleash the magic of ForecastMaster and unlock the secrets of weather prediction like never before. With cutting-edge technology and comprehensive data, this app is your key to meteorological mastery.";
   static const String successLogin = 'Successfully Logged In';
 
   static const String successLogout = 'Successfully Logged Out';

@@ -1,3 +1,5 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:fitness_workout_app_1/widget/on_boarding_page.dart';
 import 'package:fitness_workout_app_1/view/on_boarding/create_acc.dart';
 import 'package:flutter/material.dart';
@@ -27,28 +29,24 @@ class _OnBoardingViewState extends State<OnBoardingView> {
 
   List pageArea = [
     {
-      "title": "Track Your Goal",
-      "subtitle":
-          "Don't worry if you have trouble determining your goals, We can help you determine your goals and track your goals",
-      "image": "assets/img/on_11.png"
+      "title": AppString.onboardingTitleOne,
+      "subtitle": AppString.onboardingSubTitleOne,
+      "image": AppAssets.onboarding1
     },
     {
-      "title": "Get Burn",
-      "subtitle":
-          "Let’s keep burning, to achive yours goals, it hurts only temporarily, if you give up now you will be in pain forever",
-      "image": "assets/img/on_22.png"
+      "title": AppString.onboardingTitleTwo,
+      "subtitle": AppString.onboardingSubTitleTwo,
+      "image": AppAssets.onboarding2
     },
     {
-      "title": "Eat Well",
-      "subtitle":
-          "Let's start a healthy lifestyle with us, we can determine your diet every day. healthy eating is fun",
-      "image": "assets/img/on_33.png"
+      "title": AppString.onboardingTitleThree,
+      "subtitle": AppString.onboardingSubTitleThree,
+      "image": AppAssets.onboarding3
     },
     {
-      "title": "Drink Water",
-      "subtitle":
-          "Water is essential for good health, Drinking water can help improve your mood and energy levels",
-      "image": "assets/img/on_44.png"
+      "title": AppString.onboardingTitleFour,
+      "subtitle": AppString.onboardingSubTitleFour,
+      "image": AppAssets.onboarding4
     },
   ];
   PageController controller = PageController();
@@ -74,7 +72,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
               padding: const EdgeInsets.all(16.0),
               child: TextButton(
                 child: Text(
-                  'Skip',
+                  AppString.skip,
                   style: TextStyle(
                     color: AppColor.black,
                     fontWeight: FontWeight.w500,

@@ -5,7 +5,7 @@ import 'package:fitness_workout_app_1/view/on_boarding/looding.dart';
 import 'package:fitness_workout_app_1/view/on_boarding/splash.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:fitness_workout_app_1/view/on_boarding/splash_1.dart';
+import 'package:fitness_workout_app_1/view/on_boarding/splash_view.dart';
 
 import 'package:flutter/material.dart';
 
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: AppString.title,
+      title: AppString.nutrifix,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: AppColor.primaryColor1,

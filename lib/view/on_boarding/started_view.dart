@@ -1,4 +1,6 @@
 import 'package:fitness_workout_app_1/common/colo_extension.dart';
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:fitness_workout_app_1/widget/normal_button.dart';
 // import 'package:fitness_workout_app_1/common_widget/round_button.dart';
 import 'package:fitness_workout_app_1/view/on_boarding/on_boarding_view.dart';
@@ -28,7 +30,7 @@ class _StartedViewState extends State<StartedView> {
                   flex: 2,
                 ),
                 Text(
-                  'Welcome In',
+                  AppString.welcomeIn,
                   style: TextStyle(
                     color: AppColor.primaryColor1,
                     fontSize: 40,
@@ -37,7 +39,7 @@ class _StartedViewState extends State<StartedView> {
                   ),
                 ),
                 Text(
-                  'NutriFix',
+                  AppString.nutrifix,
                   style: TextStyle(
                     color: AppColor.primaryColor1,
                     fontSize: 40,
@@ -48,7 +50,7 @@ class _StartedViewState extends State<StartedView> {
                 const SizedBox(
                   height: 20,
                 ),
-                Image.asset('assets/img/o1.png'),
+                Image.asset(AppAssets.splashScreen),
                 const Spacer(
                   flex: 1,
                 ),
@@ -61,7 +63,7 @@ class _StartedViewState extends State<StartedView> {
                           SlideAction(
                             child: NormalButton(
                               textColor: AppColor.white,
-                              text: 'Get Started',
+                              text: AppString.getStarted,
                               onPressed: () {
                                 //Go to next screen
                                 Navigator.push(
@@ -97,7 +99,7 @@ class _StartedViewState extends State<StartedView> {
                             // innerColor: TColor.primaryColor1,
 
                             sliderButtonIcon: Image.asset(
-                              'assets/img/arrow.png',
+                              AppAssets.arrow,
                               height: 25,
                             ),
                             // text: 'Get Started',

@@ -1,4 +1,5 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:fitness_workout_app_1/view/on_boarding/on_boarding_view.dart';
 import 'package:fitness_workout_app_1/view/on_boarding/started_view.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +12,7 @@ class SplashScreen extends StatelessWidget {
     return AnimatedSplashScreen(
       splash: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Image.asset('assets/img/logo.png'),
+          Image.asset(AppAssets.logo),
           const SizedBox(
             height: 20,
           ),
