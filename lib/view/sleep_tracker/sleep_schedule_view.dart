@@ -1,12 +1,12 @@
 import 'package:calendar_agenda/calendar_agenda.dart';
-import 'package:fitness_workout_app_1/common_widget/normal_button.dart';
+import 'package:fitness_workout_app_1/widget/normal_button.dart';
 
 import 'package:flutter/material.dart';
 import 'package:simple_animation_progress_bar/simple_animation_progress_bar.dart';
 
 import '../../common/colo_extension.dart';
-import '../../common_widget/round_button.dart';
-import '../../common_widget/today_sleep_schedule_row.dart';
+import '../../widget/round_button.dart';
+import '../../widget/today_sleep_schedule_row.dart';
 import '../main_tab/select_view.dart';
 import 'sleep_add_alarm_view.dart';
 
@@ -50,7 +50,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
     var media = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: TColor.white,
+        backgroundColor: AppColor.white,
         centerTitle: true,
         elevation: 0,
         leading: InkWell(
@@ -76,7 +76,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
         title: Text(
           "Sleep Schedule",
           style: TextStyle(
-            color: TColor.black,
+            color: AppColor.black,
             fontSize: 16,
             fontWeight: FontWeight.w700,
             fontFamily: 'Hind',
@@ -110,7 +110,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
           )
         ],
       ),
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -126,7 +126,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                     padding: const EdgeInsets.all(20),
                     height: media.width * 0.4,
                     decoration: BoxDecoration(
-                        color: TColor.primaryColor4.withOpacity(0.3),
+                        color: AppColor.primaryColor4.withOpacity(0.3),
                         // gradient: LinearGradient(colors: [
                         //   TColor.primaryColor2.withOpacity(0.4),
                         //   TColor.primaryColor1.withOpacity(0.4)
@@ -144,7 +144,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                             Text(
                               "Ideal Hours for Sleep",
                               style: TextStyle(
-                                color: TColor.black,
+                                color: AppColor.black,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500,
                                 fontFamily: 'Khand',
@@ -153,7 +153,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                             Text(
                               "8 hours | 30 minutes",
                               style: TextStyle(
-                                color: TColor.primaryColor2,
+                                color: AppColor.primaryColor2,
                                 fontSize: 16,
                                 fontWeight: FontWeight.w500,
                                 fontFamily: 'Hind',
@@ -164,13 +164,13 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                               width: 110,
                               height: 35,
                               child: NormalButton(
-                                textColor: TColor.primaryColor1,
+                                textColor: AppColor.primaryColor1,
                                 text: 'Learn More',
                                 onPressed: () {},
-                                backgroundColor: TColor.white,
+                                backgroundColor: AppColor.white,
                                 widthSize: 95,
                                 heightSize: 35,
-                                borderColor: TColor.primaryColor1,
+                                borderColor: AppColor.primaryColor1,
                                 fontSize: 14,
                               ),
                               // RoundButton(
@@ -200,7 +200,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                   child: Text(
                     "Your Schedule",
                     style: TextStyle(
-                      color: TColor.black,
+                      color: AppColor.black,
                       fontSize: 18,
                       fontWeight: FontWeight.w700,
                       fontFamily: 'Khand',
@@ -228,7 +228,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                   weekDay: WeekDay.short,
                   dayNameFontSize: 13,
                   dayNumberFontSize: 16,
-                  dayBGColor: TColor.primaryColor4.withOpacity(0.10),
+                  dayBGColor: AppColor.primaryColor4.withOpacity(0.10),
                   titleSpaceBetween: 15,
                   backgroundColor: Colors.transparent,
                   // fullCalendar: false,
@@ -239,7 +239,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                   locale: 'en',
 
                   initialDate: DateTime.now(),
-                  calendarEventColor: TColor.primaryColor4.withOpacity(0.7),
+                  calendarEventColor: AppColor.primaryColor4.withOpacity(0.7),
                   firstDate: DateTime.now().subtract(const Duration(days: 140)),
                   lastDate: DateTime.now().add(const Duration(days: 60)),
 
@@ -251,7 +251,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                     height: double.maxFinite,
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
-                          colors: TColor.primaryG4,
+                          colors: AppColor.primaryG4,
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter),
                       borderRadius: BorderRadius.circular(10.0),
@@ -278,7 +278,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                         vertical: 10, horizontal: 20),
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                        color: TColor.primaryColor7.withOpacity(0.25),
+                        color: AppColor.primaryColor7.withOpacity(0.25),
                         // gradient: LinearGradient(colors: [
                         //   TColor.primaryColor1.withOpacity(0.4),
                         //   TColor.primaryColor1.withOpacity(0.4)
@@ -290,7 +290,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                         Text(
                           "You will get 8 hours | 10 minutes\nfor tonight",
                           style: TextStyle(
-                            color: TColor.black,
+                            color: AppColor.black,
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
                             fontFamily: 'Hind',
@@ -313,7 +313,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                               duration: const Duration(seconds: 3),
                               borderRadius: BorderRadius.circular(7.5),
                               gradientColor: LinearGradient(
-                                colors: TColor.primaryG8,
+                                colors: AppColor.primaryG8,
                                 begin: Alignment.centerLeft,
                                 end: Alignment.centerRight,
                               ),
@@ -321,7 +321,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                             Text(
                               "96%", //Value of the progress bar returned from the api call to get the progress bar value
                               style: TextStyle(
-                                color: TColor.white,
+                                color: AppColor.white,
                                 fontSize: 12,
                                 fontWeight: FontWeight.w500,
                                 fontFamily: 'Hind',
@@ -355,7 +355,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
           height: 55,
           decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: TColor.primaryG1,
+                colors: AppColor.primaryG1,
                 begin: Alignment.bottomCenter,
                 end: Alignment.topCenter,
               ),
@@ -368,7 +368,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
           child: Icon(
             Icons.add,
             size: 20,
-            color: TColor.white,
+            color: AppColor.white,
           ),
         ),
       ),

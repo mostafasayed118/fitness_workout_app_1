@@ -4,23 +4,23 @@ import 'package:fitness_workout_app_1/view/login/complete_profile_view.dart';
 import 'package:fitness_workout_app_1/view/login/login_view.dart';
 import 'package:flutter/material.dart';
 
-import '../../common_widget/normal_button.dart';
-import '../../common_widget/round_textfield.dart';
+import '../../widget/normal_button.dart';
+import '../../widget/round_textfield.dart';
 
-class SignupView extends StatefulWidget {
-  const SignupView({Key? key}) : super(key: key);
+class SignUpView extends StatefulWidget {
+  const SignUpView({Key? key}) : super(key: key);
 
   @override
-  _SignupViewState createState() => _SignupViewState();
+  _SignUpViewState createState() => _SignUpViewState();
 }
 
-class _SignupViewState extends State<SignupView> {
+class _SignUpViewState extends State<SignUpView> {
   bool isCheck = false;
   @override
   Widget build(BuildContext context) {
     var media = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
@@ -34,7 +34,7 @@ class _SignupViewState extends State<SignupView> {
                 Text(
                   "Hey there,",
                   style: TextStyle(
-                    color: TColor.primaryColor2,
+                    color: AppColor.primaryColor2,
                     fontSize: 16,
                     fontFamily: 'Hind',
                   ),
@@ -42,7 +42,7 @@ class _SignupViewState extends State<SignupView> {
                 Text(
                   "Create An Account",
                   style: TextStyle(
-                    color: TColor.primaryColor1,
+                    color: AppColor.primaryColor1,
                     fontSize: 25,
                     fontWeight: FontWeight.w700,
                     fontFamily: 'Hind',
@@ -53,57 +53,67 @@ class _SignupViewState extends State<SignupView> {
                 ),
                 const RoundTextfield(
                   hitText: 'First Name',
-                  iconPath: 'assets/img/user_text.png',
+                  iconPath: 'assets/img/collaborator_male.png',
                 ),
                 SizedBox(
                   height: media.width * 0.04,
                 ),
                 const RoundTextfield(
                   hitText: 'Last Name',
-                  iconPath: 'assets/img/user_text.png',
+                  iconPath: 'assets/img/collaborator_male.png',
                 ),
                 SizedBox(
                   height: media.width * 0.04,
                 ),
                 const RoundTextfield(
-                  hitText: 'User Name',
-                  iconPath: 'assets/img/user_text.png',
-                ),
-                SizedBox(
-                  height: media.width * 0.04,
-                ),
-                const RoundTextfield(
-                  hitText: 'Country',
-                  iconPath: 'assets/img/user_text.png',
+                  hitText: 'Phone Number',
+                  iconPath: 'assets/img/Phone.png',
+                  keyboardType: TextInputType.phone,
                 ),
                 SizedBox(
                   height: media.width * 0.04,
                 ),
                 const RoundTextfield(
                   hitText: 'Email',
-                  iconPath: 'assets/img/email.png',
+                  iconPath: 'assets/img/Envelope.png',
                   keyboardType: TextInputType.emailAddress,
                 ),
+                SizedBox(
+                  height: media.width * 0.04,
+                ),
+
+                const RoundTextfield(
+                  hitText: 'Country',
+                  iconPath: 'assets/img/country.png',
+                ),
+                SizedBox(
+                  height: media.width * 0.04,
+                ),
+                const RoundTextfield(
+                  hitText: 'User Name',
+                  iconPath: 'assets/img/collaborator_male.png',
+                ),
+
                 SizedBox(
                   height: media.width * 0.04,
                 ),
                 RoundTextfield(
                   hitText: 'Password',
                   obscureText: true,
-                  iconPath: 'assets/img/lock.png',
+                  iconPath: 'assets/img/Lock.png',
                   keyboardType: TextInputType.visiblePassword,
                   rigticon: TextButton(
                     onPressed: () {},
                     child: Container(
                       alignment: Alignment.center,
-                      width: 20,
-                      height: 20,
+                      width: 22,
+                      height: 22,
                       child: Image.asset(
-                        'assets/img/show_password.png',
-                        width: 20,
-                        height: 20,
+                        'assets/img/Eye.png',
+                        width: 22,
+                        height: 22,
                         fit: BoxFit.contain,
-                        color: TColor.gray,
+                        color: AppColor.gray,
                       ),
                     ),
                   ),
@@ -114,20 +124,19 @@ class _SignupViewState extends State<SignupView> {
                 RoundTextfield(
                   hitText: 'Confirm Password',
                   obscureText: true,
-                  iconPath: 'assets/img/lock.png',
+                  iconPath: 'assets/img/Lock.png',
                   keyboardType: TextInputType.visiblePassword,
                   rigticon: TextButton(
                     onPressed: () {},
                     child: Container(
                       alignment: Alignment.center,
-                      width: 20,
-                      height: 20,
+                      width: 22,
+                      height: 22,
                       child: Image.asset(
-                        'assets/img/show_password.png',
-                        width: 20,
-                        height: 20,
+                        'assets/img/Eye.png',
+                        width: 22,
+                        height: 22,
                         fit: BoxFit.contain,
-                        color: TColor.gray,
                       ),
                     ),
                   ),
@@ -144,7 +153,7 @@ class _SignupViewState extends State<SignupView> {
                         isCheck
                             ? Icons.check_box_outlined
                             : Icons.check_box_outline_blank_outlined,
-                        color: TColor.gray,
+                        color: AppColor.gray,
                         size: 20,
                       ),
                     ),
@@ -153,7 +162,7 @@ class _SignupViewState extends State<SignupView> {
                       child: Text(
                         'by continuing you agree to our\nterms of service and with our privacy policy ',
                         style: TextStyle(
-                            color: TColor.gray,
+                            color: AppColor.gray,
                             fontFamily: 'Hind',
                             fontSize: 12),
                       ),
@@ -168,7 +177,7 @@ class _SignupViewState extends State<SignupView> {
                 ),
 
                 NormalButton(
-                  textColor: TColor.white,
+                  textColor: AppColor.white,
                   text: 'Register',
                   onPressed: () {
                     Navigator.push(
@@ -178,10 +187,10 @@ class _SignupViewState extends State<SignupView> {
                       ),
                     );
                   },
-                  backgroundColor: TColor.primaryColor1,
+                  backgroundColor: AppColor.primaryColor1,
                   widthSize: 330,
                   heightSize: 61,
-                  borderColor: TColor.primaryColor1,
+                  borderColor: AppColor.primaryColor1,
                   fontSize: 32,
                 ),
                 // RoundButton(
@@ -203,13 +212,13 @@ class _SignupViewState extends State<SignupView> {
                     Expanded(
                       child: Container(
                         height: 2,
-                        color: TColor.primaryColor1.withOpacity(1),
+                        color: AppColor.primaryColor1.withOpacity(1),
                       ),
                     ),
                     Text(
                       '  Or  ',
                       style: TextStyle(
-                        color: TColor.primaryColor2,
+                        color: AppColor.primaryColor2,
                         fontSize: 18,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Hind',
@@ -218,7 +227,7 @@ class _SignupViewState extends State<SignupView> {
                     Expanded(
                       child: Container(
                         height: 2,
-                        color: TColor.primaryColor1.withOpacity(1),
+                        color: AppColor.primaryColor1.withOpacity(1),
                       ),
                     )
                   ],
@@ -238,7 +247,7 @@ class _SignupViewState extends State<SignupView> {
                         height: 50,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
-                          color: TColor.white,
+                          color: AppColor.white,
                         ),
                         child: Image.asset(
                           'assets/img/google1.png',
@@ -259,7 +268,7 @@ class _SignupViewState extends State<SignupView> {
                         height: 50,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
-                          color: TColor.white,
+                          color: AppColor.white,
                         ),
                         child: Image.asset(
                           'assets/img/facebook1.png',
@@ -280,7 +289,7 @@ class _SignupViewState extends State<SignupView> {
                         height: 50,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
-                          color: TColor.white,
+                          color: AppColor.white,
                         ),
                         child: Image.asset(
                           'assets/img/x.png',
@@ -307,7 +316,7 @@ class _SignupViewState extends State<SignupView> {
                       Text(
                         'Alredy have an account? ',
                         style: TextStyle(
-                          color: TColor.primaryColor1,
+                          color: AppColor.primaryColor1,
                           fontSize: 14,
                           fontFamily: 'Hind',
                           fontWeight: FontWeight.w500,
@@ -316,7 +325,7 @@ class _SignupViewState extends State<SignupView> {
                       Text(
                         'Login',
                         style: TextStyle(
-                          color: TColor.primaryColor2,
+                          color: AppColor.primaryColor2,
                           fontSize: 16,
                           fontWeight: FontWeight.w700,
                           fontFamily: 'Hind',

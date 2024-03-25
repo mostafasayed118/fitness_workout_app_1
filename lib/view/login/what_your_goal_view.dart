@@ -4,7 +4,7 @@ import 'package:fitness_workout_app_1/common/colo_extension.dart';
 import 'package:fitness_workout_app_1/view/login/welcome_view.dart';
 import 'package:flutter/material.dart';
 
-import '../../common_widget/normal_button.dart';
+import '../../widget/normal_button.dart';
 
 class WhatYourGoalView extends StatefulWidget {
   const WhatYourGoalView({Key? key}) : super(key: key);
@@ -40,7 +40,7 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
   Widget build(BuildContext context) {
     var media = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: SafeArea(
         child: Stack(
           children: [
@@ -51,7 +51,7 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                       (goalObject) => Container(
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
-                              colors: TColor.primaryG1,
+                              colors: AppColor.primaryG1,
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight),
                           // border: Border.all(color: TColor.primaryColor1),
@@ -74,7 +74,7 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                               Text(
                                 goalObject['title'].toString(),
                                 style: TextStyle(
-                                  color: TColor.white,
+                                  color: AppColor.white,
                                   fontSize: 20,
                                   fontWeight: FontWeight.w700,
                                   fontFamily: 'Hind',
@@ -83,7 +83,7 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                               Container(
                                 width: media.width * 0.1,
                                 height: 1,
-                                color: TColor.white,
+                                color: AppColor.white,
                               ),
                               SizedBox(
                                 height: media.width * 0.03,
@@ -92,7 +92,7 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                                 goalObject['subtitle'].toString(),
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
-                                  color: TColor.white,
+                                  color: AppColor.white,
                                   fontSize: 13,
                                   fontWeight: FontWeight.w500,
                                   fontFamily: 'Hind',
@@ -127,7 +127,7 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                   Text(
                     'What is Your Goal ?',
                     style: TextStyle(
-                      color: TColor.primaryColor1,
+                      color: AppColor.primaryColor1,
                       fontSize: 32,
                       fontWeight: FontWeight.w700,
                       fontFamily: 'Khand',
@@ -137,7 +137,7 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                     'It will help us to choose a best \n program for you ',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: TColor.primaryColor2,
+                      color: AppColor.primaryColor2,
                       fontSize: 15,
                       fontWeight: FontWeight.w500,
                       fontFamily: 'Hind',
@@ -148,7 +148,7 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                     height: media.width * 0.05,
                   ),
                   NormalButton(
-                    textColor: TColor.white,
+                    textColor: AppColor.white,
                     text: 'Confirm',
                     onPressed: () {
                       Navigator.push(
@@ -156,10 +156,10 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                           MaterialPageRoute(
                               builder: (context) => const WelcomeView()));
                     },
-                    backgroundColor: TColor.primaryColor1,
+                    backgroundColor: AppColor.primaryColor1,
                     widthSize: 330,
                     heightSize: 61,
-                    borderColor: TColor.primaryColor1,
+                    borderColor: AppColor.primaryColor1,
                     fontSize: 32,
                   ),
                   SizedBox(

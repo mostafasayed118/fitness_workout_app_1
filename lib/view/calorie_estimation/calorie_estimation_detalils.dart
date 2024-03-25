@@ -1,9 +1,9 @@
-import 'package:fitness_workout_app_1/common_widget/normal_button.dart';
+import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:fitness_workout_app_1/view/home/blank_view.dart';
 import 'package:flutter/material.dart';
 import '../../common/colo_extension.dart';
-import '../../common_widget/icon_title_next_row.dart';
-import '../../common_widget/round_button.dart';
+import '../../widget/icon_title_next_row.dart';
+import '../../widget/round_button.dart';
 import '../main_tab/main_tab_view.dart';
 import '../main_tab/select_view.dart';
 import '../photo_progress/result_view.dart';
@@ -21,7 +21,7 @@ class _CalorieEstimationDetailsState extends State<CalorieEstimationDetails> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: TColor.white,
+        backgroundColor: AppColor.white,
         centerTitle: true,
         elevation: 0,
         leading: InkWell(
@@ -50,7 +50,7 @@ class _CalorieEstimationDetailsState extends State<CalorieEstimationDetails> {
         title: Text(
           "Details",
           style: TextStyle(
-            color: TColor.black,
+            color: AppColor.black,
             fontSize: 20,
             fontWeight: FontWeight.w700,
             fontFamily: 'Khand',
@@ -84,7 +84,7 @@ class _CalorieEstimationDetailsState extends State<CalorieEstimationDetails> {
           )
         ],
       ),
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
         child: Column(

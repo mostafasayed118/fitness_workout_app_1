@@ -6,7 +6,7 @@ import 'package:fitness_workout_app_1/view/profile/profile_view.dart';
 import 'package:fitness_workout_app_1/view/workout_tracker/workout_tracker_view.dart';
 import 'package:flutter/material.dart';
 
-import '../../common_widget/tab_button.dart';
+import '../../widget/tab_button.dart';
 import '../photo_progress/photo_progress_view.dart';
 import 'select_view.dart';
 
@@ -24,7 +24,7 @@ class _MainTabViewState extends State<MainTabView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: PageStorage(
         bucket: pageBucket,
@@ -42,7 +42,7 @@ class _MainTabViewState extends State<MainTabView> {
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                colors: TColor.primaryG2,
+                colors: AppColor.primaryG2,
               ),
               borderRadius: BorderRadius.circular(35),
               boxShadow: const [
@@ -55,18 +55,18 @@ class _MainTabViewState extends State<MainTabView> {
             child: Icon(
               Icons.search,
               size: 35,
-              color: TColor.white,
+              color: AppColor.white,
             ),
           ),
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        color: TColor.white,
+        color: AppColor.white,
         elevation: 0,
         child: Container(
           // padding: const EdgeInsets.symmetric(horizontal: 10),
           decoration: BoxDecoration(
-            color: TColor.white,
+            color: AppColor.white,
             boxShadow: const [
               BoxShadow(
                 color: Colors.black12,
@@ -90,7 +90,7 @@ class _MainTabViewState extends State<MainTabView> {
                   if (mounted) {
                     setState(() {});
                   }
-                },    
+                },
               ),
               TabButton(
                 icon: 'assets/img/activity_tab.png',

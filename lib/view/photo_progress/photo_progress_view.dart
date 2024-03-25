@@ -1,8 +1,8 @@
-import 'package:fitness_workout_app_1/common_widget/normal_button.dart';
+import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:flutter/material.dart';
 
 import '../../common/colo_extension.dart';
-import '../../common_widget/round_button.dart';
+import '../../widget/round_button.dart';
 import '../main_tab/main_tab_view.dart';
 import '../main_tab/select_view.dart';
 import 'comparison_view.dart';
@@ -41,7 +41,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
     var media = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: TColor.white,
+        backgroundColor: AppColor.white,
         centerTitle: true,
         elevation: 0,
         leading: InkWell(
@@ -70,7 +70,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
         title: Text(
           "Progress Photo",
           style: TextStyle(
-            color: TColor.black,
+            color: AppColor.black,
             fontSize: 20,
             fontWeight: FontWeight.w700,
             fontFamily: 'khand',
@@ -104,7 +104,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
           )
         ],
       ),
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -126,7 +126,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                       children: [
                         Container(
                           decoration: BoxDecoration(
-                              color: TColor.white,
+                              color: AppColor.white,
                               borderRadius: BorderRadius.circular(30)),
                           width: 50,
                           height: 50,
@@ -155,7 +155,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                                 Text(
                                   "Next Photos Fall On July 08",
                                   style: TextStyle(
-                                    color: TColor.black,
+                                    color: AppColor.black,
                                     fontSize: 14,
                                     fontWeight: FontWeight.w700,
                                   ),
@@ -169,7 +169,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                                 onPressed: () {},
                                 icon: Icon(
                                   Icons.close,
-                                  color: TColor.gray,
+                                  color: AppColor.gray,
                                   size: 15,
                                 )))
                       ],
@@ -184,7 +184,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                     padding: const EdgeInsets.all(20),
                     height: media.width * 0.4,
                     decoration: BoxDecoration(
-                        color: TColor.primaryColor4.withOpacity(0.3),
+                        color: AppColor.primaryColor4.withOpacity(0.3),
                         // gradient: LinearGradient(colors: [
                         //   TColor.primaryColor2.withOpacity(0.4),
                         //   TColor.primaryColor1.withOpacity(0.4)
@@ -202,7 +202,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                               Text(
                                 "Track Your Progress Each\nMonth With Photo",
                                 style: TextStyle(
-                                  color: TColor.black,
+                                  color: AppColor.black,
                                   fontSize: 12,
                                   fontFamily: 'Hind',
                                   fontWeight: FontWeight.w600,
@@ -213,13 +213,13 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                                 width: 110,
                                 height: 35,
                                 child: NormalButton(
-                                    textColor: TColor.primaryColor1,
+                                    textColor: AppColor.primaryColor1,
                                     text: 'Learn More',
                                     onPressed: () {},
-                                    backgroundColor: TColor.white,
+                                    backgroundColor: AppColor.white,
                                     widthSize: 110,
                                     heightSize: 30,
-                                    borderColor: TColor.primaryColor1,
+                                    borderColor: AppColor.primaryColor1,
                                     fontSize: 12),
                                 // RoundButton(
                                 //   title: "Learn More",
@@ -246,7 +246,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                   padding:
                       const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
                   decoration: BoxDecoration(
-                    color: TColor.primaryColor7.withOpacity(0.3),
+                    color: AppColor.primaryColor7.withOpacity(0.3),
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Row(
@@ -255,7 +255,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                       Text(
                         "Compare my Photo",
                         style: TextStyle(
-                          color: TColor.black,
+                          color: AppColor.black,
                           fontSize: 14,
                           fontWeight: FontWeight.w600,
                           fontFamily: 'Hind',
@@ -265,7 +265,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                         width: 100,
                         height: 25,
                         child: NormalButton(
-                          textColor: TColor.primaryColor1,
+                          textColor: AppColor.primaryColor1,
                           text: 'Compare',
                           onPressed: () {
                             Navigator.push(
@@ -275,10 +275,10 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                               ),
                             );
                           },
-                          backgroundColor: TColor.white,
+                          backgroundColor: AppColor.white,
                           widthSize: 100,
                           heightSize: 25,
-                          borderColor: TColor.primaryColor1,
+                          borderColor: AppColor.primaryColor1,
                           fontSize: 12,
                         ),
                         // RoundButton(
@@ -309,7 +309,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                       Text(
                         "Gallery",
                         style: TextStyle(
-                          color: TColor.black,
+                          color: AppColor.black,
                           fontSize: 18,
                           fontWeight: FontWeight.w700,
                           fontFamily: 'Khand',
@@ -320,7 +320,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                           child: Text(
                             "See more",
                             style: TextStyle(
-                              color: TColor.gray,
+                              color: AppColor.gray,
                               fontSize: 12,
                               fontWeight: FontWeight.w500,
                             ),
@@ -345,7 +345,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                             child: Text(
                               pObj["time"].toString(),
                               style: TextStyle(
-                                color: TColor.gray,
+                                color: AppColor.gray,
                                 fontSize: 12,
                                 fontWeight: FontWeight.w500,
                                 fontFamily: 'Hind',
@@ -364,7 +364,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                                       const EdgeInsets.symmetric(horizontal: 4),
                                   width: 100,
                                   decoration: BoxDecoration(
-                                    color: TColor.lightGray,
+                                    color: AppColor.lightGray,
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                   child: ClipRRect(
@@ -407,7 +407,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
           height: 55,
           decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: TColor.primaryG1,
+                colors: AppColor.primaryG1,
                 end: Alignment.topCenter,
                 begin: Alignment.bottomCenter,
               ),
@@ -420,7 +420,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
           child: Icon(
             Icons.photo_camera,
             size: 20,
-            color: TColor.white,
+            color: AppColor.white,
           ),
         ),
       ),

@@ -2,10 +2,10 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 import '../../common/colo_extension.dart';
-import '../../common_widget/find_eat_cell.dart';
-import '../../common_widget/normal_button.dart';
+import '../../widget/find_eat_cell.dart';
+import '../../widget/normal_button.dart';
 // import '../../common_widget/round_button.dart';
-import '../../common_widget/today_meal_row.dart';
+import '../../widget/today_meal_row.dart';
 import '../main_tab/select_view.dart';
 import 'meal_food_details_view.dart';
 import 'meal_schedule_view.dart';
@@ -46,7 +46,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: TColor.white,
+        backgroundColor: AppColor.white,
         centerTitle: true,
         elevation: 0,
         leading: InkWell(
@@ -72,7 +72,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
         title: Text(
           "Meal Planner",
           style: TextStyle(
-            color: TColor.black,
+            color: AppColor.black,
             fontSize: 20,
             fontWeight: FontWeight.w700,
             fontFamily: 'Khand',
@@ -106,7 +106,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
           )
         ],
       ),
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -122,7 +122,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                       Text(
                         "Meal Nutritions",
                         style: TextStyle(
-                          color: TColor.black,
+                          color: AppColor.black,
                           fontSize: 18,
                           fontWeight: FontWeight.w700,
                           fontFamily: 'Khand',
@@ -135,7 +135,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                             // gradient: LinearGradient(colors: TColor.primaryG1),
                             borderRadius: BorderRadius.circular(15),
                             border: Border.all(
-                              color: TColor.primaryColor1,
+                              color: AppColor.primaryColor1,
                               width: 1.5,
                             ),
                           ),
@@ -147,18 +147,19 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                                         child: Text(
                                           name,
                                           style: TextStyle(
-                                              color: TColor.gray, fontSize: 14),
+                                              color: AppColor.gray,
+                                              fontSize: 14),
                                         ),
                                       ))
                                   .toList(),
                               onChanged: (value) {},
                               icon: Icon(Icons.expand_more,
-                                  color: TColor.primaryColor1),
+                                  color: AppColor.primaryColor1),
                               hint: Text(
                                 "Weekly",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
-                                  color: TColor.primaryColor1,
+                                  color: AppColor.primaryColor1,
                                   fontSize: 12,
                                   fontWeight: FontWeight.w500,
                                 ),
@@ -226,14 +227,14 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                                       radius: 3,
                                       color: Colors.white,
                                       strokeWidth: 3,
-                                      strokeColor: TColor.primaryColor1,
+                                      strokeColor: AppColor.primaryColor1,
                                     ),
                                   ),
                                 );
                               }).toList();
                             },
                             touchTooltipData: LineTouchTooltipData(
-                              tooltipBgColor: TColor.secondaryColor1,
+                              tooltipBgColor: AppColor.secondaryColor1,
                               tooltipRoundedRadius: 20,
                               getTooltipItems:
                                   (List<LineBarSpot> lineBarsSpot) {
@@ -270,7 +271,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                             drawVerticalLine: false,
                             getDrawingHorizontalLine: (value) {
                               return FlLine(
-                                color: TColor.gray.withOpacity(0.15),
+                                color: AppColor.gray.withOpacity(0.15),
                                 strokeWidth: 2,
                               );
                             },
@@ -290,7 +291,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                     padding: const EdgeInsets.symmetric(
                         vertical: 15, horizontal: 15),
                     decoration: BoxDecoration(
-                      color: TColor.primaryColor4.withOpacity(0.3),
+                      color: AppColor.primaryColor4.withOpacity(0.3),
                       borderRadius: BorderRadius.circular(15),
                     ),
                     child: Row(
@@ -299,7 +300,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                         Text(
                           "Daily Meal Schedule",
                           style: TextStyle(
-                            color: TColor.black,
+                            color: AppColor.black,
                             fontSize: 15,
                             fontWeight: FontWeight.w600,
                           ),
@@ -308,7 +309,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                           width: 70,
                           height: 30,
                           child: NormalButton(
-                            textColor: TColor.primaryColor1,
+                            textColor: AppColor.primaryColor1,
                             text: 'Check',
                             onPressed: () {
                               //Go to next scrren
@@ -318,10 +319,10 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                                       builder: (context) =>
                                           const MealScheduleView()));
                             },
-                            backgroundColor: TColor.white,
+                            backgroundColor: AppColor.white,
                             widthSize: 68,
                             heightSize: 28,
-                            borderColor: TColor.primaryColor1,
+                            borderColor: AppColor.primaryColor1,
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
                           ),
@@ -354,7 +355,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                       Text(
                         "Today Meals",
                         style: TextStyle(
-                          color: TColor.black,
+                          color: AppColor.black,
                           fontSize: 18,
                           fontWeight: FontWeight.w700,
                           fontFamily: 'Khand',
@@ -366,7 +367,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                           decoration: BoxDecoration(
                             // gradient: LinearGradient(colors: TColor.primaryG1),
                             border: Border.all(
-                              color: TColor.primaryColor1,
+                              color: AppColor.primaryColor1,
                               width: 1.5,
                             ),
                             borderRadius: BorderRadius.circular(15),
@@ -385,20 +386,21 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                                         child: Text(
                                           name,
                                           style: TextStyle(
-                                              color: TColor.gray, fontSize: 14),
+                                              color: AppColor.gray,
+                                              fontSize: 14),
                                         ),
                                       ))
                                   .toList(),
                               onChanged: (value) {},
                               icon: Icon(
                                 Icons.expand_more,
-                                color: TColor.primaryColor1,
+                                color: AppColor.primaryColor1,
                               ),
                               hint: Text(
                                 "Breakfast",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
-                                    color: TColor.primaryColor1,
+                                    color: AppColor.primaryColor1,
                                     fontSize: 12,
                                     fontWeight: FontWeight.w500),
                               ),
@@ -428,7 +430,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
               child: Text(
                 "Find Something to Eat",
                 style: TextStyle(
-                  color: TColor.black,
+                  color: AppColor.black,
                   fontSize: 18,
                   fontWeight: FontWeight.w700,
                   fontFamily: 'Khand',
@@ -475,7 +477,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
 
   LineChartBarData get lineChartBarData1_1 => LineChartBarData(
         isCurved: true,
-        color: TColor.primaryColor4,
+        color: AppColor.primaryColor4,
         // gradient: LinearGradient(colors: [
         //   TColor.primaryColor2,
         //   TColor.primaryColor1,
@@ -488,7 +490,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
             radius: 3,
             color: Colors.white,
             strokeWidth: 1,
-            strokeColor: TColor.secondaryColor5,
+            strokeColor: AppColor.secondaryColor5,
           ),
         ),
         belowBarData: BarAreaData(show: false),
@@ -537,7 +539,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
 
     return Text(text,
         style: TextStyle(
-          color: TColor.gray,
+          color: AppColor.gray,
           fontSize: 13,
           fontWeight: FontWeight.w500,
         ),
@@ -553,7 +555,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
 
   Widget bottomTitleWidgets(double value, TitleMeta meta) {
     var style = TextStyle(
-      color: TColor.gray,
+      color: AppColor.gray,
       fontSize: 13,
       fontWeight: FontWeight.w500,
     );

@@ -68,7 +68,7 @@ class _LoodingVideoState extends State<LoodingVideo> {
             Text(
               'NutriFix',
               style: TextStyle(
-                color: TColor.primaryColor1,
+                color: AppColor.primaryColor1,
                 fontSize: 50,
                 fontWeight: FontWeight.bold,
                 fontFamily: 'Khand',
@@ -77,7 +77,7 @@ class _LoodingVideoState extends State<LoodingVideo> {
             Text(
               'Everybood Can Train',
               style: TextStyle(
-                color: TColor.primaryColor1,
+                color: AppColor.primaryColor1,
                 fontSize: 20,
                 fontWeight: FontWeight.w700,
                 fontFamily: 'Khand',

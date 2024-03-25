@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 import '../../common/colo_extension.dart';
 import '../../common/common.dart';
-import '../../common_widget/icon_title_next_row.dart';
-import '../../common_widget/normal_button.dart';
+import '../../widget/icon_title_next_row.dart';
+import '../../widget/normal_button.dart';
 import '../main_tab/select_view.dart';
 // import '../../common_widget/round_button.dart';
 
@@ -23,7 +23,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: TColor.white,
+        backgroundColor: AppColor.white,
         centerTitle: true,
         elevation: 0,
         leading: InkWell(
@@ -49,7 +49,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
         title: Text(
           "Add Schedule",
           style: TextStyle(
-            color: TColor.black,
+            color: AppColor.black,
             fontSize: 20,
             fontWeight: FontWeight.w700,
             fontFamily: 'Khand',
@@ -83,7 +83,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
           )
         ],
       ),
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: Container(
         padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 25),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -100,7 +100,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
               Text(
                 dateToString(widget.date, formatStr: "E, dd MMMM yyyy"),
                 style: TextStyle(
-                  color: TColor.gray,
+                  color: AppColor.gray,
                   fontSize: 14,
                   fontWeight: FontWeight.w500,
                 ),
@@ -113,7 +113,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
           Text(
             "Time",
             style: TextStyle(
-              color: TColor.black,
+              color: AppColor.black,
               fontSize: 14,
               fontWeight: FontWeight.w600,
             ),
@@ -134,7 +134,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
           Text(
             "Details Workout",
             style: TextStyle(
-              color: TColor.black,
+              color: AppColor.black,
               fontSize: 16,
               fontWeight: FontWeight.w600,
             ),
@@ -146,7 +146,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
               icon: "assets/img/choose_workout.png",
               title: "Choose Workout",
               time: "Upperbody",
-              color: TColor.gray.withOpacity(0.10),
+              color: AppColor.gray.withOpacity(0.10),
               onPressed: () {}),
           const SizedBox(
             height: 10,
@@ -155,7 +155,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
               icon: "assets/img/difficulity.png",
               title: "Difficulity",
               time: "Beginner",
-              color: TColor.gray.withOpacity(0.10),
+              color: AppColor.gray.withOpacity(0.10),
               onPressed: () {}),
           const SizedBox(
             height: 10,
@@ -164,7 +164,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
               icon: "assets/img/repetitions.png",
               title: "Custom Repetitions",
               time: "",
-              color: TColor.gray.withOpacity(0.10),
+              color: AppColor.gray.withOpacity(0.10),
               onPressed: () {}),
           const SizedBox(
             height: 10,
@@ -173,11 +173,11 @@ class _AddScheduleViewState extends State<AddScheduleView> {
               icon: "assets/img/repetitions.png",
               title: "Custom Weights",
               time: "",
-              color: TColor.gray.withOpacity(0.10),
+              color: AppColor.gray.withOpacity(0.10),
               onPressed: () {}),
           const Spacer(),
           NormalButton(
-            textColor: TColor.primaryColor1,
+            textColor: AppColor.primaryColor1,
             text: 'Save',
             onPressed: () {
               // Navigator.push(
@@ -185,10 +185,10 @@ class _AddScheduleViewState extends State<AddScheduleView> {
               //     MaterialPageRoute(
               //         builder: (context) => const LoginView()));
             },
-            backgroundColor: TColor.white,
+            backgroundColor: AppColor.white,
             widthSize: 200,
             heightSize: 50,
-            borderColor: TColor.primaryColor1,
+            borderColor: AppColor.primaryColor1,
             fontSize: 20,
           ),
 

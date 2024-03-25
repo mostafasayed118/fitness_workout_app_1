@@ -1,4 +1,4 @@
-import 'package:fitness_workout_app_1/common_widget/on_boarding_page.dart';
+import 'package:fitness_workout_app_1/widget/on_boarding_page.dart';
 import 'package:fitness_workout_app_1/view/on_boarding/create_acc.dart';
 import 'package:flutter/material.dart';
 
@@ -56,7 +56,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   Widget build(BuildContext context) {
     // var media = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: Stack(alignment: Alignment.bottomRight, children: [
         PageView.builder(
           controller: controller,
@@ -76,7 +76,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                 child: Text(
                   'Skip',
                   style: TextStyle(
-                    color: TColor.black,
+                    color: AppColor.black,
                     fontWeight: FontWeight.w500,
                     fontSize: 18,
                   ),
@@ -99,7 +99,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                     width: 70,
                     height: 70,
                     child: CircularProgressIndicator(
-                      color: TColor.primaryColor1,
+                      color: AppColor.primaryColor1,
                       value: (selectPage + 1) / 4,
                       strokeWidth: 2,
                     ),
@@ -110,13 +110,13 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                     width: 60,
                     height: 60,
                     decoration: BoxDecoration(
-                      color: TColor.primaryColor1,
+                      color: AppColor.primaryColor1,
                       borderRadius: BorderRadius.circular(35),
                     ),
                     child: IconButton(
                       icon: Icon(
                         Icons.navigate_next,
-                        color: TColor.white,
+                        color: AppColor.white,
                       ),
                       onPressed: () {
                         if (selectPage < 3) {

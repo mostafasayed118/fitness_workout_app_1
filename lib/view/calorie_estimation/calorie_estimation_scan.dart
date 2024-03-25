@@ -1,7 +1,7 @@
-import 'package:fitness_workout_app_1/common_widget/normal_button.dart';
+import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:flutter/material.dart';
 import '../../common/colo_extension.dart';
-import '../../common_widget/icon_title_next_row.dart';
+import '../../widget/icon_title_next_row.dart';
 // import '../../common_widget/round_button.dart';
 import '../main_tab/main_tab_view.dart';
 import '../main_tab/select_view.dart';
@@ -20,7 +20,7 @@ class _CaloriesEstimationScanState extends State<CaloriesEstimationScan> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: TColor.white,
+        backgroundColor: AppColor.white,
         centerTitle: true,
         elevation: 0,
         leading: InkWell(
@@ -49,7 +49,7 @@ class _CaloriesEstimationScanState extends State<CaloriesEstimationScan> {
         title: Text(
           "Scan",
           style: TextStyle(
-            color: TColor.black,
+            color: AppColor.black,
             fontSize: 20,
             fontWeight: FontWeight.w700,
             fontFamily: 'Khand',
@@ -83,14 +83,14 @@ class _CaloriesEstimationScanState extends State<CaloriesEstimationScan> {
           )
         ],
       ),
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
         child: Column(
           children: [
             const Spacer(),
             NormalButton(
-                textColor: TColor.primaryColor1,
+                textColor: AppColor.primaryColor1,
                 text: 'Scan',
                 onPressed: () {
                   Navigator.push(
@@ -100,10 +100,10 @@ class _CaloriesEstimationScanState extends State<CaloriesEstimationScan> {
                     ),
                   );
                 },
-                backgroundColor: TColor.white,
+                backgroundColor: AppColor.white,
                 widthSize: 330,
                 heightSize: 55,
-                borderColor: TColor.primaryColor1,
+                borderColor: AppColor.primaryColor1,
                 fontSize: 16),
             // RoundButton(
             //   title: "Compare",
@@ -146,7 +146,7 @@ class _CaloriesEstimationScanState extends State<CaloriesEstimationScan> {
           height: 60,
           decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: TColor.primaryG1,
+                colors: AppColor.primaryG1,
                 end: Alignment.topCenter,
                 begin: Alignment.bottomCenter,
               ),

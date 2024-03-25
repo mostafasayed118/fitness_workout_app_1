@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class TColor {
+class AppColor {
   static Color get primaryColor1 => const Color(0xff4CAF50);
   static Color get primaryColor2 => const Color(0xff016A70);
   static Color get primaryColor3 => const Color(0xff349A9F);

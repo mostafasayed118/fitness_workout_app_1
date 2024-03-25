@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../common/colo_extension.dart';
 import '../../common/common.dart';
-import '../../common_widget/normal_button.dart';
+import '../../widget/normal_button.dart';
 // import '../../common_widget/round_button.dart';
 import '../main_tab/select_view.dart';
 import 'add_schedule_view.dart';
@@ -97,7 +97,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
     var media = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: TColor.white,
+        backgroundColor: AppColor.white,
         centerTitle: true,
         elevation: 0,
         leading: InkWell(
@@ -123,7 +123,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
         title: Text(
           "Workout Schedule",
           style: TextStyle(
-            color: TColor.black,
+            color: AppColor.black,
             fontSize: 20,
             fontWeight: FontWeight.w700,
             fontFamily: 'Khand',
@@ -158,7 +158,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
           )
         ],
       ),
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -187,7 +187,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
             weekDay: WeekDay.short,
             dayNameFontSize: 12,
             dayNumberFontSize: 16,
-            dayBGColor: TColor.primaryColor4.withOpacity(0.10),
+            dayBGColor: AppColor.primaryColor4.withOpacity(0.10),
             titleSpaceBetween: 15,
             backgroundColor: Colors.transparent,
             // fullCalendar: false,
@@ -198,7 +198,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
             locale: 'en', //change all locale
 
             initialDate: DateTime.now(),
-            calendarEventColor: TColor.primaryColor4.withOpacity(0.7),
+            calendarEventColor: AppColor.primaryColor4.withOpacity(0.7),
             firstDate: DateTime.now().subtract(const Duration(days: 140)),
             lastDate: DateTime.now().add(const Duration(days: 60)),
 
@@ -211,7 +211,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
               height: double.maxFinite,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  colors: TColor.primaryG4,
+                  colors: AppColor.primaryG4,
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                 ),
@@ -244,7 +244,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                               child: Text(
                                 getTime(index * 60),
                                 style: TextStyle(
-                                  color: TColor.black,
+                                  color: AppColor.black,
                                   fontSize: 12,
                                   fontWeight: FontWeight.w500,
                                 ),
@@ -276,7 +276,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                                                         vertical: 15,
                                                         horizontal: 20),
                                                 decoration: BoxDecoration(
-                                                  color: TColor.white,
+                                                  color: AppColor.white,
                                                   borderRadius:
                                                       BorderRadius.circular(20),
                                                 ),
@@ -322,7 +322,8 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                                                         Text(
                                                           "Workout Schedule",
                                                           style: TextStyle(
-                                                            color: TColor.black,
+                                                            color:
+                                                                AppColor.black,
                                                             fontSize: 18,
                                                             fontWeight:
                                                                 FontWeight.w600,
@@ -362,7 +363,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                                                     Text(
                                                       sObj["name"].toString(),
                                                       style: TextStyle(
-                                                        color: TColor.black,
+                                                        color: AppColor.black,
                                                         fontSize: 16,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -384,7 +385,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                                                       Text(
                                                         "${getDayTitle(sObj["start_time"].toString())} | ${getStringDateToOtherFormate(sObj["start_time"].toString(), outFormatStr: "h:mm aa")}",
                                                         style: TextStyle(
-                                                          color: TColor.gray,
+                                                          color: AppColor.gray,
                                                           fontSize: 13,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -395,18 +396,18 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                                                       height: 15,
                                                     ),
                                                     NormalButton(
-                                                      textColor:
-                                                          TColor.primaryColor1,
+                                                      textColor: AppColor
+                                                          .primaryColor1,
                                                       text: 'Mark As Done',
                                                       onPressed: () {
                                                         Navigator.pop(context);
                                                       },
                                                       backgroundColor:
-                                                          TColor.white,
+                                                          AppColor.white,
                                                       widthSize: 200,
                                                       heightSize: 50,
-                                                      borderColor:
-                                                          TColor.primaryColor1,
+                                                      borderColor: AppColor
+                                                          .primaryColor1,
                                                       fontSize: 20,
                                                     ),
 
@@ -432,13 +433,13 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                                             horizontal: 8),
                                         alignment: Alignment.centerLeft,
                                         decoration: BoxDecoration(
-                                          color: TColor.white,
+                                          color: AppColor.white,
                                           // gradient: LinearGradient(
                                           //     colors: TColor.primaryG1),
                                           borderRadius:
                                               BorderRadius.circular(17.5),
                                           border: Border.all(
-                                            color: TColor.primaryColor1,
+                                            color: AppColor.primaryColor1,
                                             width: 1,
                                           ),
                                         ),
@@ -446,7 +447,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                                           "${sObj["name"].toString()}, ${getStringDateToOtherFormate(sObj["start_time"].toString(), outFormatStr: "h:mm aa")}",
                                           maxLines: 1,
                                           style: TextStyle(
-                                            color: TColor.primaryColor1,
+                                            color: AppColor.primaryColor1,
                                             fontSize: 13,
                                             fontWeight: FontWeight.w500,
                                           ),
@@ -462,7 +463,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                     },
                     separatorBuilder: (context, index) {
                       return Divider(
-                        color: TColor.gray.withOpacity(0.2),
+                        color: AppColor.gray.withOpacity(0.2),
                         height: 1,
                       );
                     },
@@ -488,7 +489,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
           height: 55,
           decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: TColor.primaryG1,
+                colors: AppColor.primaryG1,
                 begin: Alignment.bottomCenter,
                 end: Alignment.topCenter,
               ),
@@ -501,7 +502,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
           child: Icon(
             Icons.add,
             size: 20,
-            color: TColor.white,
+            color: AppColor.white,
           ),
         ),
       ),

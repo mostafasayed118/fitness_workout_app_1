@@ -2,28 +2,21 @@ import 'package:fitness_workout_app_1/common/colo_extension.dart';
 // import 'package:fitness_workout_app_1/common_widget/round_button.dart';
 // import 'package:fitness_workout_app_1/view/login/complete_profile_view.dart';
 import 'package:fitness_workout_app_1/forget_password/password_forget_page_one.dart';
-// import 'package:fitness_workout_app_1/view/home/home_view.dart';
 import 'package:fitness_workout_app_1/view/login/signup_view.dart';
 import 'package:flutter/material.dart';
 
-import '../../common_widget/normal_button.dart';
-import '../../common_widget/round_textfield.dart';
+import '../../widget/normal_button.dart';
+import '../../widget/round_textfield.dart';
 import '../main_tab/main_tab_view.dart';
 
-class LoginView extends StatefulWidget {
+class LoginView extends StatelessWidget {
   const LoginView({Key? key}) : super(key: key);
 
-  @override
-  _LoginViewState createState() => _LoginViewState();
-}
-
-class _LoginViewState extends State<LoginView> {
-  bool isCheck = false;
   @override
   Widget build(BuildContext context) {
     var media = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: SingleChildScrollView(
         child: SafeArea(
           child: Container(
@@ -32,40 +25,39 @@ class _LoginViewState extends State<LoginView> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SizedBox(
-                  height: media.width * 0.06,
-                ),
+                SizedBox(height: media.width * 0.1),
                 Text(
                   "Hey there,",
                   style: TextStyle(
-                      color: TColor.primaryColor2,
-                      fontSize: 16,
-                      fontFamily: 'Hind',
-                      fontWeight: FontWeight.w500),
+                    color: AppColor.primaryColor2,
+                    fontSize: 16,
+                    fontFamily: 'Hind',
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
                 Text(
                   "Welcome Back",
                   style: TextStyle(
-                    color: TColor.primaryColor1,
+                    color: AppColor.primaryColor1,
                     fontSize: 20,
                     fontWeight: FontWeight.w700,
                     fontFamily: 'Hind',
                   ),
                 ),
-                SizedBox(
-                  height: media.width * 0.05,
+                SizedBox(height: media.width * 0.05),
+                Image.asset(
+                  'assets/img/logo_1.png',
+                  width: 100,
+                  height: 100,
                 ),
-                SizedBox(
-                  height: media.width * 0.08,
-                ),
-                const RoundTextfield(
+                SizedBox(height: media.width * 0.05),
+                SizedBox(height: media.width * 0.08),
+                RoundTextfield(
                   hitText: 'Email',
                   iconPath: 'assets/img/email.png',
                   keyboardType: TextInputType.emailAddress,
                 ),
-                SizedBox(
-                  height: media.width * 0.04,
-                ),
+                SizedBox(height: media.width * 0.04),
                 RoundTextfield(
                   hitText: 'Password',
                   obscureText: true,
@@ -82,29 +74,29 @@ class _LoginViewState extends State<LoginView> {
                         width: 20,
                         height: 20,
                         fit: BoxFit.contain,
-                        color: TColor.gray,
+                        color: AppColor.gray,
                       ),
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: media.width * 0.06,
-                ),
+                SizedBox(height: media.width * 0.06),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     GestureDetector(
                       onTap: () {
                         Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    const PasswordForgetEmailPage()));
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                const PasswordForgetEmailPage(),
+                          ),
+                        );
                       },
                       child: Text(
                         "Forgot Your Password?",
                         style: TextStyle(
-                          color: TColor.primaryColor2,
+                          color: AppColor.primaryColor2,
                           fontSize: 12,
                           fontWeight: FontWeight.w500,
                           fontFamily: 'Hind',
@@ -114,66 +106,51 @@ class _LoginViewState extends State<LoginView> {
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: media.width * 0.4,
-                ),
-                // const Spacer(),
+                SizedBox(height: media.width * 0.25),
                 NormalButton(
-                  textColor: TColor.white,
+                  textColor: AppColor.white,
                   text: 'Login',
                   onPressed: () {
                     Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const MainTabView()));
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MainTabView(),
+                      ),
+                    );
                   },
-                  backgroundColor: TColor.primaryColor1,
+                  backgroundColor: AppColor.primaryColor1,
                   widthSize: 330,
                   heightSize: 61,
-                  borderColor: TColor.primaryColor1,
+                  borderColor: AppColor.primaryColor1,
                   fontSize: 32,
                 ),
-                // RoundButton(
-                //   title: "Login",
-                //   onPressed: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //             builder: (context) => const CompleteProfileView()));
-                //   },
-                //   fontSize: 32,
-                //   fontWeight: FontWeight.w700,
-                // ),
-                SizedBox(
-                  height: media.width * 0.04,
-                ),
+                SizedBox(height: media.width * 0.04),
                 Row(
                   children: [
                     Expanded(
                       child: Container(
                         height: 2,
-                        color: TColor.primaryColor1.withOpacity(0.5),
+                        color: AppColor.primaryColor1.withOpacity(0.5),
                       ),
                     ),
                     Text(
                       ' Or ',
                       style: TextStyle(
-                          color: TColor.primaryColor2,
-                          fontSize: 14,
-                          fontFamily: 'Hind',
-                          fontWeight: FontWeight.w500),
+                        color: AppColor.primaryColor2,
+                        fontSize: 14,
+                        fontFamily: 'Hind',
+                        fontWeight: FontWeight.w500,
+                      ),
                     ),
                     Expanded(
                       child: Container(
                         height: 2,
-                        color: TColor.primaryColor1.withOpacity(0.5),
+                        color: AppColor.primaryColor1.withOpacity(0.5),
                       ),
-                    )
+                    ),
                   ],
                 ),
-                SizedBox(
-                  height: media.width * 0.04,
-                ),
+                SizedBox(height: media.width * 0.04),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -184,7 +161,7 @@ class _LoginViewState extends State<LoginView> {
                         height: 50,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
-                          color: TColor.white,
+                          color: AppColor.white,
                         ),
                         child: Image.asset(
                           'assets/img/google1.png',
@@ -193,9 +170,7 @@ class _LoginViewState extends State<LoginView> {
                         ),
                       ),
                     ),
-                    SizedBox(
-                      width: media.width * 0.04,
-                    ),
+                    SizedBox(width: media.width * 0.04),
                     GestureDetector(
                       onTap: () {},
                       child: Container(
@@ -203,7 +178,7 @@ class _LoginViewState extends State<LoginView> {
                         height: 50,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
-                          color: TColor.white,
+                          color: AppColor.white,
                         ),
                         child: Image.asset(
                           'assets/img/facebook1.png',
@@ -212,9 +187,7 @@ class _LoginViewState extends State<LoginView> {
                         ),
                       ),
                     ),
-                    SizedBox(
-                      width: media.width * 0.04,
-                    ),
+                    SizedBox(width: media.width * 0.04),
                     GestureDetector(
                       onTap: () {},
                       child: Container(
@@ -222,7 +195,7 @@ class _LoginViewState extends State<LoginView> {
                         height: 50,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
-                          color: TColor.white,
+                          color: AppColor.white,
                         ),
                         child: Image.asset(
                           'assets/img/x.png',
@@ -233,15 +206,15 @@ class _LoginViewState extends State<LoginView> {
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: media.width * 0.04,
-                ),
+                SizedBox(height: media.width * 0.04),
                 TextButton(
                   onPressed: () {
                     Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const SignupView()));
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SignUpView(),
+                      ),
+                    );
                   },
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
@@ -249,15 +222,16 @@ class _LoginViewState extends State<LoginView> {
                       Text(
                         "Don't have an account yet? ",
                         style: TextStyle(
-                            color: TColor.primaryColor1,
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                            fontFamily: 'Hind'),
+                          color: AppColor.primaryColor1,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                          fontFamily: 'Hind',
+                        ),
                       ),
                       Text(
                         'Register',
                         style: TextStyle(
-                          color: TColor.primaryColor2,
+                          color: AppColor.primaryColor2,
                           fontSize: 14,
                           fontWeight: FontWeight.w700,
                           fontFamily: 'Hind',
@@ -266,9 +240,7 @@ class _LoginViewState extends State<LoginView> {
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: media.width * 0.04,
-                ),
+                SizedBox(height: media.width * 0.04),
               ],
             ),
           ),

@@ -1,9 +1,9 @@
 import 'package:fitness_workout_app_1/common/colo_extension.dart';
 import 'package:flutter/material.dart';
 
-import '../../common_widget/normal_button.dart';
+import '../../widget/normal_button.dart';
 // import '../../common_widget/round_button.dart';
-import '../../common_widget/round_textfield.dart';
+import '../../widget/round_textfield.dart';
 // import '../main_tab/main_tab_view.dart';
 import 'what_your_goal_view.dart';
 
@@ -20,7 +20,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
   Widget build(BuildContext context) {
     var media = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: SingleChildScrollView(
         child: SafeArea(
             child: Padding(
@@ -30,7 +30,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
               Text(
                 "Let's Complete Your Profile",
                 style: TextStyle(
-                  color: TColor.primaryColor1,
+                  color: AppColor.primaryColor1,
                   fontSize: 24,
                   fontWeight: FontWeight.w700,
                   fontFamily: 'Khand',
@@ -39,7 +39,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
               Text(
                 "It will help us to know more about you!",
                 style: TextStyle(
-                  color: TColor.primaryColor2,
+                  color: AppColor.primaryColor2,
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
                   fontFamily: 'Khand',
@@ -62,7 +62,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                   children: [
                     Container(
                       decoration: BoxDecoration(
-                        color: TColor.lightGray,
+                        color: AppColor.lightGray,
                         borderRadius: BorderRadius.circular(15),
                       ),
                       child: Row(
@@ -77,7 +77,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                               width: 20,
                               height: 20,
                               fit: BoxFit.contain,
-                              color: TColor.gray,
+                              color: AppColor.gray,
                             ),
                           ),
                           Expanded(
@@ -89,7 +89,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                                           child: Text(
                                             name,
                                             style: TextStyle(
-                                              color: TColor.gray,
+                                              color: AppColor.gray,
                                               fontSize: 16,
                                               fontWeight: FontWeight.w500,
                                               fontFamily: 'Khand',
@@ -102,7 +102,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                                 hint: Text(
                                   'Choose Gender',
                                   style: TextStyle(
-                                    color: TColor.gray,
+                                    color: AppColor.gray,
                                     fontSize: 16,
                                     fontWeight: FontWeight.w500,
                                     fontFamily: 'Hind',
@@ -144,14 +144,14 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                           alignment: Alignment.center,
                           decoration: BoxDecoration(
                             gradient: LinearGradient(
-                              colors: TColor.primaryG1,
+                              colors: AppColor.primaryG1,
                             ),
                             borderRadius: BorderRadius.circular(15),
                           ),
                           child: Text(
                             'KG',
                             style: TextStyle(
-                              color: TColor.white,
+                              color: AppColor.white,
                               fontSize: 12,
                               fontFamily: 'Hind',
                               fontWeight: FontWeight.w700,
@@ -180,14 +180,14 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                           alignment: Alignment.center,
                           decoration: BoxDecoration(
                             gradient: LinearGradient(
-                              colors: TColor.primaryG1,
+                              colors: AppColor.primaryG1,
                             ),
                             borderRadius: BorderRadius.circular(15),
                           ),
                           child: Text(
                             'CM',
                             style: TextStyle(
-                              color: TColor.white,
+                              color: AppColor.white,
                               fontSize: 12,
                               fontFamily: 'Hind',
                               fontWeight: FontWeight.w700,
@@ -200,7 +200,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                       height: media.width * 0.07,
                     ),
                     NormalButton(
-                      textColor: TColor.white,
+                      textColor: AppColor.white,
                       text: 'Next Step',
                       onPressed: () {
                         Navigator.push(
@@ -209,10 +209,10 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                                 builder: (context) =>
                                     const WhatYourGoalView()));
                       },
-                      backgroundColor: TColor.primaryColor1,
+                      backgroundColor: AppColor.primaryColor1,
                       widthSize: 330,
                       heightSize: 61,
-                      borderColor: TColor.primaryColor1,
+                      borderColor: AppColor.primaryColor1,
                       fontSize: 30,
                       // RoundButton(
                       //   title: "Next Step",

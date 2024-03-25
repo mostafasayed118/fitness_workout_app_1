@@ -1,8 +1,8 @@
-import 'package:fitness_workout_app_1/common_widget/normal_button.dart';
+import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:flutter/material.dart';
 import '../../common/colo_extension.dart';
-import '../../common_widget/icon_title_next_row.dart';
-import '../../common_widget/round_button.dart';
+import '../../widget/icon_title_next_row.dart';
+import '../../widget/round_button.dart';
 import '../main_tab/main_tab_view.dart';
 import '../main_tab/select_view.dart';
 import 'result_view.dart';
@@ -19,7 +19,7 @@ class _ComparisonViewState extends State<ComparisonView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: TColor.white,
+        backgroundColor: AppColor.white,
         centerTitle: true,
         elevation: 0,
         leading: InkWell(
@@ -48,7 +48,7 @@ class _ComparisonViewState extends State<ComparisonView> {
         title: Text(
           "Comparison",
           style: TextStyle(
-              color: TColor.black, fontSize: 16, fontWeight: FontWeight.w700),
+              color: AppColor.black, fontSize: 16, fontWeight: FontWeight.w700),
         ),
         actions: [
           InkWell(
@@ -78,7 +78,7 @@ class _ComparisonViewState extends State<ComparisonView> {
           )
         ],
       ),
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
         child: Column(
@@ -88,7 +88,7 @@ class _ComparisonViewState extends State<ComparisonView> {
                 title: "Select Month 1",
                 time: "May",
                 onPressed: () {},
-                color: TColor.gray),
+                color: AppColor.gray),
             const SizedBox(
               height: 15,
             ),
@@ -97,10 +97,10 @@ class _ComparisonViewState extends State<ComparisonView> {
                 title: "Select Month 2",
                 time: "select Month",
                 onPressed: () {},
-                color: TColor.gray),
+                color: AppColor.gray),
             const Spacer(),
             NormalButton(
-                textColor: TColor.primaryColor1,
+                textColor: AppColor.primaryColor1,
                 text: 'Compare',
                 onPressed: () {
                   Navigator.push(
@@ -113,10 +113,10 @@ class _ComparisonViewState extends State<ComparisonView> {
                     ),
                   );
                 },
-                backgroundColor: TColor.white,
+                backgroundColor: AppColor.white,
                 widthSize: 330,
                 heightSize: 55,
-                borderColor: TColor.primaryColor1,
+                borderColor: AppColor.primaryColor1,
                 fontSize: 16),
             // RoundButton(
             //   title: "Compare",

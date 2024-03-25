@@ -1,8 +1,8 @@
 import 'package:fitness_workout_app_1/common/colo_extension.dart';
-import 'package:fitness_workout_app_1/common_widget/normal_button.dart';
+import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:flutter/material.dart';
 
-import '../common_widget/round_textfield.dart';
+import '../widget/round_textfield.dart';
 import 'password_forget_page_two.dart';
 
 class PasswordForgetEmailPage extends StatefulWidget {
@@ -48,7 +48,7 @@ class _PasswordForgetEmailPageState extends State<PasswordForgetEmailPage> {
     var media = MediaQuery.of(context).size;
 
     return Scaffold(
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
@@ -73,7 +73,7 @@ class _PasswordForgetEmailPageState extends State<PasswordForgetEmailPage> {
                           "Please Enter Your Email Address To Send A Password Reset Link",
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            color: TColor.primaryColor1,
+                            color: AppColor.primaryColor1,
                             fontSize: 24,
                             fontWeight: FontWeight.w700,
                             fontFamily: 'Khand',
@@ -91,7 +91,7 @@ class _PasswordForgetEmailPageState extends State<PasswordForgetEmailPage> {
                           height: media.width * 0.3,
                         ),
                         NormalButton(
-                          textColor: TColor.primaryColor1,
+                          textColor: AppColor.primaryColor1,
                           text: 'Send',
                           onPressed: () {
                             Navigator.push(
@@ -100,10 +100,10 @@ class _PasswordForgetEmailPageState extends State<PasswordForgetEmailPage> {
                                     builder: (context) =>
                                         const PasswordForgetCodePage()));
                           },
-                          backgroundColor: TColor.white,
+                          backgroundColor: AppColor.white,
                           widthSize: 330,
                           heightSize: 50,
-                          borderColor: TColor.primaryColor1,
+                          borderColor: AppColor.primaryColor1,
                           fontSize: 32,
                         ),
                       ],

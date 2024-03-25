@@ -1,5 +1,5 @@
 import 'package:fitness_workout_app_1/common/colo_extension.dart';
-import 'package:fitness_workout_app_1/common_widget/normal_button.dart';
+import 'package:fitness_workout_app_1/widget/normal_button.dart';
 // import 'package:fitness_workout_app_1/common_widget/round_button.dart';
 import 'package:fitness_workout_app_1/view/login/signup_view.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +19,7 @@ class _CreateAccountState extends State<CreateAccount> {
   Widget build(BuildContext context) {
     var media = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: SingleChildScrollView(
         child: SafeArea(
           child: Container(
@@ -45,18 +45,18 @@ class _CreateAccountState extends State<CreateAccount> {
                       ),
 
                       NormalButton(
-                        textColor: TColor.white,
+                        textColor: AppColor.white,
                         text: 'Create Account',
                         onPressed: () {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const SignupView()));
+                                  builder: (context) => const SignUpView()));
                         },
-                        backgroundColor: TColor.primaryColor1,
+                        backgroundColor: AppColor.primaryColor1,
                         widthSize: 330,
                         heightSize: 61,
-                        borderColor: TColor.primaryColor1,
+                        borderColor: AppColor.primaryColor1,
                         fontSize: 30,
                       )
                       // RoundButton(
@@ -76,7 +76,7 @@ class _CreateAccountState extends State<CreateAccount> {
                         height: media.width * 0.06,
                       ),
                       NormalButton(
-                        textColor: TColor.primaryColor1,
+                        textColor: AppColor.primaryColor1,
                         text: 'Login',
                         onPressed: () {
                           Navigator.push(
@@ -84,10 +84,10 @@ class _CreateAccountState extends State<CreateAccount> {
                               MaterialPageRoute(
                                   builder: (context) => const LoginView()));
                         },
-                        backgroundColor: TColor.white,
+                        backgroundColor: AppColor.white,
                         widthSize: 330,
                         heightSize: 61,
-                        borderColor: TColor.primaryColor1,
+                        borderColor: AppColor.primaryColor1,
                         fontSize: 32,
                       ),
                       // RoundButton(

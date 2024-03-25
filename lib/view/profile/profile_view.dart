@@ -1,11 +1,11 @@
 import 'package:animated_toggle_switch/animated_toggle_switch.dart';
-import 'package:fitness_workout_app_1/common_widget/normal_button.dart';
+import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:fitness_workout_app_1/view/main_tab/main_tab_view.dart';
 import 'package:flutter/material.dart';
 
 import '../../common/colo_extension.dart';
-import '../../common_widget/setting_row.dart';
-import '../../common_widget/title_subtitle_cell.dart';
+import '../../widget/setting_row.dart';
+import '../../widget/title_subtitle_cell.dart';
 import '../home/activity_tracker_view.dart';
 import '../main_tab/select_view.dart';
 
@@ -49,7 +49,7 @@ class _ProfileViewState extends State<ProfileView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: TColor.white,
+        backgroundColor: AppColor.white,
         centerTitle: true,
         elevation: 0,
         leading: InkWell(
@@ -78,7 +78,7 @@ class _ProfileViewState extends State<ProfileView> {
         title: Text(
           "Profile",
           style: TextStyle(
-            color: TColor.black,
+            color: AppColor.black,
             fontSize: 20,
             fontWeight: FontWeight.w700,
             fontFamily: 'Khand',
@@ -113,7 +113,7 @@ class _ProfileViewState extends State<ProfileView> {
           )
         ],
       ),
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 25),
@@ -141,7 +141,7 @@ class _ProfileViewState extends State<ProfileView> {
                         Text(
                           "Mustafa Sayed",
                           style: TextStyle(
-                            color: TColor.black,
+                            color: AppColor.black,
                             fontSize: 15,
                             fontWeight: FontWeight.w600,
                             fontFamily: 'Khand',
@@ -150,7 +150,7 @@ class _ProfileViewState extends State<ProfileView> {
                         Text(
                           "Lose a Fat Program",
                           style: TextStyle(
-                            color: TColor.gray,
+                            color: AppColor.gray,
                             fontSize: 13,
                             fontWeight: FontWeight.w500,
                             fontFamily: 'Hind',
@@ -163,7 +163,7 @@ class _ProfileViewState extends State<ProfileView> {
                       width: 80,
                       height: 30,
                       child: NormalButton(
-                          textColor: TColor.primaryColor1,
+                          textColor: AppColor.primaryColor1,
                           text: 'Edit',
                           onPressed: () {
                             Navigator.push(
@@ -174,10 +174,10 @@ class _ProfileViewState extends State<ProfileView> {
                               ),
                             );
                           },
-                          backgroundColor: TColor.white,
+                          backgroundColor: AppColor.white,
                           widthSize: 80,
                           heightSize: 25,
-                          borderColor: TColor.primaryColor1,
+                          borderColor: AppColor.primaryColor1,
                           fontSize: 15)
                       // RoundButton(
                       //   title: "Edit",
@@ -234,7 +234,7 @@ class _ProfileViewState extends State<ProfileView> {
                 padding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
                 decoration: BoxDecoration(
-                    color: TColor.white,
+                    color: AppColor.white,
                     borderRadius: BorderRadius.circular(15),
                     boxShadow: const [
                       BoxShadow(color: Colors.black12, blurRadius: 2)
@@ -245,7 +245,7 @@ class _ProfileViewState extends State<ProfileView> {
                     Text(
                       "Account",
                       style: TextStyle(
-                        color: TColor.black,
+                        color: AppColor.black,
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Khand',
@@ -277,7 +277,7 @@ class _ProfileViewState extends State<ProfileView> {
                 padding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
                 decoration: BoxDecoration(
-                    color: TColor.white,
+                    color: AppColor.white,
                     borderRadius: BorderRadius.circular(15),
                     boxShadow: const [
                       BoxShadow(color: Colors.black12, blurRadius: 2)
@@ -288,7 +288,7 @@ class _ProfileViewState extends State<ProfileView> {
                     Text(
                       "Notification",
                       style: TextStyle(
-                        color: TColor.black,
+                        color: AppColor.black,
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
                       ),
@@ -310,7 +310,7 @@ class _ProfileViewState extends State<ProfileView> {
                               child: Text(
                                 "Pop-up Notification",
                                 style: TextStyle(
-                                  color: TColor.black,
+                                  color: AppColor.black,
                                   fontSize: 12,
                                   fontFamily: 'Hind',
                                 ),
@@ -343,7 +343,7 @@ class _ProfileViewState extends State<ProfileView> {
                                         height: 30.0,
                                         child: DecoratedBox(
                                           decoration: BoxDecoration(
-                                            color: TColor.primaryColor1,
+                                            color: AppColor.primaryColor1,
                                             // gradient: LinearGradient(
                                             //     colors: TColor.primaryG3),
                                             borderRadius:
@@ -360,7 +360,7 @@ class _ProfileViewState extends State<ProfileView> {
                                   size: const Size(10, 10),
                                   child: DecoratedBox(
                                     decoration: BoxDecoration(
-                                      color: TColor.white,
+                                      color: AppColor.white,
                                       borderRadius: const BorderRadius.all(
                                           Radius.circular(50.0)),
                                       boxShadow: const [
@@ -390,7 +390,7 @@ class _ProfileViewState extends State<ProfileView> {
                 padding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
                 decoration: BoxDecoration(
-                    color: TColor.white,
+                    color: AppColor.white,
                     borderRadius: BorderRadius.circular(15),
                     boxShadow: const [
                       BoxShadow(color: Colors.black12, blurRadius: 2)
@@ -401,7 +401,7 @@ class _ProfileViewState extends State<ProfileView> {
                     Text(
                       "Choose Mode",
                       style: TextStyle(
-                        color: TColor.black,
+                        color: AppColor.black,
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
                       ),
@@ -423,7 +423,7 @@ class _ProfileViewState extends State<ProfileView> {
                               child: Text(
                                 "Night Mode",
                                 style: TextStyle(
-                                  color: TColor.black,
+                                  color: AppColor.black,
                                   fontSize: 12,
                                   fontFamily: 'Hind',
                                 ),
@@ -456,7 +456,7 @@ class _ProfileViewState extends State<ProfileView> {
                                         height: 30.0,
                                         child: DecoratedBox(
                                           decoration: BoxDecoration(
-                                            color: TColor.primaryColor1,
+                                            color: AppColor.primaryColor1,
                                             // gradient: LinearGradient(
                                             //     colors: TColor.primaryG3),
                                             borderRadius:
@@ -473,7 +473,7 @@ class _ProfileViewState extends State<ProfileView> {
                                   size: const Size(10, 10),
                                   child: DecoratedBox(
                                     decoration: BoxDecoration(
-                                      color: TColor.white,
+                                      color: AppColor.white,
                                       borderRadius: const BorderRadius.all(
                                           Radius.circular(50.0)),
                                       boxShadow: const [
@@ -507,7 +507,7 @@ class _ProfileViewState extends State<ProfileView> {
                               child: Text(
                                 "Light Mode",
                                 style: TextStyle(
-                                  color: TColor.black,
+                                  color: AppColor.black,
                                   fontSize: 12,
                                   fontFamily: 'Hind',
                                 ),
@@ -540,7 +540,7 @@ class _ProfileViewState extends State<ProfileView> {
                                         height: 30.0,
                                         child: DecoratedBox(
                                           decoration: BoxDecoration(
-                                            color: TColor.primaryColor1,
+                                            color: AppColor.primaryColor1,
                                             // gradient: LinearGradient(
                                             //     colors: TColor.primaryG3),
                                             borderRadius:
@@ -557,7 +557,7 @@ class _ProfileViewState extends State<ProfileView> {
                                   size: const Size(10, 10),
                                   child: DecoratedBox(
                                     decoration: BoxDecoration(
-                                      color: TColor.white,
+                                      color: AppColor.white,
                                       borderRadius: const BorderRadius.all(
                                           Radius.circular(50.0)),
                                       boxShadow: const [
@@ -584,7 +584,7 @@ class _ProfileViewState extends State<ProfileView> {
                 padding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
                 decoration: BoxDecoration(
-                    color: TColor.white,
+                    color: AppColor.white,
                     borderRadius: BorderRadius.circular(15),
                     boxShadow: const [
                       BoxShadow(color: Colors.black12, blurRadius: 2)
@@ -595,7 +595,7 @@ class _ProfileViewState extends State<ProfileView> {
                     Text(
                       "Other",
                       style: TextStyle(
-                        color: TColor.black,
+                        color: AppColor.black,
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Khand',

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../common/colo_extension.dart';
-import '../../common_widget/meal_category_cell.dart';
-import '../../common_widget/meal_recommed_cell.dart';
-import '../../common_widget/popular_meal_row.dart';
+import '../../widget/meal_category_cell.dart';
+import '../../widget/meal_recommed_cell.dart';
+import '../../widget/popular_meal_row.dart';
 // import '../../common_widget/today_meal_row.dart';
 import '../main_tab/select_view.dart';
 import 'food_info_details_view.dart';
@@ -96,7 +96,7 @@ class _MealFoodDetailsViewState extends State<MealFoodDetailsView> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: TColor.white,
+        backgroundColor: AppColor.white,
         centerTitle: true,
         elevation: 0,
         leading: InkWell(
@@ -123,7 +123,7 @@ class _MealFoodDetailsViewState extends State<MealFoodDetailsView> {
         title: Text(
           widget.eObj["name"].toString(),
           style: TextStyle(
-            color: TColor.black,
+            color: AppColor.black,
             fontSize: 22,
             fontWeight: FontWeight.w700,
             fontFamily: 'khand',
@@ -157,7 +157,7 @@ class _MealFoodDetailsViewState extends State<MealFoodDetailsView> {
           )
         ],
       ),
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -166,7 +166,7 @@ class _MealFoodDetailsViewState extends State<MealFoodDetailsView> {
               margin: const EdgeInsets.symmetric(horizontal: 20),
               padding: const EdgeInsets.symmetric(horizontal: 8),
               decoration: BoxDecoration(
-                  color: TColor.white,
+                  color: AppColor.white,
                   borderRadius: BorderRadius.circular(15),
                   boxShadow: const [
                     BoxShadow(
@@ -189,7 +189,7 @@ class _MealFoodDetailsViewState extends State<MealFoodDetailsView> {
                       ),
                       hintText: "Search Pancake",
                       hintStyle: TextStyle(
-                        color: TColor.gray.withOpacity(0.5),
+                        color: AppColor.gray.withOpacity(0.5),
                       ),
                     ),
                   )),
@@ -197,7 +197,7 @@ class _MealFoodDetailsViewState extends State<MealFoodDetailsView> {
                     margin: const EdgeInsets.symmetric(horizontal: 8),
                     width: 1,
                     height: 25,
-                    color: TColor.gray.withOpacity(0.3),
+                    color: AppColor.gray.withOpacity(0.3),
                   ),
                   InkWell(
                     onTap: () {},
@@ -221,7 +221,7 @@ class _MealFoodDetailsViewState extends State<MealFoodDetailsView> {
                   Text(
                     "Category",
                     style: TextStyle(
-                      color: TColor.black,
+                      color: AppColor.black,
                       fontSize: 20,
                       fontWeight: FontWeight.w600,
                       fontFamily: 'khand',
@@ -252,7 +252,7 @@ class _MealFoodDetailsViewState extends State<MealFoodDetailsView> {
               child: Text(
                 "Recommendation\nfor Diet",
                 style: TextStyle(
-                  color: TColor.black,
+                  color: AppColor.black,
                   fontSize: 20,
                   fontWeight: FontWeight.w600,
                   fontFamily: 'khand',
@@ -281,7 +281,7 @@ class _MealFoodDetailsViewState extends State<MealFoodDetailsView> {
               child: Text(
                 "Popular",
                 style: TextStyle(
-                  color: TColor.black,
+                  color: AppColor.black,
                   fontSize: 20,
                   fontWeight: FontWeight.w600,
                   fontFamily: 'Khand',

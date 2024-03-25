@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:fitness_workout_app_1/firebase_options.dart';
 import 'package:fitness_workout_app_1/notification/local_notification_service.dart';
 import 'package:fitness_workout_app_1/view/on_boarding/looding.dart';
@@ -27,10 +28,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'NutriFix',
+      title: AppString.title,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: TColor.primaryColor1,
+        primaryColor: AppColor.primaryColor1,
         fontFamily: "Hind",
       ),
       // darkTheme: ThemeData(
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
       //   primaryColor: TColor.primaryColor4,
       //   fontFamily: "Hind",
       // ),
-      home: const Splash1(),
+      home: const SplashScreen(),
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:fitness_workout_app_1/common/colo_extension.dart';
-import 'package:fitness_workout_app_1/common_widget/normal_button.dart';
+import 'package:fitness_workout_app_1/widget/normal_button.dart';
 // import 'package:fitness_workout_app_1/common_widget/round_button.dart';
 import 'package:fitness_workout_app_1/view/on_boarding/on_boarding_view.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +17,7 @@ class _StartedViewState extends State<StartedView> {
   Widget build(BuildContext context) {
     var media = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: SizedBox(
           width: media.width,
           child: Expanded(
@@ -30,7 +30,7 @@ class _StartedViewState extends State<StartedView> {
                 Text(
                   'Welcome In',
                   style: TextStyle(
-                    color: TColor.primaryColor1,
+                    color: AppColor.primaryColor1,
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Khand',
@@ -39,7 +39,7 @@ class _StartedViewState extends State<StartedView> {
                 Text(
                   'NutriFix',
                   style: TextStyle(
-                    color: TColor.primaryColor1,
+                    color: AppColor.primaryColor1,
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Khand',
@@ -60,7 +60,7 @@ class _StartedViewState extends State<StartedView> {
                         children: [
                           SlideAction(
                             child: NormalButton(
-                              textColor: TColor.white,
+                              textColor: AppColor.white,
                               text: 'Get Started',
                               onPressed: () {
                                 //Go to next screen
@@ -72,10 +72,10 @@ class _StartedViewState extends State<StartedView> {
                                   ),
                                 );
                               },
-                              backgroundColor: TColor.primaryColor1,
+                              backgroundColor: AppColor.primaryColor1,
                               widthSize: 344,
                               heightSize: 70,
-                              borderColor: TColor.primaryColor1,
+                              borderColor: AppColor.primaryColor1,
                               fontSize: 25,
                             ),
 
@@ -92,7 +92,7 @@ class _StartedViewState extends State<StartedView> {
 
                             borderRadius: 30,
                             elevation: 0,
-                            outerColor: TColor.primaryColor4,
+                            outerColor: AppColor.primaryColor4,
                             innerColor: Colors.white,
                             // innerColor: TColor.primaryColor1,
 

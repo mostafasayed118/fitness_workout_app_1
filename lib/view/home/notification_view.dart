@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 import '../../common/colo_extension.dart';
-import '../../common_widget/notification_row.dart';
+import '../../widget/notification_row.dart';
 import '../main_tab/select_view.dart';
 
 class NotificationView extends StatefulWidget {
@@ -63,7 +63,7 @@ class _NotificationViewState extends State<NotificationView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: TColor.white,
+        backgroundColor: AppColor.white,
         centerTitle: true,
         elevation: 0,
         leading: InkWell(
@@ -90,7 +90,7 @@ class _NotificationViewState extends State<NotificationView> {
         title: Text(
           "Notification",
           style: TextStyle(
-            color: TColor.black,
+            color: AppColor.black,
             fontSize: 20,
             fontWeight: FontWeight.w700,
             fontFamily: 'khand',
@@ -125,7 +125,7 @@ class _NotificationViewState extends State<NotificationView> {
           )
         ],
       ),
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: ListView.separated(
           padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 25),
           itemBuilder: ((context, index) {
@@ -134,7 +134,7 @@ class _NotificationViewState extends State<NotificationView> {
           }),
           separatorBuilder: (context, index) {
             return Divider(
-              color: TColor.gray.withOpacity(0.5),
+              color: AppColor.gray.withOpacity(0.5),
               height: 1,
             );
           },

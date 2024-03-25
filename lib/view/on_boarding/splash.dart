@@ -1,14 +1,14 @@
 import 'package:fitness_workout_app_1/view/on_boarding/on_boarding_view.dart';
 import 'package:flutter/material.dart';
 
-class SplashScreen extends StatefulWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+class SplashScreen1 extends StatefulWidget {
+  const SplashScreen1({Key? key}) : super(key: key);
 
   @override
-  State<SplashScreen> createState() => _SplashScreenState();
+  State<SplashScreen1> createState() => _SplashScreen1State();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _SplashScreen1State extends State<SplashScreen1> {
   @override
   void initState() {
     super.initState();

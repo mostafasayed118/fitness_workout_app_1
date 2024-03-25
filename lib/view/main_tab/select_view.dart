@@ -1,4 +1,4 @@
-import 'package:fitness_workout_app_1/common_widget/normal_button.dart';
+import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:fitness_workout_app_1/view/calorie_estimation/calorie_estimation_scan.dart';
 import 'package:fitness_workout_app_1/view/home/blank_view.dart';
 import 'package:fitness_workout_app_1/view/home/home_view.dart';
@@ -6,7 +6,7 @@ import 'package:fitness_workout_app_1/view/photo_progress/photo_progress_view.da
 import 'package:flutter/material.dart';
 
 import '../../common/colo_extension.dart';
-import '../../common_widget/round_button.dart';
+import '../../widget/round_button.dart';
 import '../meal_planner/meal_planner_view.dart';
 import '../sleep_tracker/sleep_tracker_view.dart';
 import '../workout_tracker/workout_tracker_view.dart';
@@ -20,7 +20,7 @@ class SelectView extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: TColor.white,
+        backgroundColor: AppColor.white,
         centerTitle: true,
         elevation: 0,
         leading: InkWell(
@@ -46,7 +46,7 @@ class SelectView extends StatelessWidget {
         title: Text(
           "Select Page",
           style: TextStyle(
-            color: TColor.black,
+            color: AppColor.black,
             fontSize: 20,
             fontWeight: FontWeight.w700,
             fontFamily: 'Khand',
@@ -86,7 +86,7 @@ class SelectView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             NormalButton(
-                textColor: TColor.primaryColor1,
+                textColor: AppColor.primaryColor1,
                 text: 'Home',
                 onPressed: () {
                   Navigator.push(
@@ -96,16 +96,16 @@ class SelectView extends StatelessWidget {
                     ),
                   );
                 },
-                backgroundColor: TColor.white,
+                backgroundColor: AppColor.white,
                 widthSize: 315,
                 heightSize: 60,
-                borderColor: TColor.primaryColor1,
+                borderColor: AppColor.primaryColor1,
                 fontSize: 20),
             const SizedBox(
               height: 15,
             ),
             NormalButton(
-                textColor: TColor.primaryColor1,
+                textColor: AppColor.primaryColor1,
                 text: 'WorkOut Tracker',
                 onPressed: () {
                   Navigator.push(
@@ -115,16 +115,16 @@ class SelectView extends StatelessWidget {
                     ),
                   );
                 },
-                backgroundColor: TColor.white,
+                backgroundColor: AppColor.white,
                 widthSize: 315,
                 heightSize: 60,
-                borderColor: TColor.primaryColor1,
+                borderColor: AppColor.primaryColor1,
                 fontSize: 20),
             const SizedBox(
               height: 15,
             ),
             NormalButton(
-                textColor: TColor.primaryColor1,
+                textColor: AppColor.primaryColor1,
                 text: 'Meal Planner',
                 onPressed: () {
                   Navigator.push(
@@ -134,16 +134,16 @@ class SelectView extends StatelessWidget {
                     ),
                   );
                 },
-                backgroundColor: TColor.white,
+                backgroundColor: AppColor.white,
                 widthSize: 315,
                 heightSize: 60,
-                borderColor: TColor.primaryColor1,
+                borderColor: AppColor.primaryColor1,
                 fontSize: 20),
             const SizedBox(
               height: 15,
             ),
             NormalButton(
-                textColor: TColor.primaryColor1,
+                textColor: AppColor.primaryColor1,
                 text: 'Sleep Tracker',
                 onPressed: () {
                   Navigator.push(
@@ -153,16 +153,16 @@ class SelectView extends StatelessWidget {
                     ),
                   );
                 },
-                backgroundColor: TColor.white,
+                backgroundColor: AppColor.white,
                 widthSize: 315,
                 heightSize: 60,
-                borderColor: TColor.primaryColor1,
+                borderColor: AppColor.primaryColor1,
                 fontSize: 20),
             const SizedBox(
               height: 15,
             ),
             NormalButton(
-                textColor: TColor.primaryColor1,
+                textColor: AppColor.primaryColor1,
                 text: 'Progress Tracker',
                 onPressed: () {
                   Navigator.push(
@@ -172,16 +172,16 @@ class SelectView extends StatelessWidget {
                     ),
                   );
                 },
-                backgroundColor: TColor.white,
+                backgroundColor: AppColor.white,
                 widthSize: 315,
                 heightSize: 60,
-                borderColor: TColor.primaryColor1,
+                borderColor: AppColor.primaryColor1,
                 fontSize: 20),
             const SizedBox(
               height: 15,
             ),
             NormalButton(
-                textColor: TColor.primaryColor1,
+                textColor: AppColor.primaryColor1,
                 text: 'Calories Estimation',
                 onPressed: () {
                   Navigator.push(
@@ -191,10 +191,10 @@ class SelectView extends StatelessWidget {
                     ),
                   );
                 },
-                backgroundColor: TColor.white,
+                backgroundColor: AppColor.white,
                 widthSize: 315,
                 heightSize: 60,
-                borderColor: TColor.primaryColor1,
+                borderColor: AppColor.primaryColor1,
                 fontSize: 20),
             // RoundButton(
             //   title: "Workout Tracker",

@@ -1,6 +1,6 @@
 import 'package:dotted_dashed_line/dotted_dashed_line.dart';
 import 'package:fitness_workout_app_1/common/colo_extension.dart';
-import 'package:fitness_workout_app_1/common_widget/normal_button.dart';
+import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:fitness_workout_app_1/view/home/activity_tracker_view.dart';
 import 'package:fitness_workout_app_1/view/home/finished_workout_view.dart';
 // import 'package:fitness_workout_app_1/view/login/complete_profile_view.dart';
@@ -9,8 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:simple_animation_progress_bar/simple_animation_progress_bar.dart';
 import 'package:simple_circular_progress_bar/simple_circular_progress_bar.dart';
 
-import '../../common_widget/tab_button.dart';
-import '../../common_widget/workout_row.dart';
+import '../../widget/tab_button.dart';
+import '../../widget/workout_row.dart';
 import '../photo_progress/photo_progress_view.dart';
 import '../profile/profile_view.dart';
 import 'notification_view.dart';
@@ -99,13 +99,13 @@ class _HomeViewState extends State<HomeView> {
         belowBarData: BarAreaData(
           show: true,
           gradient: LinearGradient(colors: [
-            TColor.primaryColor1.withOpacity(0.4),
-            TColor.primaryColor2.withOpacity(0.1),
+            AppColor.primaryColor1.withOpacity(0.4),
+            AppColor.primaryColor2.withOpacity(0.1),
           ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
         ),
         dotData: const FlDotData(show: false),
         gradient: LinearGradient(
-          colors: TColor.primaryG1,
+          colors: AppColor.primaryG1,
         ),
       ),
     ];
@@ -242,7 +242,7 @@ class _HomeViewState extends State<HomeView> {
                         Text(
                           "Welcome Back,",
                           style: TextStyle(
-                            color: TColor.gray,
+                            color: AppColor.gray,
                             fontSize: 12,
                             fontFamily: 'Hind',
                           ),
@@ -250,7 +250,7 @@ class _HomeViewState extends State<HomeView> {
                         Text(
                           "Mustafa Sayed",
                           style: TextStyle(
-                            color: TColor.black,
+                            color: AppColor.black,
                             fontSize: 25,
                             fontWeight: FontWeight.w700,
                             fontFamily: 'Hind',
@@ -281,7 +281,7 @@ class _HomeViewState extends State<HomeView> {
                 Container(
                   height: media.width * 0.4,
                   decoration: BoxDecoration(
-                    color: TColor.primaryColor4,
+                    color: AppColor.primaryColor4,
                     borderRadius: BorderRadius.circular(media.width * 0.075),
                   ),
                   child: Stack(alignment: Alignment.center, children: [
@@ -304,7 +304,7 @@ class _HomeViewState extends State<HomeView> {
                               Text(
                                 "BMI (Body Mass Index)",
                                 style: TextStyle(
-                                  color: TColor.white,
+                                  color: AppColor.white,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w700,
                                   fontFamily: 'Hind',
@@ -313,7 +313,7 @@ class _HomeViewState extends State<HomeView> {
                               Text(
                                 "You have a normal weight",
                                 style: TextStyle(
-                                  color: TColor.white.withOpacity(0.7),
+                                  color: AppColor.white.withOpacity(0.7),
                                   fontSize: 12,
                                   fontWeight: FontWeight.w700,
                                   fontFamily: 'Hind',
@@ -326,15 +326,15 @@ class _HomeViewState extends State<HomeView> {
                                 width: 120,
                                 height: 35,
                                 child: NormalButton(
-                                  textColor: TColor.primaryColor1,
+                                  textColor: AppColor.primaryColor1,
                                   text: 'View More',
                                   onPressed: () {
                                     //Function to go to BMI
                                   },
-                                  backgroundColor: TColor.white,
+                                  backgroundColor: AppColor.white,
                                   widthSize: 120,
                                   heightSize: 30,
-                                  borderColor: TColor.primaryColor1,
+                                  borderColor: AppColor.primaryColor1,
                                   fontSize: 14,
                                 ),
                               ),
@@ -370,7 +370,7 @@ class _HomeViewState extends State<HomeView> {
                   padding:
                       const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
                   decoration: BoxDecoration(
-                    color: TColor.primaryColor4.withOpacity(0.2),
+                    color: AppColor.primaryColor4.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Row(
@@ -379,7 +379,7 @@ class _HomeViewState extends State<HomeView> {
                       Text(
                         "Today Target",
                         style: TextStyle(
-                          color: TColor.black,
+                          color: AppColor.black,
                           fontSize: 16,
                           fontWeight: FontWeight.w700,
                           fontFamily: 'Hind',
@@ -389,7 +389,7 @@ class _HomeViewState extends State<HomeView> {
                         width: 80,
                         height: 30,
                         child: NormalButton(
-                            textColor: TColor.primaryColor1,
+                            textColor: AppColor.primaryColor1,
                             text: 'Check',
                             onPressed: () {
                               Navigator.push(
@@ -400,10 +400,10 @@ class _HomeViewState extends State<HomeView> {
                                 ),
                               );
                             },
-                            backgroundColor: TColor.white,
+                            backgroundColor: AppColor.white,
                             widthSize: 80,
                             heightSize: 30,
-                            borderColor: TColor.primaryColor1,
+                            borderColor: AppColor.primaryColor1,
                             fontSize: 14),
                       ),
                     ],
@@ -415,7 +415,7 @@ class _HomeViewState extends State<HomeView> {
                 Text(
                   "Activity Status",
                   style: TextStyle(
-                    color: TColor.black,
+                    color: AppColor.black,
                     fontSize: 16,
                     fontWeight: FontWeight.w700,
                     fontFamily: 'Hind',
@@ -430,7 +430,7 @@ class _HomeViewState extends State<HomeView> {
                     height: media.width * 0.4,
                     width: double.maxFinite,
                     decoration: BoxDecoration(
-                      color: TColor.primaryColor4.withOpacity(0.2),
+                      color: AppColor.primaryColor4.withOpacity(0.2),
                       borderRadius: BorderRadius.circular(25),
                     ),
                     child: Stack(
@@ -447,7 +447,7 @@ class _HomeViewState extends State<HomeView> {
                               Text(
                                 "Heart Rate",
                                 style: TextStyle(
-                                  color: TColor.black,
+                                  color: AppColor.black,
                                   fontSize: 16,
                                   fontWeight: FontWeight.w600,
                                   fontFamily: 'Hind',
@@ -456,7 +456,7 @@ class _HomeViewState extends State<HomeView> {
                               Text(
                                 "78 BPM",
                                 style: TextStyle(
-                                  color: TColor.primaryColor1,
+                                  color: AppColor.primaryColor1,
                                   fontSize: 18,
                                   fontWeight: FontWeight.w600,
                                   fontFamily: 'khand',
@@ -517,14 +517,14 @@ class _HomeViewState extends State<HomeView> {
                                         radius: 3,
                                         color: Colors.white,
                                         strokeWidth: 3,
-                                        strokeColor: TColor.primaryColor1,
+                                        strokeColor: AppColor.primaryColor1,
                                       ),
                                     ),
                                   );
                                 }).toList();
                               },
                               touchTooltipData: LineTouchTooltipData(
-                                tooltipBgColor: TColor.primaryColor1,
+                                tooltipBgColor: AppColor.primaryColor1,
                                 tooltipRoundedRadius: 20,
                                 getTooltipItems:
                                     (List<LineBarSpot> lineBarsSpot) {
@@ -589,7 +589,7 @@ class _HomeViewState extends State<HomeView> {
                               duration: const Duration(seconds: 5),
                               borderRadius: BorderRadius.circular(15),
                               gradientColor: LinearGradient(
-                                  colors: TColor.primaryG4,
+                                  colors: AppColor.primaryG4,
                                   begin: Alignment.bottomCenter,
                                   end: Alignment.topCenter),
                             ),
@@ -603,7 +603,7 @@ class _HomeViewState extends State<HomeView> {
                                   Text(
                                     "Water Intake",
                                     style: TextStyle(
-                                      color: TColor.black,
+                                      color: AppColor.black,
                                       fontSize: 13,
                                       fontWeight: FontWeight.w700,
                                       fontFamily: 'Hind',
@@ -612,7 +612,7 @@ class _HomeViewState extends State<HomeView> {
                                   Text(
                                     "4 Liters",
                                     style: TextStyle(
-                                      color: TColor.primaryColor1,
+                                      color: AppColor.primaryColor1,
                                       fontSize: 14,
                                       fontWeight: FontWeight.w700,
                                       fontFamily: 'khand',
@@ -624,7 +624,7 @@ class _HomeViewState extends State<HomeView> {
                                   Text(
                                     "Real Time Updates",
                                     style: TextStyle(
-                                      color: TColor.gray,
+                                      color: AppColor.gray,
                                       fontSize: 11,
                                       fontWeight: FontWeight.w700,
                                       fontFamily: 'Hind',
@@ -653,7 +653,8 @@ class _HomeViewState extends State<HomeView> {
                                                   width: 10,
                                                   height: 7,
                                                   decoration: BoxDecoration(
-                                                    color: TColor.primaryColor1
+                                                    color: AppColor
+                                                        .primaryColor1
                                                         .withOpacity(0.5),
                                                     borderRadius:
                                                         BorderRadius.circular(
@@ -665,7 +666,7 @@ class _HomeViewState extends State<HomeView> {
                                                     height: media.width * 0.078,
                                                     width: 0,
                                                     axis: Axis.vertical,
-                                                    dashColor: TColor
+                                                    dashColor: AppColor
                                                         .primaryColor1
                                                         .withOpacity(0.5),
                                                   ),
@@ -684,7 +685,7 @@ class _HomeViewState extends State<HomeView> {
                                                   waterObject['title']
                                                       .toString(),
                                                   style: TextStyle(
-                                                    color: TColor.gray,
+                                                    color: AppColor.gray,
                                                     fontSize: 10,
                                                     fontWeight: FontWeight.w600,
                                                     fontFamily: 'Hind',
@@ -694,7 +695,8 @@ class _HomeViewState extends State<HomeView> {
                                                   waterObject['subtitle']
                                                       .toString(),
                                                   style: TextStyle(
-                                                    color: TColor.primaryColor1,
+                                                    color:
+                                                        AppColor.primaryColor1,
                                                     fontSize: 12,
                                                     fontWeight: FontWeight.w700,
                                                     fontFamily: 'Hind',
@@ -712,11 +714,11 @@ class _HomeViewState extends State<HomeView> {
                                   ),
                                   TextField(
                                     controller: _textController,
-                                    cursorColor: TColor.primaryColor1,
+                                    cursorColor: AppColor.primaryColor1,
                                     decoration: InputDecoration(
                                       hintText: "Add ML..",
                                       hintStyle: TextStyle(
-                                        color: TColor.primaryColor1,
+                                        color: AppColor.primaryColor1,
                                         fontSize: 10,
                                         fontWeight: FontWeight.w700,
                                         fontFamily: 'Hind',
@@ -724,7 +726,7 @@ class _HomeViewState extends State<HomeView> {
                                       suffixIcon: IconButton(
                                         icon: Image.asset(
                                             'assets/img/Button_Add.png'),
-                                        color: TColor.primaryColor1,
+                                        color: AppColor.primaryColor1,
                                         padding: const EdgeInsets.all(0),
                                         onPressed: () {
                                           // Navigator.push(
@@ -744,7 +746,7 @@ class _HomeViewState extends State<HomeView> {
                                       disabledBorder: InputBorder.none,
                                     ),
                                     style: TextStyle(
-                                      color: TColor.primaryColor1,
+                                      color: AppColor.primaryColor1,
                                       fontSize: 10.3,
                                       fontWeight: FontWeight.w700,
                                       fontFamily: 'Hind',
@@ -786,7 +788,7 @@ class _HomeViewState extends State<HomeView> {
                                 Text(
                                   'Sleep',
                                   style: TextStyle(
-                                    color: TColor.black,
+                                    color: AppColor.black,
                                     fontSize: 14,
                                     fontWeight: FontWeight.w600,
                                     fontFamily: 'khand',
@@ -795,7 +797,7 @@ class _HomeViewState extends State<HomeView> {
                                 Text(
                                   '8h 20m',
                                   style: TextStyle(
-                                    color: TColor.primaryColor1,
+                                    color: AppColor.primaryColor1,
                                     fontSize: 14,
                                     fontWeight: FontWeight.w700,
                                     fontFamily: 'Hind',
@@ -831,7 +833,7 @@ class _HomeViewState extends State<HomeView> {
                                 Text(
                                   'Calories',
                                   style: TextStyle(
-                                    color: TColor.black,
+                                    color: AppColor.black,
                                     fontSize: 14,
                                     fontWeight: FontWeight.w600,
                                     fontFamily: 'khand',
@@ -840,7 +842,7 @@ class _HomeViewState extends State<HomeView> {
                                 Text(
                                   '760 kCal',
                                   style: TextStyle(
-                                    color: TColor.primaryColor1,
+                                    color: AppColor.primaryColor1,
                                     fontSize: 14,
                                     fontWeight: FontWeight.w700,
                                     fontFamily: 'Hind',
@@ -861,7 +863,7 @@ class _HomeViewState extends State<HomeView> {
                                           alignment: Alignment.center,
                                           decoration: BoxDecoration(
                                             gradient: LinearGradient(
-                                              colors: TColor.primaryG1,
+                                              colors: AppColor.primaryG1,
                                             ),
                                             borderRadius: BorderRadius.circular(
                                                 media.width * 0.075),
@@ -871,7 +873,7 @@ class _HomeViewState extends State<HomeView> {
                                               '230kCal\nLeft',
                                               textAlign: TextAlign.center,
                                               style: TextStyle(
-                                                color: TColor.white,
+                                                color: AppColor.white,
                                                 fontSize: 11,
                                                 fontWeight: FontWeight.w500,
                                                 fontFamily: 'Hind',
@@ -883,7 +885,7 @@ class _HomeViewState extends State<HomeView> {
                                           progressStrokeWidth: 10,
                                           backStrokeWidth: 10,
                                           startAngle: -180,
-                                          progressColors: TColor.primaryG1,
+                                          progressColors: AppColor.primaryG1,
                                           valueNotifier: ValueNotifier(35),
                                           backColor: Colors.grey.shade100,
                                         ),
@@ -908,7 +910,7 @@ class _HomeViewState extends State<HomeView> {
                     Text(
                       "Workout Progress",
                       style: TextStyle(
-                        color: TColor.black,
+                        color: AppColor.black,
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
                         fontFamily: 'khand',
@@ -918,10 +920,10 @@ class _HomeViewState extends State<HomeView> {
                         height: 30,
                         padding: const EdgeInsets.symmetric(horizontal: 8),
                         decoration: BoxDecoration(
-                          color: TColor.white.withOpacity(0.3),
+                          color: AppColor.white.withOpacity(0.3),
                           borderRadius: BorderRadius.circular(15),
-                          border:
-                              Border.all(color: TColor.primaryColor1, width: 2),
+                          border: Border.all(
+                              color: AppColor.primaryColor1, width: 2),
                         ),
                         child: DropdownButtonHideUnderline(
                           child: DropdownButton(
@@ -931,7 +933,7 @@ class _HomeViewState extends State<HomeView> {
                                       child: Text(
                                         name,
                                         style: TextStyle(
-                                            color: TColor.gray,
+                                            color: AppColor.gray,
                                             fontSize: 14,
                                             fontFamily: 'Hind',
                                             fontWeight: FontWeight.w500),
@@ -942,12 +944,12 @@ class _HomeViewState extends State<HomeView> {
                               //Function to be implemented
                             },
                             icon: Icon(Icons.expand_more,
-                                color: TColor.primaryColor1),
+                                color: AppColor.primaryColor1),
                             hint: Text(
                               "Weekly",
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                  color: TColor.primaryColor1,
+                                  color: AppColor.primaryColor1,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w500,
                                   fontFamily: 'Hind'),
@@ -1014,14 +1016,14 @@ class _HomeViewState extends State<HomeView> {
                                   radius: 3,
                                   color: Colors.white,
                                   strokeWidth: 3,
-                                  strokeColor: TColor.primaryColor1,
+                                  strokeColor: AppColor.primaryColor1,
                                 ),
                               ),
                             );
                           }).toList();
                         },
                         touchTooltipData: LineTouchTooltipData(
-                          tooltipBgColor: TColor.primaryColor1,
+                          tooltipBgColor: AppColor.primaryColor1,
                           tooltipRoundedRadius: 20,
                           getTooltipItems: (List<LineBarSpot> lineBarsSpot) {
                             return lineBarsSpot.map((lineBarSpot) {
@@ -1057,7 +1059,7 @@ class _HomeViewState extends State<HomeView> {
                         drawVerticalLine: false,
                         getDrawingHorizontalLine: (value) {
                           return FlLine(
-                            color: TColor.gray.withOpacity(0.15),
+                            color: AppColor.gray.withOpacity(0.15),
                             strokeWidth: 2,
                           );
                         },
@@ -1080,7 +1082,7 @@ class _HomeViewState extends State<HomeView> {
                     Text(
                       "Latest Workout",
                       style: TextStyle(
-                        color: TColor.black,
+                        color: AppColor.black,
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
                         fontFamily: 'khand',
@@ -1091,7 +1093,7 @@ class _HomeViewState extends State<HomeView> {
                       child: Text(
                         "See More",
                         style: TextStyle(
-                          color: TColor.gray,
+                          color: AppColor.gray,
                           fontSize: 15,
                           fontWeight: FontWeight.w500,
                           fontFamily: 'khand',
@@ -1137,7 +1139,7 @@ class _HomeViewState extends State<HomeView> {
     return List.generate(
       2,
       (i) {
-        var color0 = TColor.primaryColor1;
+        var color0 = AppColor.primaryColor1;
 
         switch (i) {
           case 0:
@@ -1150,7 +1152,7 @@ class _HomeViewState extends State<HomeView> {
               badgeWidget: Text(
                 '20.1',
                 style: TextStyle(
-                    color: TColor.white,
+                    color: AppColor.white,
                     fontFamily: 'Hind',
                     fontWeight: FontWeight.w700,
                     fontSize: 13),
@@ -1215,7 +1217,7 @@ class _HomeViewState extends State<HomeView> {
         //   TColor.primaryColor1.withOpacity(0.5),
         //   TColor.primaryColor2.withOpacity(0.5),
         // ]),
-        color: TColor.primaryColor4.withOpacity(0.4),
+        color: AppColor.primaryColor4.withOpacity(0.4),
         barWidth: 4,
         isStrokeCapRound: true,
         dotData: const FlDotData(show: false),
@@ -1237,7 +1239,7 @@ class _HomeViewState extends State<HomeView> {
         //   TColor.secondaryColor2.withOpacity(0.5),
         //   TColor.secondaryColor1.withOpacity(0.5),
         // ]),
-        color: TColor.primaryColor1.withOpacity(0.3),
+        color: AppColor.primaryColor1.withOpacity(0.3),
         barWidth: 2,
         isStrokeCapRound: true,
         dotData: const FlDotData(show: false),
@@ -1288,7 +1290,7 @@ class _HomeViewState extends State<HomeView> {
 
     return Text(text,
         style: TextStyle(
-          color: TColor.gray,
+          color: AppColor.gray,
           fontSize: 12,
         ),
         textAlign: TextAlign.center);
@@ -1303,7 +1305,7 @@ class _HomeViewState extends State<HomeView> {
 
   Widget bottomTitleWidgets(double value, TitleMeta meta) {
     var style = TextStyle(
-        color: TColor.gray,
+        color: AppColor.gray,
         fontSize: 12,
         fontWeight: FontWeight.w500,
         fontFamily: 'Hind');

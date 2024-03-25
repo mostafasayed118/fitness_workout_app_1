@@ -1,4 +1,4 @@
-import 'package:fitness_workout_app_1/common_widget/normal_button.dart';
+import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:flutter/material.dart';
 
 import '../../common/colo_extension.dart';
@@ -37,7 +37,7 @@ class _FinishedWorkoutViewState extends State<FinishedWorkoutView> {
                 "Congratulations, You Have Finished Your Workout",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: TColor.primaryColor1,
+                  color: AppColor.primaryColor1,
                   fontSize: 20,
                   fontWeight: FontWeight.w700,
                   fontFamily: 'Khand',
@@ -50,7 +50,7 @@ class _FinishedWorkoutViewState extends State<FinishedWorkoutView> {
                 "Exercises is king and nutrition is queen. Combine the two and you will have a kingdom",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: TColor.primaryColor4,
+                  color: AppColor.primaryColor4,
                   fontWeight: FontWeight.w600,
                   fontSize: 13,
                   fontFamily: 'Hind',
@@ -63,7 +63,7 @@ class _FinishedWorkoutViewState extends State<FinishedWorkoutView> {
                 "-Jack Lalanne",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: TColor.primaryColor4,
+                  color: AppColor.primaryColor4,
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
                   fontFamily: 'Hind',
@@ -71,15 +71,15 @@ class _FinishedWorkoutViewState extends State<FinishedWorkoutView> {
               ),
               const Spacer(),
               NormalButton(
-                  textColor: TColor.primaryColor1,
+                  textColor: AppColor.primaryColor1,
                   text: 'Back To Home',
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  backgroundColor: TColor.white,
+                  backgroundColor: AppColor.white,
                   widthSize: 315,
                   heightSize: 60,
-                  borderColor: TColor.primaryColor1,
+                  borderColor: AppColor.primaryColor1,
                   fontSize: 20),
               // RoundButton(
               //     title: "Back To Home",

@@ -1,10 +1,10 @@
-import 'package:fitness_workout_app_1/common_widget/normal_button.dart';
+import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 import '../../common/colo_extension.dart';
-import '../../common_widget/round_button.dart';
-import '../../common_widget/today_sleep_schedule_row.dart';
+import '../../widget/round_button.dart';
+import '../../widget/today_sleep_schedule_row.dart';
 import 'sleep_schedule_view.dart';
 
 class SleepTrackerView extends StatefulWidget {
@@ -47,7 +47,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
     final tooltipsOnBar = lineBarsData1[0];
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: TColor.white,
+        backgroundColor: AppColor.white,
         centerTitle: true,
         elevation: 0,
         leading: InkWell(
@@ -73,7 +73,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
         title: Text(
           "Sleep Tracker",
           style: TextStyle(
-            color: TColor.black,
+            color: AppColor.black,
             fontSize: 20,
             fontWeight: FontWeight.w700,
             fontFamily: 'Khand',
@@ -100,7 +100,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
           )
         ],
       ),
-      backgroundColor: TColor.white,
+      backgroundColor: AppColor.white,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -167,14 +167,14 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
                                       radius: 3,
                                       color: Colors.white,
                                       strokeWidth: 1,
-                                      strokeColor: TColor.primaryColor2,
+                                      strokeColor: AppColor.primaryColor2,
                                     ),
                                   ),
                                 );
                               }).toList();
                             },
                             touchTooltipData: LineTouchTooltipData(
-                              tooltipBgColor: TColor.white,
+                              tooltipBgColor: AppColor.white,
                               tooltipRoundedRadius: 5,
                               getTooltipItems:
                                   (List<LineBarSpot> lineBarsSpot) {
@@ -182,7 +182,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
                                   return LineTooltipItem(
                                     "${lineBarSpot.y.toInt()} hours",
                                     TextStyle(
-                                      color: TColor.primaryColor1,
+                                      color: AppColor.primaryColor1,
                                       fontSize: 10,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -211,7 +211,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
                             drawVerticalLine: false,
                             getDrawingHorizontalLine: (value) {
                               return FlLine(
-                                color: TColor.gray.withOpacity(0.15),
+                                color: AppColor.gray.withOpacity(0.15),
                                 strokeWidth: 2,
                               );
                             },
@@ -231,7 +231,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
                     width: double.maxFinite,
                     height: media.width * 0.4,
                     decoration: BoxDecoration(
-                        gradient: LinearGradient(colors: TColor.primaryG4),
+                        gradient: LinearGradient(colors: AppColor.primaryG4),
                         borderRadius: BorderRadius.circular(20)),
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -246,7 +246,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
                                 Text(
                                   "Last Night Sleep",
                                   style: TextStyle(
-                                    color: TColor.white,
+                                    color: AppColor.white,
                                     fontSize: 16,
                                     fontWeight: FontWeight.w500,
                                     fontFamily: 'Khand',
@@ -267,7 +267,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
                             child: Text(
                               "8h 20m",
                               style: TextStyle(
-                                  color: TColor.white,
+                                  color: AppColor.white,
                                   fontSize: 16,
                                   fontWeight: FontWeight.w500),
                             ),
@@ -286,7 +286,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
                     padding: const EdgeInsets.symmetric(
                         vertical: 15, horizontal: 15),
                     decoration: BoxDecoration(
-                      color: TColor.primaryColor4.withOpacity(0.3),
+                      color: AppColor.primaryColor4.withOpacity(0.3),
                       borderRadius: BorderRadius.circular(15),
                     ),
                     child: Row(
@@ -295,7 +295,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
                         Text(
                           "Daily Sleep Schedule",
                           style: TextStyle(
-                              color: TColor.black,
+                              color: AppColor.black,
                               fontSize: 14,
                               fontWeight: FontWeight.w600),
                         ),
@@ -303,7 +303,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
                           width: 70,
                           height: 30,
                           child: NormalButton(
-                            textColor: TColor.primaryColor1,
+                            textColor: AppColor.primaryColor1,
                             text: 'Check',
                             onPressed: () {
                               Navigator.push(
@@ -314,10 +314,10 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
                                 ),
                               );
                             },
-                            backgroundColor: TColor.white,
+                            backgroundColor: AppColor.white,
                             widthSize: 68,
                             heightSize: 28,
-                            borderColor: TColor.primaryColor1,
+                            borderColor: AppColor.primaryColor1,
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
                           ),
@@ -349,7 +349,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
                   Text(
                     "Today Schedule",
                     style: TextStyle(
-                      color: TColor.black,
+                      color: AppColor.black,
                       fontSize: 18,
                       fontWeight: FontWeight.w600,
                       fontFamily: 'Khand',
@@ -387,7 +387,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
 
   LineChartBarData get lineChartBarData1_1 => LineChartBarData(
         isCurved: true,
-        color: TColor.primaryColor8.withOpacity(0.3),
+        color: AppColor.primaryColor8.withOpacity(0.3),
         // gradient: LinearGradient(colors: [
         //   TColor.primaryColor4,
         //   TColor.primaryColor1,
@@ -399,8 +399,8 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
           show: true,
           gradient: LinearGradient(
             colors: [
-              TColor.primaryColor4,
-              TColor.white,
+              AppColor.primaryColor4,
+              AppColor.white,
             ],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -451,7 +451,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
 
     return Text(text,
         style: TextStyle(
-          color: TColor.gray,
+          color: AppColor.gray,
           fontSize: 12,
           fontWeight: FontWeight.w500,
         ),
@@ -467,7 +467,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
 
   Widget bottomTitleWidgets(double value, TitleMeta meta) {
     var style = TextStyle(
-      color: TColor.gray,
+      color: AppColor.gray,
       fontSize: 12,
       fontWeight: FontWeight.w500,
     );

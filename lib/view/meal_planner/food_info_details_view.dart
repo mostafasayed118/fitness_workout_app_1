@@ -1,9 +1,9 @@
-import 'package:fitness_workout_app_1/common_widget/normal_button.dart';
+import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
 
 import '../../common/colo_extension.dart';
-import '../../common_widget/food_step_detail_row.dart';
+import '../../widget/food_step_detail_row.dart';
 // import '../../common_widget/round_button.dart';
 import '../main_tab/select_view.dart';
 import 'meal_schedule_view.dart';
@@ -62,7 +62,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
     var media = MediaQuery.of(context).size;
     return Container(
       decoration:
-          BoxDecoration(gradient: LinearGradient(colors: TColor.primaryG1)),
+          BoxDecoration(gradient: LinearGradient(colors: AppColor.primaryG1)),
       child: NestedScrollView(
         headerSliverBuilder: (context, innerBoxIsScrolled) {
           return [
@@ -161,7 +161,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
         },
         body: Container(
           decoration: BoxDecoration(
-            color: TColor.white,
+            color: AppColor.white,
             borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(25),
               topRight: Radius.circular(25),
@@ -185,7 +185,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                             width: 50,
                             height: 4,
                             decoration: BoxDecoration(
-                                color: TColor.gray.withOpacity(0.3),
+                                color: AppColor.gray.withOpacity(0.3),
                                 borderRadius: BorderRadius.circular(3)),
                           ),
                         ],
@@ -205,7 +205,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                                   Text(
                                     widget.dObj["name"].toString(),
                                     style: TextStyle(
-                                      color: TColor.black,
+                                      color: AppColor.black,
                                       fontSize: 20,
                                       fontWeight: FontWeight.w700,
                                       fontFamily: 'Khand',
@@ -214,7 +214,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                                   Text(
                                     "By Mustafa Sayed",
                                     style: TextStyle(
-                                      color: TColor.gray,
+                                      color: AppColor.gray,
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500,
                                     ),
@@ -242,7 +242,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                         child: Text(
                           "Nutrition",
                           style: TextStyle(
-                            color: TColor.black,
+                            color: AppColor.black,
                             fontSize: 18,
                             fontWeight: FontWeight.w600,
                             fontFamily: 'Khand',
@@ -264,8 +264,8 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                                   padding:
                                       const EdgeInsets.symmetric(horizontal: 8),
                                   decoration: BoxDecoration(
-                                      color:
-                                          TColor.primaryColor4.withOpacity(0.3),
+                                      color: AppColor.primaryColor4
+                                          .withOpacity(0.3),
                                       // gradient: LinearGradient(
                                       //   colors: [
                                       //     TColor.primaryColor2.withOpacity(0.4),
@@ -289,7 +289,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                                         child: Text(
                                           nObj["title"].toString(),
                                           style: TextStyle(
-                                            color: TColor.black,
+                                            color: AppColor.black,
                                             fontSize: 12,
                                             fontWeight: FontWeight.w500,
                                           ),
@@ -307,7 +307,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                         child: Text(
                           "Descriptions",
                           style: TextStyle(
-                            color: TColor.black,
+                            color: AppColor.black,
                             fontSize: 18,
                             fontWeight: FontWeight.w600,
                             fontFamily: 'Khand',
@@ -322,19 +322,19 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                         child: ReadMoreText(
                           'Pancakes are some people\'s favorite breakfast, who doesn\'t like pancakes? Especially with the real honey splash on top of the pancakes, of course everyone loves that! besides being Pancakes are some people\'s favorite breakfast, who doesn\'t like pancakes? Especially with the real honey splash on top of the pancakes, of course everyone loves that! besides being',
                           trimLines: 4,
-                          colorClickableText: TColor.red,
+                          colorClickableText: AppColor.red,
                           trimMode: TrimMode.Line,
                           trimCollapsedText: ' Read More ...',
                           trimExpandedText: ' Read Less',
                           style: TextStyle(
-                            color: TColor.gray,
+                            color: AppColor.gray,
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
                           ),
                           moreStyle: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w700,
-                            color: TColor.primaryColor4,
+                            color: AppColor.primaryColor4,
                           ),
                         ),
                       ),
@@ -349,7 +349,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                             Text(
                               "Ingredients That You\nWill Need",
                               style: TextStyle(
-                                color: TColor.black,
+                                color: AppColor.black,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w600,
                                 fontFamily: 'Khand',
@@ -360,7 +360,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                               child: Text(
                                 "${ingredientsArr.length} Items",
                                 style: TextStyle(
-                                  color: TColor.gray,
+                                  color: AppColor.gray,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w500,
                                 ),
@@ -391,8 +391,8 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                                         width: media.width * 0.23,
                                         height: media.width * 0.23,
                                         decoration: BoxDecoration(
-                                            color:
-                                                TColor.gray.withOpacity(0.050),
+                                            color: AppColor.gray
+                                                .withOpacity(0.050),
                                             borderRadius:
                                                 BorderRadius.circular(10)),
                                         alignment: Alignment.center,
@@ -409,7 +409,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                                       Text(
                                         nObj["title"].toString(),
                                         style: TextStyle(
-                                          color: TColor.black,
+                                          color: AppColor.black,
                                           fontSize: 13,
                                           fontWeight: FontWeight.w500,
                                         ),
@@ -417,7 +417,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                                       Text(
                                         nObj["value"].toString(),
                                         style: TextStyle(
-                                          color: TColor.gray,
+                                          color: AppColor.gray,
                                           fontSize: 11,
                                           fontWeight: FontWeight.w500,
                                         ),
@@ -434,7 +434,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                             Text(
                               "Step by Step",
                               style: TextStyle(
-                                color: TColor.black,
+                                color: AppColor.black,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w600,
                                 fontFamily: 'khand',
@@ -445,7 +445,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                               child: Text(
                                 "${stepArr.length} Steps",
                                 style: TextStyle(
-                                  color: TColor.gray,
+                                  color: AppColor.gray,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w500,
                                 ),
@@ -483,7 +483,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                         padding: const EdgeInsets.symmetric(
                             horizontal: 15, vertical: 20),
                         child: NormalButton(
-                            textColor: TColor.primaryColor1,
+                            textColor: AppColor.primaryColor1,
                             text: "Add to ${widget.mObj["name"]} Meal",
                             onPressed: () {
                               Navigator.push(
@@ -494,10 +494,10 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                                 ),
                               );
                             },
-                            backgroundColor: TColor.white,
+                            backgroundColor: AppColor.white,
                             widthSize: 315,
                             heightSize: 60,
-                            borderColor: TColor.primaryColor1,
+                            borderColor: AppColor.primaryColor1,
                             fontSize: 20),
                         // RoundButton(
                         //   title: "Add to ${widget.mObj["name"]} Meal",
