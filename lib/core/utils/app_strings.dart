@@ -20,7 +20,7 @@ class AppString {
 
 //login screen and register screen
   static const String heyThere = "Hey there,";
-  static const String welcomeBack = 'Welcome Back';
+
   static const String forgotPassword = 'Forgot Your Password?';
   static const String or = '  Or  ';
   static const String dontHaveAccount = "Don't have an account yet? ";
@@ -33,12 +33,42 @@ class AppString {
   static const String completeProfileSubTitle =
       "It will help us to know more about you!";
 
+//what your goal screen
+  static const String whatYourGoalTitleOne = 'Improve Shape';
+  static const String whatYourGoalTitleTwo = "Lean & Tone";
+  static const String whatYourGoalTitleThree = 'Lose a Fat';
+
+  static const String whatYourGoalSubTitleOne =
+      'I have a low amount of body fat \n and need / want to build more \n muscle';
+  static const String whatYourGoalSubTitleTwo =
+      "I'm Skinny fat. I look thin but have \n no shape. I want to add learn\n muscle in the right way";
+  static const String whatYourGoalSubTitleThree =
+      'I have over 20 lbs to lose. I want to \n drop all this fat and gain muscle\n mass';
+  static const String whatYourGoal = 'What is Your Goal ?';
+  static const String whatYourGoalSub =
+      'It will help us to choose a best \n program for you ';
+
+//welcome screen
+
+  static const String titleWelcome = 'We Are Creating A Perfect Plan For You';
+
+  static const String subWelcome =
+      "You are all set now, let's reach your\n goals together with us ";
+
+//home screen
+
+  static const String bmi = "BMI (Body Mass Index)";
+  static const String todayTarget = "Today Target";
+  static const String waterIntake = "Water Intake";
+  static const String activityStatus =  "Activity Status";
+
+  static const String heartRate = "Heart Rate";
+
+
+////////////////
   static const String searchHint = '';
   static const String searchLabel = 'Search';
 
-  static const String welcome = 'Welcome';
-  static const String welcomeSubTitleScreen =
-      "You are all set now, let's reach your\n goals together with us ";
   static const String https = 'https:';
   static const String oopsMessage =
       'Oops! Something went wrong. Please try again.';
@@ -66,6 +96,8 @@ class AppString {
   //global
   static const String nutrifix = 'NutriFix';
   static const String skip = 'Skip';
+  static const String welcomeBack = 'Welcome Back';
+  static const String welcome = 'Welcome';
 
   //buttons
   static const String createAccount = 'Create Account';
@@ -73,6 +105,10 @@ class AppString {
   static const String login = 'Login';
   static const String goToHome = 'Go To Home';
   static const String next = 'Next Step';
+  static const String confirm = 'Confirm';
+  static const String viewMore = 'View More';
+  static const String viewLess = 'View Less';
+  static const String check = 'Check';
 
   // hints
   static const String firstNameHint = 'First Name';
@@ -90,4 +126,8 @@ class AppString {
   static const String kg = 'KG';
   static const String heightHint = 'Your Height';
   static const String cm = 'CM';
+
+  //Fonts 
+  static const String fontFamilyPoppins = 'Poppins';
+  static const String fontFamilyHind = 'Hind';
 }

@@ -1,44 +1,36 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:fitness_workout_app_1/common/colo_extension.dart';
-// import 'package:fitness_workout_app_1/common_widget/round_button.dart';
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:fitness_workout_app_1/view/login/welcome_view.dart';
 import 'package:flutter/material.dart';
 
 import '../../widget/normal_button.dart';
 
-class WhatYourGoalView extends StatefulWidget {
-  const WhatYourGoalView({Key? key}) : super(key: key);
+class WhatYourGoalView extends StatelessWidget {
+  WhatYourGoalView({Key? key}) : super(key: key);
 
-  @override
-  _WhatYourGoalViewState createState() => _WhatYourGoalViewState();
-}
-
-class _WhatYourGoalViewState extends State<WhatYourGoalView> {
-  CarouselController buttonCarouselController = CarouselController();
-
-  List goalArray = [
+  final List<Map<String, String>> goalArray = [
     {
-      'image': 'assets/img/goal_11.png',
-      'title': 'Improve Shape',
-      'subtitle':
-          'I have a low amount of body fat \n and need / want to build more \n muscle'
+      'image': AppAssets.whatYourGoalImageOne,
+      'title': AppString.whatYourGoalTitleOne,
+      'subtitle': AppString.whatYourGoalSubTitleOne,
     },
     {
-      "image": "assets/img/goal_22.png",
-      "title": "Lean & Tone",
-      "subtitle":
-          "I'm Skinny fat. I look thin but have \n no shape. I want to add learn\n muscle in the right way"
+      'image': AppAssets.whatYourGoalImageTwo,
+      'title': AppString.whatYourGoalTitleTwo,
+      'subtitle': AppString.whatYourGoalSubTitleTwo,
     },
     {
-      'image': 'assets/img/goal_33.png',
-      'title': 'Lose a Fat',
-      'subtitle':
-          'I have over 20 lbs to lose. I want to \n drop all this fat and gain muscle\n mass'
+      'image': AppAssets.whatYourGoalImageThree,
+      'title': AppString.whatYourGoalTitleThree,
+      'subtitle': AppString.whatYourGoalSubTitleThree,
     },
   ];
+
   @override
   Widget build(BuildContext context) {
-    var media = MediaQuery.of(context).size;
+    final media = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: AppColor.white,
       body: SafeArea(
@@ -51,20 +43,22 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                       (goalObject) => Container(
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
-                              colors: AppColor.primaryG1,
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight),
-                          // border: Border.all(color: TColor.primaryColor1),
+                            colors: AppColor.primaryG1,
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                          ),
                           borderRadius: BorderRadius.circular(25),
                         ),
                         padding: EdgeInsets.symmetric(
-                            vertical: media.width * 0.1, horizontal: 25),
+                          vertical: media.width * 0.1,
+                          horizontal: 25,
+                        ),
                         alignment: Alignment.center,
                         child: FittedBox(
                           child: Column(
                             children: [
                               Image.asset(
-                                goalObject['image'].toString(),
+                                goalObject['image']!,
                                 width: media.width * 0.5,
                                 fit: BoxFit.fitWidth,
                               ),
@@ -72,7 +66,7 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                                 height: media.width * 0.05,
                               ),
                               Text(
-                                goalObject['title'].toString(),
+                                goalObject['title']!,
                                 style: TextStyle(
                                   color: AppColor.white,
                                   fontSize: 20,
@@ -89,7 +83,7 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                                 height: media.width * 0.03,
                               ),
                               Text(
-                                goalObject['subtitle'].toString(),
+                                goalObject['subtitle']!,
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                   color: AppColor.white,
@@ -104,15 +98,13 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                       ),
                     )
                     .toList(),
-                carouselController: buttonCarouselController,
+                carouselController: CarouselController(),
                 options: CarouselOptions(
                   autoPlay: false,
                   enlargeCenterPage: true,
                   viewportFraction: 0.7,
                   aspectRatio: 0.74,
                   initialPage: 0,
-                  // onPageChanged:
-                  // onScrolled:
                 ),
               ),
             ),
@@ -125,16 +117,16 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                     height: media.width * 0.03,
                   ),
                   Text(
-                    'What is Your Goal ?',
+                    AppString.whatYourGoal,
                     style: TextStyle(
                       color: AppColor.primaryColor1,
                       fontSize: 32,
                       fontWeight: FontWeight.w700,
-                      fontFamily: 'Khand',
+                      fontFamily: 'Poppins',
                     ),
                   ),
                   Text(
-                    'It will help us to choose a best \n program for you ',
+                    AppString.whatYourGoalSub,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: AppColor.primaryColor2,
@@ -149,12 +141,14 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                   ),
                   NormalButton(
                     textColor: AppColor.white,
-                    text: 'Confirm',
+                    text: AppString.confirm,
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const WelcomeView()));
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const WelcomeView(),
+                        ),
+                      );
                     },
                     backgroundColor: AppColor.primaryColor1,
                     widthSize: 330,
@@ -167,7 +161,7 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                   ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

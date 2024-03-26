@@ -1,5 +1,7 @@
 import 'package:dotted_dashed_line/dotted_dashed_line.dart';
 import 'package:fitness_workout_app_1/common/colo_extension.dart';
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:fitness_workout_app_1/view/home/activity_tracker_view.dart';
 import 'package:fitness_workout_app_1/view/home/finished_workout_view.dart';
@@ -26,21 +28,21 @@ class _HomeViewState extends State<HomeView> {
   List lastWorkoutArr = [
     {
       "name": "Full Body Workout",
-      "image": "assets/img/Workout_1.png",
+      "image": "assets/images/Workout_1.png",
       "kcal": "180",
       "time": "20",
       "progress": 0.3
     },
     {
       "name": "Lower Body Workout",
-      "image": "assets/img/Workout_2.png",
+      "image": "assets/images/Workout_2.png",
       "kcal": "200",
       "time": "30",
       "progress": 0.5
     },
     {
       "name": "Ab Workout",
-      "image": "assets/img/Workout_3.png",
+      "image": "assets/images/Workout_3.png",
       "kcal": "300",
       "time": "40",
       "progress": 0.7
@@ -113,119 +115,10 @@ class _HomeViewState extends State<HomeView> {
     final tooltipsOnBar = lineBarsData[0];
 
     var _textController = TextEditingController();
-    // int selectTab = 0;
-    // Widget curentTab = const HomeView();
-    // final PageStorageBucket pageBucket = PageStorageBucket();
+    
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      // backgroundColor: TColor.white,
-      // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      // floatingActionButton: SizedBox(
-      //   height: 70,
-      //   width: 70,
-      //   child: InkWell(
-      //     onTap: () {},
-      //     child: Container(
-      //       height: 65,
-      //       width: 65,
-      //       decoration: BoxDecoration(
-      //         gradient: LinearGradient(
-      //           begin: Alignment.topCenter,
-      //           end: Alignment.bottomCenter,
-      //           colors: TColor.primaryG2,
-      //         ),
-      //         borderRadius: BorderRadius.circular(35),
-      //         boxShadow: const [
-      //           BoxShadow(
-      //             color: Colors.black12,
-      //             blurRadius: 2,
-      //           ),
-      //         ],
-      //       ),
-      //       child: Icon(
-      //         Icons.search,
-      //         size: 35,
-      //         color: TColor.white,
-      //       ),
-      //     ),
-      //   ),
-      // ),
-      // bottomNavigationBar: BottomAppBar(
-      //   color: TColor.white,
-      //   elevation: 0,
-      //   child: Container(
-      //     // padding: const EdgeInsets.symmetric(horizontal: 10),
-      //     decoration: BoxDecoration(
-      //       color: TColor.white,
-      //       boxShadow: const [
-      //         BoxShadow(
-      //           color: Colors.black12,
-      //           offset: Offset(0, -2),
-      //           blurRadius: 2,
-      //         ),
-      //       ],
-      //     ),
-
-      //     height: kToolbarHeight,
-      //     child: Row(
-      //       mainAxisAlignment: MainAxisAlignment.spaceAround,
-      //       children: [
-      //         TabButton(
-      //           icon: 'assets/img/home_tab.png',
-      //           selectIcon: 'assets/img/home_active3.png',
-      //           isSelected: selectTab == 0,
-      //           onTap: () {
-      //             selectTab = 0;
-      //             curentTab = const HomeView();
-      //             if (mounted) {
-      //               setState(() {});
-      //             }
-      //           },
-      //         ),
-      //         TabButton(
-      //           icon: 'assets/img/activity_tab.png',
-      //           selectIcon: 'assets/img/Activity.png',
-      //           isSelected: selectTab == 1,
-      //           onTap: () {
-      //             selectTab = 1;
-      //             // curentTab = const SelectView();
-      //             curentTab = const ActivityTrackerView();
-      //             if (mounted) {
-      //               setState(() {});
-      //             }
-      //           },
-      //         ),
-      //         const SizedBox(
-      //           width: 40,
-      //         ),
-      //         TabButton(
-      //           icon: 'assets/img/camera_tab.png',
-      //           selectIcon: 'assets/img/camera_donw_colored.png',
-      //           isSelected: selectTab == 2,
-      //           onTap: () {
-      //             selectTab = 2;
-      //             curentTab = const PhotoProgressView();
-      //             if (mounted) {
-      //               setState(() {});
-      //             }
-      //           },
-      //         ),
-      //         TabButton(
-      //           icon: 'assets/img/profile_tab.png',
-      //           selectIcon: 'assets/img/profile_down_colored.png',
-      //           isSelected: selectTab == 3,
-      //           onTap: () {
-      //             selectTab = 3;
-      //             curentTab = const ProfileView();
-      //             if (mounted) {
-      //               setState(() {});
-      //             }
-      //           },
-      //         ),
-      //       ],
-      //     ),
-      //   ),
-      // ),
+      
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
@@ -240,20 +133,20 @@ class _HomeViewState extends State<HomeView> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Welcome Back,",
+                          "${AppString.welcomeBack},",
                           style: TextStyle(
                             color: AppColor.gray,
                             fontSize: 12,
-                            fontFamily: 'Hind',
+                            fontFamily: AppString.fontFamilyHind,
                           ),
                         ),
                         Text(
-                          "Mustafa Sayed",
+                          "Mustafa Sayed",//user name will be here from api
                           style: TextStyle(
                             color: AppColor.black,
                             fontSize: 25,
                             fontWeight: FontWeight.w700,
-                            fontFamily: 'Hind',
+                            fontFamily: AppString.fontFamilyHind,
                           ),
                         ),
                       ],
@@ -268,7 +161,7 @@ class _HomeViewState extends State<HomeView> {
                           );
                         },
                         icon: Image.asset(
-                          'assets/img/notification_active.png',
+                          AppAssets.notificationActiveIcon,
                           width: 25,
                           height: 25,
                           fit: BoxFit.fitHeight,
@@ -286,7 +179,7 @@ class _HomeViewState extends State<HomeView> {
                   ),
                   child: Stack(alignment: Alignment.center, children: [
                     Image.asset(
-                      'assets/img/bg_dots.png',
+                      AppAssets.homeImageBackgroundDots,
                       height: media.width * 0.4,
                       width: double.maxFinite,
                       fit: BoxFit.fitHeight,
@@ -302,21 +195,21 @@ class _HomeViewState extends State<HomeView> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "BMI (Body Mass Index)",
+                           AppString.bmi,
                                 style: TextStyle(
                                   color: AppColor.white,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w700,
-                                  fontFamily: 'Hind',
+                                  fontFamily: AppString.fontFamilyHind,
                                 ),
                               ),
                               Text(
-                                "You have a normal weight",
+                                "You have a normal weight",// condition will be here according to api
                                 style: TextStyle(
                                   color: AppColor.white.withOpacity(0.7),
                                   fontSize: 12,
                                   fontWeight: FontWeight.w700,
-                                  fontFamily: 'Hind',
+                                  fontFamily: AppString.fontFamilyHind,
                                 ),
                               ),
                               SizedBox(
@@ -327,7 +220,7 @@ class _HomeViewState extends State<HomeView> {
                                 height: 35,
                                 child: NormalButton(
                                   textColor: AppColor.primaryColor1,
-                                  text: 'View More',
+                                  text: AppString.viewMore,
                                   onPressed: () {
                                     //Function to go to BMI
                                   },
@@ -377,12 +270,12 @@ class _HomeViewState extends State<HomeView> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Today Target",
+                        AppString.todayTarget,
                         style: TextStyle(
                           color: AppColor.black,
                           fontSize: 16,
                           fontWeight: FontWeight.w700,
-                          fontFamily: 'Hind',
+                          fontFamily: AppString.fontFamilyHind,
                         ),
                       ),
                       SizedBox(
@@ -390,7 +283,7 @@ class _HomeViewState extends State<HomeView> {
                         height: 30,
                         child: NormalButton(
                             textColor: AppColor.primaryColor1,
-                            text: 'Check',
+                            text: AppString.check,
                             onPressed: () {
                               Navigator.push(
                                 context,
@@ -413,12 +306,12 @@ class _HomeViewState extends State<HomeView> {
                   height: media.width * 0.05,
                 ),
                 Text(
-                  "Activity Status",
+                AppString.activityStatus ,
                   style: TextStyle(
                     color: AppColor.black,
                     fontSize: 16,
                     fontWeight: FontWeight.w700,
-                    fontFamily: 'Hind',
+                    fontFamily: AppString.fontFamilyHind,
                   ),
                 ),
                 SizedBox(
@@ -445,21 +338,21 @@ class _HomeViewState extends State<HomeView> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Heart Rate",
+                                AppString.heartRate,
                                 style: TextStyle(
                                   color: AppColor.black,
                                   fontSize: 16,
                                   fontWeight: FontWeight.w600,
-                                  fontFamily: 'Hind',
+                                  fontFamily: AppString.fontFamilyHind,
                                 ),
                               ),
                               Text(
-                                "78 BPM",
+                                "78 BPM", // condition will be here according to api
                                 style: TextStyle(
                                   color: AppColor.primaryColor1,
                                   fontSize: 18,
                                   fontWeight: FontWeight.w600,
-                                  fontFamily: 'khand',
+                                  fontFamily: AppString.fontFamilyPoppins,
                                 ),
                               ),
                             ],
@@ -601,21 +494,21 @@ class _HomeViewState extends State<HomeView> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    "Water Intake",
+                                    AppString.waterIntake,
                                     style: TextStyle(
                                       color: AppColor.black,
                                       fontSize: 13,
                                       fontWeight: FontWeight.w700,
-                                      fontFamily: 'Hind',
+                                      fontFamily: AppString.fontFamilyHind,
                                     ),
                                   ),
                                   Text(
-                                    "4 Liters",
+                                    "4 Liters", // Function will be here to get water intake
                                     style: TextStyle(
                                       color: AppColor.primaryColor1,
                                       fontSize: 14,
                                       fontWeight: FontWeight.w700,
-                                      fontFamily: 'khand',
+                                      fontFamily: AppString.fontFamilyPoppins,
                                     ),
                                   ),
                                   const SizedBox(
@@ -627,7 +520,7 @@ class _HomeViewState extends State<HomeView> {
                                       color: AppColor.gray,
                                       fontSize: 11,
                                       fontWeight: FontWeight.w700,
-                                      fontFamily: 'Hind',
+                                      fontFamily: AppString.fontFamilyPoppins
                                     ),
                                   ),
                                   Column(
@@ -688,7 +581,7 @@ class _HomeViewState extends State<HomeView> {
                                                     color: AppColor.gray,
                                                     fontSize: 10,
                                                     fontWeight: FontWeight.w600,
-                                                    fontFamily: 'Hind',
+                                                    fontFamily: AppString.fontFamilyHind,
                                                   ),
                                                 ),
                                                 Text(
@@ -699,7 +592,7 @@ class _HomeViewState extends State<HomeView> {
                                                         AppColor.primaryColor1,
                                                     fontSize: 12,
                                                     fontWeight: FontWeight.w700,
-                                                    fontFamily: 'Hind',
+                                                    fontFamily: AppString.fontFamilyHind,
                                                   ),
                                                 ),
                                               ],
@@ -721,11 +614,11 @@ class _HomeViewState extends State<HomeView> {
                                         color: AppColor.primaryColor1,
                                         fontSize: 10,
                                         fontWeight: FontWeight.w700,
-                                        fontFamily: 'Hind',
+                                        fontFamily: AppString.fontFamilyHind,
                                       ),
                                       suffixIcon: IconButton(
                                         icon: Image.asset(
-                                            'assets/img/Button_Add.png'),
+                                            'assets/images/Button_Add.png'),
                                         color: AppColor.primaryColor1,
                                         padding: const EdgeInsets.all(0),
                                         onPressed: () {
@@ -749,7 +642,7 @@ class _HomeViewState extends State<HomeView> {
                                       color: AppColor.primaryColor1,
                                       fontSize: 10.3,
                                       fontWeight: FontWeight.w700,
-                                      fontFamily: 'Hind',
+                                      fontFamily: AppString.fontFamilyHind,
                                       // decoration: TextDecoration.underline,
                                       // decorationColor: TColor.primaryColor1,
                                       // decorationThickness: 1.5,
@@ -791,7 +684,7 @@ class _HomeViewState extends State<HomeView> {
                                     color: AppColor.black,
                                     fontSize: 14,
                                     fontWeight: FontWeight.w600,
-                                    fontFamily: 'khand',
+                                    fontFamily: AppString.fontFamilyPoppins,
                                   ),
                                 ),
                                 Text(
@@ -800,12 +693,12 @@ class _HomeViewState extends State<HomeView> {
                                     color: AppColor.primaryColor1,
                                     fontSize: 14,
                                     fontWeight: FontWeight.w700,
-                                    fontFamily: 'Hind',
+                                    fontFamily: AppString.fontFamilyHind,
                                   ),
                                 ),
                                 const Spacer(),
                                 Image.asset(
-                                  'assets/img/Sleep_Graph.png',
+                                  'assets/images/Sleep_Graph.png',
                                   width: double.maxFinite,
                                   fit: BoxFit.fitWidth,
                                 ),
@@ -836,7 +729,7 @@ class _HomeViewState extends State<HomeView> {
                                     color: AppColor.black,
                                     fontSize: 14,
                                     fontWeight: FontWeight.w600,
-                                    fontFamily: 'khand',
+                                    fontFamily: AppString.fontFamilyPoppins,
                                   ),
                                 ),
                                 Text(
@@ -845,7 +738,7 @@ class _HomeViewState extends State<HomeView> {
                                     color: AppColor.primaryColor1,
                                     fontSize: 14,
                                     fontWeight: FontWeight.w700,
-                                    fontFamily: 'Hind',
+                                    fontFamily: AppString.fontFamilyHind,
                                   ),
                                 ),
                                 const Spacer(),
@@ -876,7 +769,7 @@ class _HomeViewState extends State<HomeView> {
                                                 color: AppColor.white,
                                                 fontSize: 11,
                                                 fontWeight: FontWeight.w500,
-                                                fontFamily: 'Hind',
+                                                fontFamily: AppString.fontFamilyHind,
                                               ),
                                             ),
                                           ),
@@ -913,7 +806,7 @@ class _HomeViewState extends State<HomeView> {
                         color: AppColor.black,
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        fontFamily: 'khand',
+                        fontFamily: AppString.fontFamilyPoppins,
                       ),
                     ),
                     Container(
@@ -935,7 +828,7 @@ class _HomeViewState extends State<HomeView> {
                                         style: TextStyle(
                                             color: AppColor.gray,
                                             fontSize: 14,
-                                            fontFamily: 'Hind',
+                                            fontFamily: AppString.fontFamilyHind,
                                             fontWeight: FontWeight.w500),
                                       ),
                                     ))
@@ -952,7 +845,7 @@ class _HomeViewState extends State<HomeView> {
                                   color: AppColor.primaryColor1,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w500,
-                                  fontFamily: 'Hind'),
+                                  fontFamily: AppString.fontFamilyHind),
                             ),
                           ),
                         )),
@@ -1085,7 +978,7 @@ class _HomeViewState extends State<HomeView> {
                         color: AppColor.black,
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        fontFamily: 'khand',
+                        fontFamily: AppString.fontFamilyPoppins,
                       ),
                     ),
                     TextButton(
@@ -1096,7 +989,7 @@ class _HomeViewState extends State<HomeView> {
                           color: AppColor.gray,
                           fontSize: 15,
                           fontWeight: FontWeight.w500,
-                          fontFamily: 'khand',
+                          fontFamily: AppString.fontFamilyPoppins,
                         ),
                       ),
                     ),
@@ -1153,7 +1046,7 @@ class _HomeViewState extends State<HomeView> {
                 '20.1',
                 style: TextStyle(
                     color: AppColor.white,
-                    fontFamily: 'Hind',
+                    fontFamily: AppString.fontFamilyHind,
                     fontWeight: FontWeight.w700,
                     fontSize: 13),
               ),
@@ -1308,7 +1201,7 @@ class _HomeViewState extends State<HomeView> {
         color: AppColor.gray,
         fontSize: 12,
         fontWeight: FontWeight.w500,
-        fontFamily: 'Hind');
+        fontFamily: AppString.fontFamilyHind);
     Widget text;
     switch (value.toInt()) {
       case 1:
@@ -1345,4 +1238,4 @@ class _HomeViewState extends State<HomeView> {
   }
 }
 
-class MainTabView {}
+

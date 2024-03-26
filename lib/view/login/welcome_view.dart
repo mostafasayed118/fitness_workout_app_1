@@ -1,20 +1,15 @@
 import 'package:fitness_workout_app_1/common/colo_extension.dart';
-// import 'package:fitness_workout_app_1/common_widget/round_button.dart';
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
 import '../../widget/normal_button.dart';
-// import '../home/home_view.dart';
 import '../main_tab/main_tab_view.dart';
 
-class WelcomeView extends StatefulWidget {
+class WelcomeView extends StatelessWidget {
   const WelcomeView({Key? key}) : super(key: key);
 
-  @override
-  _WelcomeViewState createState() => _WelcomeViewState();
-}
-
-class _WelcomeViewState extends State<WelcomeView> {
   @override
   Widget build(BuildContext context) {
     var media = MediaQuery.of(context).size;
@@ -27,67 +22,56 @@ class _WelcomeViewState extends State<WelcomeView> {
             padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 25),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisSize: MainAxisSize.max,
               children: [
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      'We Are Creating A Perfect Plan For You',
-                      style: TextStyle(
-                        color: AppColor.primaryColor1,
-                        fontSize: 22,
-                        fontFamily: 'Khand',
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                  ],
+                const SizedBox(height: 20),
+                Text(
+                  AppString.titleWelcome,
+                  style: TextStyle(
+                    color: AppColor.primaryColor1,
+                    fontSize: 20,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w700,
+                  ),
                 ),
-                SizedBox(
-                  height: media.width * 0.2,
-                ),
+                const SizedBox(height: 20),
                 Lottie.asset(
-                  'assets/animation/animation _welcome.json',
+                  AppAssets.animationWelcome,
                   width: 225,
                   height: 290,
                   fit: BoxFit.fill,
                 ),
-                SizedBox(
-                  height: media.width * 0.01,
-                ),
+                const SizedBox(height: 10),
                 Text(
-                  "Welcome,Mustafa",
+                  "${AppString.welcome}, Mustafa", // user name fetch from Api
                   style: TextStyle(
                     color: AppColor.primaryColor2,
                     fontSize: 30,
                     fontWeight: FontWeight.w700,
-                    fontFamily: 'Khand',
+                    fontFamily: 'Poppins',
                   ),
                 ),
+                const SizedBox(height: 10),
                 Text(
-                  "You are all set now, let's reach your\n goals together with us ",
+                  AppString.subWelcome,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: AppColor.primaryColor1,
                     fontSize: 15,
                     fontWeight: FontWeight.w500,
-                    fontFamily: 'Khand',
+                    fontFamily: 'Poppins',
                   ),
                 ),
-                SizedBox(
-                  height: media.width * 0.2,
-                ),
-
+                const SizedBox(height: 20),
                 NormalButton(
                   textColor: AppColor.white,
-                  text: 'Go To Home',
+                  text: AppString.goToHome,
                   onPressed: () {
                     Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const MainTabView()));
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MainTabView(),
+                      ),
+                    );
                   },
                   backgroundColor: AppColor.primaryColor1,
                   widthSize: 330,
@@ -95,17 +79,6 @@ class _WelcomeViewState extends State<WelcomeView> {
                   borderColor: AppColor.primaryColor1,
                   fontSize: 32,
                 ),
-                // RoundButton(
-                //   title: "Go To Home",
-                //   onPressed: () {
-                //     // Navigator.push(
-                //     //     context,
-                //     //     MaterialPageRoute(
-                //     //         builder: (context) => const WelcomeView()));
-                //   },
-                //   fontSize: 32,
-                //   fontWeight: FontWeight.w700,
-                // ),
               ],
             ),
           ),
