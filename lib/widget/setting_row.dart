@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../common/colo_extension.dart';
@@ -36,7 +37,7 @@ class SettingRow extends StatelessWidget {
                 style: TextStyle(
                   color: AppColor.black,
                   fontSize: 12,
-                  fontFamily: 'Hind',
+                  fontFamily: AppStrings.fontFamilyHind,
                   fontWeight: FontWeight.w500,
                 ),
               ),

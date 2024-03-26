@@ -1,3 +1,5 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:flutter/material.dart';
 import '../../common/colo_extension.dart';
@@ -34,12 +36,9 @@ class _CaloriesEstimationScanState extends State<CaloriesEstimationScan> {
             height: 40,
             width: 40,
             alignment: Alignment.center,
-            decoration: BoxDecoration(
-                // color: TColor.primaryColor1.withOpacity(0.2), //Rahma edit
-                // color: TColor.lightGray,
-                borderRadius: BorderRadius.circular(10)),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              "assets/img/not_butt.png",
+              AppAssets.twoDotsIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -47,12 +46,12 @@ class _CaloriesEstimationScanState extends State<CaloriesEstimationScan> {
           ),
         ),
         title: Text(
-          "Scan",
+          AppStrings.scan,
           style: TextStyle(
             color: AppColor.black,
             fontSize: 20,
             fontWeight: FontWeight.w700,
-            fontFamily: 'Khand',
+            fontFamily: AppStrings.fontFamilyPoppins,
           ),
         ),
         actions: [
@@ -74,7 +73,7 @@ class _CaloriesEstimationScanState extends State<CaloriesEstimationScan> {
                   // color: TColor.lightGray,
                   borderRadius: BorderRadius.circular(10)),
               child: Image.asset(
-                "assets/img/not_btn_1.png",
+                AppAssets.rightArrowIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,
@@ -91,7 +90,7 @@ class _CaloriesEstimationScanState extends State<CaloriesEstimationScan> {
             const Spacer(),
             NormalButton(
                 textColor: AppColor.primaryColor1,
-                text: 'Scan',
+                text: AppStrings.scan,
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -105,24 +104,6 @@ class _CaloriesEstimationScanState extends State<CaloriesEstimationScan> {
                 heightSize: 55,
                 borderColor: AppColor.primaryColor1,
                 fontSize: 16),
-            // RoundButton(
-            //   title: "Compare",
-            //   onPressed: () {
-            // Navigator.push(
-            //   context,
-            //   MaterialPageRoute(
-            //     builder: (context) => ResultView(
-            //       date1: DateTime(2024, 1, 1),
-            //       date2: DateTime(2024, 2, 1),
-            //     ),
-            //   ),
-            // );
-            //   },
-            //   fontSize: 16,
-            //   elevation: 0,
-            //   fontWeight: FontWeight.normal,
-            // ),
-
             const SizedBox(
               height: 70,
             ),
@@ -130,16 +111,7 @@ class _CaloriesEstimationScanState extends State<CaloriesEstimationScan> {
         ),
       ),
       floatingActionButton: InkWell(
-        onTap: () {
-          // Navigator.push(
-          //   context,
-          //   MaterialPageRoute(
-          //     builder: (context) => SleepAddAlarmView(
-          //       date: _selectedDateAppBBar,
-          //     ),
-          //   ),
-          // );
-        },
+        onTap: () {},
         child: Container(
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
           width: 60,
@@ -157,7 +129,7 @@ class _CaloriesEstimationScanState extends State<CaloriesEstimationScan> {
               ]),
           alignment: Alignment.center,
           child: Image.asset(
-            'assets/img/gallery_flot.png',
+            AppAssets.galleryIcon,
           ),
         ),
       ),

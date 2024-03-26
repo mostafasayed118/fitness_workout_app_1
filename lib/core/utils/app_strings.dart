@@ -78,6 +78,13 @@ class AppStrings {
   static const String footSteps = "Foot Steps";
   static const String activityProgress = "Activity  Progress";
 
+
+//calories screen
+  static const String calorie = "Calorie";
+  static const String totalCalories = "Total Calories";
+  static const String details =  "Details";
+  static const String scan = 'Scan';
+
 ////////////////
   static const String searchHint = '';
   static const String searchLabel = 'Search';

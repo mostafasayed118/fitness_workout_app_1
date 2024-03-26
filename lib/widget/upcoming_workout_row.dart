@@ -1,4 +1,5 @@
 import 'package:animated_toggle_switch/animated_toggle_switch.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../common/colo_extension.dart';
@@ -50,7 +51,7 @@ class _UpcomingWorkoutRowState extends State<UpcomingWorkoutRow> {
                     color: AppColor.black,
                     fontSize: 15,
                     fontWeight: FontWeight.w600,
-                    fontFamily: 'Khand',
+                    fontFamily: AppStrings.fontFamilyPoppins,
                   ),
                 ),
                 Text(
@@ -59,7 +60,7 @@ class _UpcomingWorkoutRowState extends State<UpcomingWorkoutRow> {
                     color: AppColor.gray.withOpacity(0.7),
                     fontSize: 11,
                     fontWeight: FontWeight.w500,
-                    fontFamily: 'Hind',
+                    fontFamily: AppStrings.fontFamilyHind,
                   ),
                 ),
               ],

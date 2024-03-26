@@ -1,3 +1,5 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_animation_progress_bar/simple_animation_progress_bar.dart';
 
@@ -44,14 +46,14 @@ class WorkoutRow extends StatelessWidget {
                       color: AppColor.black,
                       fontSize: 14,
                       fontWeight: FontWeight.w500,
-                      fontFamily: 'khand'),
+                      fontFamily: AppStrings.fontFamilyPoppins),
                 ),
                 Text(
                   "${wObj["kcal"].toString()} Calories Burn | ${wObj["time"].toString()} minutes",
                   style: TextStyle(
                       color: AppColor.gray,
                       fontSize: 12,
-                      fontFamily: 'Hind',
+                      fontFamily: AppStrings.fontFamilyHind,
                       fontWeight: FontWeight.w500),
                 ),
                 const SizedBox(
@@ -77,7 +79,7 @@ class WorkoutRow extends StatelessWidget {
             IconButton(
                 onPressed: () {},
                 icon: Image.asset(
-                  "assets/img/next_icon_p.png",
+                  AppAssets.rightArrowGradinIcon,
                   width: 30,
                   height: 30,
                   fit: BoxFit.contain,

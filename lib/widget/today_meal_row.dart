@@ -1,3 +1,5 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../common/colo_extension.dart';
@@ -43,7 +45,7 @@ class TodayMealRow extends StatelessWidget {
                       color: AppColor.black,
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
-                      fontFamily: 'Khand',
+                      fontFamily: AppStrings.fontFamilyPoppins,
                     ),
                   ),
                   Text(
@@ -60,7 +62,7 @@ class TodayMealRow extends StatelessWidget {
             IconButton(
               onPressed: () {},
               icon: Image.asset(
-                "assets/img/Reminders.png",
+                AppAssets.remindersOnIcon,
                 width: 30,
                 height: 30,
               ),

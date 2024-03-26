@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 import '../common/colo_extension.dart';
 // import '../view/home/activity_tracker_view.dart';
@@ -20,10 +21,6 @@ class WhatTrainRow extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
           decoration: BoxDecoration(
             color: AppColor.primaryColor4.withOpacity(0.3),
-            // gradient: LinearGradient(colors: [
-            //   TColor.primaryColor2.withOpacity(0.3),
-            //   TColor.primaryColor1.withOpacity(0.3)
-            // ]),
             borderRadius: BorderRadius.circular(15),
           ),
           child: Row(
@@ -38,7 +35,7 @@ class WhatTrainRow extends StatelessWidget {
                         color: AppColor.black,
                         fontSize: 15,
                         fontWeight: FontWeight.w600,
-                        fontFamily: 'Khand',
+                        fontFamily: AppStrings.fontFamilyPoppins,
                       ),
                     ),
                     const SizedBox(
@@ -49,7 +46,7 @@ class WhatTrainRow extends StatelessWidget {
                       style: TextStyle(
                         color: AppColor.gray.withOpacity(0.8),
                         fontSize: 13,
-                        fontFamily: 'Hind',
+                        fontFamily: AppStrings.fontFamilyHind,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
@@ -61,29 +58,15 @@ class WhatTrainRow extends StatelessWidget {
                         height: 35,
                         child: NormalButton(
                           textColor: AppColor.primaryColor1,
-                          text: 'View More',
-                          onPressed: () {
-                            // Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //         builder: (context) =>
-                            //             const ActivityTrackerView()));
-                          },
+                          text: AppStrings.viewMore,
+                          onPressed: () {},
                           backgroundColor: AppColor.white,
                           widthSize: 90,
                           heightSize: 35,
                           borderColor: AppColor.primaryColor1,
                           fontSize: 11,
                           fontWeight: FontWeight.w500,
-                        )
-                        // RoundButton(
-                        //     title: "View More",
-                        //     fontSize: 10,
-                        //     type: RoundButtonType.textGradient,
-                        //     elevation: 0.05,
-                        //     fontWeight: FontWeight.w400,
-                        //     onPressed: () {}),
-                        )
+                        ))
                   ],
                 ),
               ),

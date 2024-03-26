@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../common/colo_extension.dart';
@@ -21,33 +22,20 @@ class TitleSubtitleCell extends StatelessWidget {
       ),
       child: Column(
         children: [
-          // ShaderMask(
-          //   blendMode: BlendMode.srcIn,
-          //   shaderCallback: (bounds) {
-          //     return LinearGradient(
-          //             colors: TColor.primaryG4,
-          //             begin: Alignment.centerLeft,
-          //             end: Alignment.centerRight)
-          //         .createShader(
-          //             Rect.fromLTRB(0, 0, bounds.width, bounds.height));
-          //   },
-          //
-          //
           Text(
             title,
             style: TextStyle(
                 color: AppColor.primaryColor4,
                 fontWeight: FontWeight.w600,
                 fontSize: 14,
-                fontFamily: 'Hind'),
+                fontFamily: AppStrings.fontFamilyHind),
           ),
-
           Text(
             subtitle,
             style: TextStyle(
               color: AppColor.gray,
               fontSize: 12,
-              fontFamily: 'Hind',
+              fontFamily: AppStrings.fontFamilyHind,
               fontWeight: FontWeight.w500,
             ),
           ),

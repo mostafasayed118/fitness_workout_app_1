@@ -1,3 +1,5 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:fitness_workout_app_1/view/home/blank_view.dart';
 import 'package:flutter/material.dart';
@@ -35,12 +37,9 @@ class _CalorieEstimationDetailsState extends State<CalorieEstimationDetails> {
             height: 40,
             width: 40,
             alignment: Alignment.center,
-            decoration: BoxDecoration(
-                // color: TColor.primaryColor1.withOpacity(0.2), //Rahma edit
-                // color: TColor.lightGray,
-                borderRadius: BorderRadius.circular(10)),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              "assets/img/not_butt.png",
+              AppAssets.twoDotsIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -48,12 +47,12 @@ class _CalorieEstimationDetailsState extends State<CalorieEstimationDetails> {
           ),
         ),
         title: Text(
-          "Details",
+          AppStrings.details,
           style: TextStyle(
             color: AppColor.black,
             fontSize: 20,
             fontWeight: FontWeight.w700,
-            fontFamily: 'Khand',
+            fontFamily: AppStrings.fontFamilyPoppins,
           ),
         ),
         actions: [
@@ -75,7 +74,7 @@ class _CalorieEstimationDetailsState extends State<CalorieEstimationDetails> {
                   // color: TColor.lightGray,
                   borderRadius: BorderRadius.circular(10)),
               child: Image.asset(
-                "assets/img/not_btn_1.png",
+                AppAssets.rightArrowIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,
@@ -85,44 +84,11 @@ class _CalorieEstimationDetailsState extends State<CalorieEstimationDetails> {
         ],
       ),
       backgroundColor: AppColor.white,
-      body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+      body: const Padding(
+        padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
         child: Column(
           children: [
-            // const Spacer(),
-            // NormalButton(
-            //     textColor: TColor.primaryColor1,
-            //     text: 'Next',
-            //     onPressed: () {
-            //       Navigator.push(
-            //         context,
-            //         MaterialPageRoute(builder: (context) => const BlankView()),
-            //       );
-            //     },
-            //     backgroundColor: TColor.white,
-            //     widthSize: 330,
-            //     heightSize: 55,
-            //     borderColor: TColor.primaryColor1,
-            //     fontSize: 16),
-            // // RoundButton(
-            //   title: "Compare",
-            //   onPressed: () {
-            // Navigator.push(
-            //   context,
-            //   MaterialPageRoute(
-            //     builder: (context) => ResultView(
-            //       date1: DateTime(2024, 1, 1),
-            //       date2: DateTime(2024, 2, 1),
-            //     ),
-            //   ),
-            // );
-            //   },
-            //   fontSize: 16,
-            //   elevation: 0,
-            //   fontWeight: FontWeight.normal,
-            // ),
-
-            const SizedBox(
+            SizedBox(
               height: 15,
             ),
           ],

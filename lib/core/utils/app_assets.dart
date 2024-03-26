@@ -4,10 +4,16 @@ class AppAssets {
   static const String logoSplash = '${basePathImage}logo_splash.png';
   static const String finishedImage = '${basePathImage}finished_image.png';
 
-
 //global icons
-  static const String twoDotsIcon='${basePathIcon}two_dots_icon.png';
-  static const String threeDotsVerticalIcon='${basePathIcon}three_dots_vertical_icon.png';
+  static const String twoDotsIcon = '${basePathIcon}two_dots_icon.png';
+  static const String threeDotsVerticalIcon =
+      '${basePathIcon}three_dots_vertical_icon.png';
+static const String threeDotsVerticalBlackIcon = '${basePathIcon}three_dots_vertical_black_icon.png';
+ static const String remindersOnIcon = '${basePathIcon}reminders_on_icon.png';
+  static const String remindersOffIcon = '${basePathIcon}reminders_off_icon.png';
+  // global gradient icon
+
+  static const String rightArrowGradinIcon = '${basePathIcon}right_arrow_gradin_icon.png';
 
 // animation
   static const String basePathAnimation = 'assets/animation/';
@@ -59,9 +65,12 @@ class AppAssets {
       '${basePathIcon}setting_icon_active.png';
 
 //ACTIVITY TRACKER SCREEN icons
-static const String glassIcon= '${basePathIcon}glass_icon.png';
-static const String footIcon= '${basePathIcon}foot_icon.png';
- 
+  static const String glassIcon = '${basePathIcon}glass_icon.png';
+  static const String footIcon = '${basePathIcon}foot_icon.png';
+
+//calories screen
+  static const String galleryIcon = '${basePathIcon}gallery_icon.png';
+
   static const String basePathImage = 'assets/images/';
 
   //splash screen
@@ -100,3 +109,5 @@ static const String footIcon= '${basePathIcon}foot_icon.png';
 
 // act as  flutter developer to optimize this code according to your requirements and needs for better performance and better user experience.
 //'Poppins'
+//next_icon_p.png >> rightArrowGradinIcon
+//More_V.png >== three dots black

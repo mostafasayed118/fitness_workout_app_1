@@ -1,4 +1,6 @@
 import 'package:animated_toggle_switch/animated_toggle_switch.dart';
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 // import 'package:fitness/common/colo_extension.dart';
 import 'package:flutter/material.dart';
 
@@ -57,7 +59,7 @@ class _TodaySleepScheduleRowState extends State<TodaySleepScheduleRow> {
                             color: AppColor.black,
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            fontFamily: 'Hind'),
+                            fontFamily: AppStrings.fontFamilyHind),
                       ),
                       Text(
                         " | ${getStringDateToOtherFormate(widget.sObj["time"].toString())}",
@@ -65,7 +67,7 @@ class _TodaySleepScheduleRowState extends State<TodaySleepScheduleRow> {
                           color: AppColor.gray,
                           fontSize: 12,
                           fontWeight: FontWeight.w500,
-                          fontFamily: 'Hind',
+                          fontFamily: AppStrings.fontFamilyHind,
                         ),
                       ),
                     ],
@@ -79,7 +81,7 @@ class _TodaySleepScheduleRowState extends State<TodaySleepScheduleRow> {
                       color: AppColor.gray,
                       fontSize: 14,
                       fontWeight: FontWeight.w500,
-                      fontFamily: 'Hind',
+                      fontFamily: AppStrings.fontFamilyHind,
                     ),
                   ),
                 ],
@@ -94,7 +96,7 @@ class _TodaySleepScheduleRowState extends State<TodaySleepScheduleRow> {
                   child: IconButton(
                     onPressed: () {},
                     icon: Image.asset(
-                      "assets/img/More_V.png",
+                      AppAssets.threeDotsVerticalBlackIcon,
                       width: 20,
                       height: 20,
                     ),

@@ -1,4 +1,5 @@
 import 'package:dotted_dashed_line/dotted_dashed_line.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../common/colo_extension.dart';
@@ -66,7 +67,7 @@ class StepDetailRow extends StatelessWidget {
                 style: TextStyle(
                   color: AppColor.black,
                   fontSize: 16,
-                  fontFamily: 'khand',
+                  fontFamily: AppStrings.fontFamilyPoppins,
                   fontWeight: FontWeight.w600,
                 ),
               ),
