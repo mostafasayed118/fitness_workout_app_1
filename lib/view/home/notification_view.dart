@@ -1,3 +1,5 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:fitness_workout_app_1/notification/local_notification_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -16,33 +18,33 @@ class NotificationView extends StatefulWidget {
 class _NotificationViewState extends State<NotificationView> {
   List notificationArr = [
     {
-      "image": "assets/img/not_3.png",
+      "image": "assets/images/not_3.png",
       "title": "Hey, it's time for lunch",
       "time": "About 1 minutes ago"
     },
     {
-      "image": "assets/img/Workout_2.png",
-      "title": "Don't miss your lowerbody workout",
+      "image": "assets/images/Workout_2.png",
+      "title": "Don't miss your lower body workout",
       "time": "About 3 hours ago"
     },
     {
-      "image": "assets/img/not_2.png",
+      "image": "assets/images/not_2.png",
       "title": "Hey, let's add some meals for your b",
       "time": "About 3 hours ago"
     },
     {
-      "image": "assets/img/Workout_3.png",
+      "image": "assets/images/Workout_3.png",
       "title": "Congratulations, You have finished A..",
       "time": "29 May"
     },
     {
-      "image": "assets/img/not_1.png",
+      "image": "assets/images/not_1.png",
       "title": "Hey, it's time for lunch",
       "time": "8 April"
     },
     {
-      "image": "assets/img/Workout_2.png",
-      "title": "Ups, You have missed your Lowerbo...",
+      "image": "assets/images/Workout_2.png",
+      "title": "Ups, You have missed your Lower bo...",
       "time": "8 April"
     },
   ];
@@ -76,11 +78,9 @@ class _NotificationViewState extends State<NotificationView> {
             width: 40,
             alignment: Alignment.center,
             decoration: BoxDecoration(
-                // color: TColor.primaryColor1.withOpacity(0.2), //Rahma edit
-                // color: TColor.lightGray,
                 borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              "assets/img/not_butt.png",
+              AppAssets.rightArrowIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -88,12 +88,12 @@ class _NotificationViewState extends State<NotificationView> {
           ),
         ),
         title: Text(
-          "Notification",
+         AppString.notification,
           style: TextStyle(
             color: AppColor.black,
             fontSize: 20,
             fontWeight: FontWeight.w700,
-            fontFamily: 'khand',
+            fontFamily: AppString.fontFamilyPoppins,
           ),
         ),
         actions: [

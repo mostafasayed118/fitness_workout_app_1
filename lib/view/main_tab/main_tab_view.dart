@@ -1,4 +1,5 @@
 import 'package:fitness_workout_app_1/common/colo_extension.dart';
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:fitness_workout_app_1/view/home/activity_tracker_view.dart';
 // import 'package:fitness_workout_app_1/view/home/blank_view.dart';
 import 'package:fitness_workout_app_1/view/home/home_view.dart';
@@ -81,8 +82,8 @@ class _MainTabViewState extends State<MainTabView> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               TabButton(
-                icon: 'assets/img/home_tab.png',
-                selectIcon: 'assets/img/home_active3.png',
+                icon: AppAssets.homeTabIcon,
+                selectIcon: AppAssets.homeActiveIcon,
                 isSelected: selectTab == 0,
                 onTap: () {
                   selectTab = 0;
@@ -93,8 +94,8 @@ class _MainTabViewState extends State<MainTabView> {
                 },
               ),
               TabButton(
-                icon: 'assets/img/activity_tab.png',
-                selectIcon: 'assets/img/Activity.png',
+                icon: AppAssets.activityTabIcon,
+                selectIcon: AppAssets.activityActiveIcon,
                 isSelected: selectTab == 1,
                 onTap: () {
                   selectTab = 1;
@@ -109,8 +110,8 @@ class _MainTabViewState extends State<MainTabView> {
                 width: 40,
               ),
               TabButton(
-                icon: 'assets/img/camera_tab.png',
-                selectIcon: 'assets/img/camera_donw_colored.png',
+                icon: AppAssets.cameraTabIcon,
+                selectIcon: AppAssets.cameraActiveIcon,
                 isSelected: selectTab == 2,
                 onTap: () {
                   selectTab = 2;
@@ -121,8 +122,8 @@ class _MainTabViewState extends State<MainTabView> {
                 },
               ),
               TabButton(
-                icon: 'assets/img/profile_tab.png',
-                selectIcon: 'assets/img/profile_down_colored.png',
+                icon: AppAssets.profileTabIcon,
+                selectIcon: AppAssets.profileIconActive,
                 isSelected: selectTab == 3,
                 onTap: () {
                   selectTab = 3;

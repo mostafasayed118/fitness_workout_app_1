@@ -60,10 +60,18 @@ class AppString {
   static const String bmi = "BMI (Body Mass Index)";
   static const String todayTarget = "Today Target";
   static const String waterIntake = "Water Intake";
-  static const String activityStatus =  "Activity Status";
-
+  static const String activityStatus = "Activity Status";
   static const String heartRate = "Heart Rate";
-
+  static const String realTimeUpdates = "Real Time Updates";
+  static const String steps = "Steps";
+  static const String exercise = "Exercise";
+  static const String sleep = "Sleep";
+  static const String water = "Water";
+  static const String addWaterIntake = "Add Water Intake";
+  static const String calories = 'Calories';
+  static const String workoutProgress = "Workout Progress";
+  static const String latestWorkout = "Latest Workout";
+  static const String notification = "Notification";
 
 ////////////////
   static const String searchHint = '';
@@ -109,6 +117,14 @@ class AppString {
   static const String viewMore = 'View More';
   static const String viewLess = 'View Less';
   static const String check = 'Check';
+  static const String seeMore = "See More";
+  static const String home = 'Home';
+  static const String workoutTracker = 'Workout Tracker';
+  static const String progressTracker = 'Progress Tracker';
+  static const String mealPlanner = 'Meal Planner';
+  static const String sleepTracker = 'Sleep Tracker';
+
+  static const String caloriesEstimation = 'Calories Estimation';
 
   // hints
   static const String firstNameHint = 'First Name';
@@ -119,6 +135,7 @@ class AppString {
   static const String countryhint = 'Choose Country';
   static const String passwordHint = 'Password';
   static const String confirmPasswordHint = 'Confirm Password';
+  static const String addMlHint = "Add ML..";
 
   static const String chooseGenderHint = 'Choose Gender';
   static const String dateOfBirthHint = 'Date of Birth';
@@ -127,7 +144,24 @@ class AppString {
   static const String heightHint = 'Your Height';
   static const String cm = 'CM';
 
-  //Fonts 
+  // drop down menu
+  static const String male = 'Male';
+  static const String female = 'Female';
+  static const String other = 'Other';
+  static const String monthly = "Monthly";
+  static const String weekly = "Weekly";
+  static const String daily = "Daily";
+
+  // bottomTitles
+  static const String sunday = 'Sun';
+  static const String monday = 'Mon';
+  static const String tuesday = 'Tue';
+  static const String wednesday = 'Wed';
+  static const String thursday = 'Thu';
+  static const String friday = 'Fri';
+  static const String saturday = 'Sat';
+
+  //Fonts
   static const String fontFamilyPoppins = 'Poppins';
   static const String fontFamilyHind = 'Hind';
 }

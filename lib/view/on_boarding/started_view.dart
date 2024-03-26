@@ -99,7 +99,7 @@ class _StartedViewState extends State<StartedView> {
                             // innerColor: TColor.primaryColor1,
 
                             sliderButtonIcon: Image.asset(
-                              AppAssets.arrow,
+                              AppAssets.rightArrowIcon,
                               height: 25,
                             ),
                             // text: 'Get Started',

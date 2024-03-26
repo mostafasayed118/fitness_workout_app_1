@@ -8,8 +8,9 @@ class AppAssets {
       '${basePathAnimation}animation _welcome.json';
 
   static const String basePathIcon = 'assets/icons/';
-
-  static const String arrow = '${basePathIcon}arrow.png';
+// arrows
+  static const String rightArrowIcon = '${basePathIcon}right_arrow_icon.png';
+  static const String leftArrowIcon = '${basePathIcon}left_arrow_icon.png';
   // login page and register page
   static const String userIcon = '${basePathIcon}user_icon.png';
   static const String phoneIcon = '${basePathIcon}phone_icon.png';
@@ -29,11 +30,26 @@ class AppAssets {
   static const String heightIcon = '${basePathIcon}swap_icon.png';
 
   // home page
-  static const String notificationActiveIcon = '${basePathIcon}notification_active_icon.png';
-  static const String homeIcon = '${basePathIcon}home_icon.png';
+  static const String notificationActiveIcon =
+      '${basePathIcon}notification_active_icon.png';
+  static const String homeAddWaterIcon = '${basePathIcon}add_water_icon.png';
   static const String profileIcon = '${basePathIcon}profile_icon.png';
   static const String settingIcon = '${basePathIcon}setting_icon.png';
   static const String logoutIcon = '${basePathIcon}logout_icon.png';
+  //main tab screen
+  static const String homeTabIcon = '${basePathIcon}home_tab_icon.png';
+  static const String homeActiveIcon = '${basePathIcon}home_active_icon.png';
+  static const String activityTabIcon = '${basePathIcon}activity_tab_icon.png';
+  static const String activityActiveIcon =
+      '${basePathIcon}activity_tab_active_icon.png';
+  static const String cameraTabIcon = '${basePathIcon}camera_tab_icon.png';
+  static const String cameraActiveIcon =
+      '${basePathIcon}camera_active_tab_icon.png';
+  static const String profileTabIcon = '${basePathIcon}profile_tab_icon.png';
+  static const String profileIconActive =
+      '${basePathIcon}profile_active_icon.png';
+  static const String settingIconActive =
+      '${basePathIcon}setting_icon_active.png';
 
   static const String basePathImage = 'assets/images/';
 
@@ -62,8 +78,9 @@ class AppAssets {
       '${basePathImage}goal_image_3.png';
 
 //home screen
-  static const String homeImageBackgroundDots = '${basePathImage}background_dots.png';
-  static const String homeImageTwo = '${basePathImage}home_image_2.png';
+  static const String homeImageBackgroundDots =
+      '${basePathImage}background_dots.png';
+  static const String homeImageTSleepGraph = '${basePathImage}sleep_graph.png';
   static const String homeImageThree = '${basePathImage}home_image_3.png';
 
   static const String splashImage = '${basePathImage}splash.jpg';
