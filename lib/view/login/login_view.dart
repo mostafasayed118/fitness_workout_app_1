@@ -29,7 +29,7 @@ class LoginView extends StatelessWidget {
               children: [
                 SizedBox(height: media.width * 0.1),
                 Text(
-                  AppString.heyThere,
+                  AppStrings.heyThere,
                   style: TextStyle(
                     color: AppColor.primaryColor2,
                     fontSize: 16,
@@ -38,7 +38,7 @@ class LoginView extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  AppString.welcomeBack,
+                  AppStrings.welcomeBack,
                   style: TextStyle(
                     color: AppColor.primaryColor1,
                     fontSize: 20,
@@ -55,13 +55,13 @@ class LoginView extends StatelessWidget {
                 SizedBox(height: media.width * 0.05),
                 SizedBox(height: media.width * 0.08),
                 const RoundTextfield(
-                  hitText: AppString.emailHint,
+                  hitText: AppStrings.emailHint,
                   iconPath: AppAssets.emailIcon,
                   keyboardType: TextInputType.emailAddress,
                 ),
                 SizedBox(height: media.width * 0.04),
                 RoundTextfield(
-                  hitText: AppString.passwordHint,
+                  hitText: AppStrings.passwordHint,
                   obscureText: true,
                   iconPath: AppAssets.passwordIcon,
                   keyboardType: TextInputType.visiblePassword,
@@ -96,7 +96,7 @@ class LoginView extends StatelessWidget {
                         );
                       },
                       child: Text(
-                        AppString.forgotPassword,
+                        AppStrings.forgotPassword,
                         style: TextStyle(
                           color: AppColor.primaryColor2,
                           fontSize: 12,
@@ -111,7 +111,7 @@ class LoginView extends StatelessWidget {
                 SizedBox(height: media.width * 0.25),
                 NormalButton(
                   textColor: AppColor.white,
-                  text: AppString.login,
+                  text: AppStrings.login,
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -136,7 +136,7 @@ class LoginView extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      AppString.or,
+                      AppStrings.or,
                       style: TextStyle(
                         color: AppColor.primaryColor2,
                         fontSize: 14,
@@ -157,9 +157,7 @@ class LoginView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     GestureDetector(
-                      onTap: () {
-
-                      },
+                      onTap: () {},
                       child: Container(
                         width: 50,
                         height: 50,
@@ -224,7 +222,7 @@ class LoginView extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        AppString.dontHaveAccount,
+                        AppStrings.dontHaveAccount,
                         style: TextStyle(
                           color: AppColor.primaryColor1,
                           fontSize: 14,
@@ -233,7 +231,7 @@ class LoginView extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        AppString.register,
+                        AppStrings.register,
                         style: TextStyle(
                           color: AppColor.primaryColor2,
                           fontSize: 14,

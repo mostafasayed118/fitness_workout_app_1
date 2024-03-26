@@ -51,10 +51,9 @@ class SelectView extends StatelessWidget {
             color: AppColor.black,
             fontSize: 20,
             fontWeight: FontWeight.w700,
-            fontFamily: 'Khand',
+            fontFamily: AppStrings.fontFamilyPoppins,
           ),
         ),
-        
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -63,7 +62,7 @@ class SelectView extends StatelessWidget {
           children: [
             NormalButton(
                 textColor: AppColor.primaryColor1,
-                text: AppString.home,
+                text: AppStrings.home,
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -82,7 +81,7 @@ class SelectView extends StatelessWidget {
             ),
             NormalButton(
                 textColor: AppColor.primaryColor1,
-                text: AppString.workoutTracker,
+                text: AppStrings.workoutTracker,
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -101,7 +100,7 @@ class SelectView extends StatelessWidget {
             ),
             NormalButton(
                 textColor: AppColor.primaryColor1,
-                text:AppString.mealPlanner ,
+                text: AppStrings.mealPlanner,
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -120,7 +119,7 @@ class SelectView extends StatelessWidget {
             ),
             NormalButton(
                 textColor: AppColor.primaryColor1,
-                text: AppString.sleepTracker,
+                text: AppStrings.sleepTracker,
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -139,7 +138,7 @@ class SelectView extends StatelessWidget {
             ),
             NormalButton(
                 textColor: AppColor.primaryColor1,
-                text: AppString.progressTracker,
+                text: AppStrings.progressTracker,
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -158,7 +157,7 @@ class SelectView extends StatelessWidget {
             ),
             NormalButton(
                 textColor: AppColor.primaryColor1,
-                text: AppString.caloriesEstimation,
+                text: AppStrings.caloriesEstimation,
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -172,7 +171,6 @@ class SelectView extends StatelessWidget {
                 heightSize: 60,
                 borderColor: AppColor.primaryColor1,
                 fontSize: 20),
-            
           ],
         ),
       ),

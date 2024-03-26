@@ -1,8 +1,15 @@
 class AppAssets {
-  // global
+  // global images
   static const String logo = '${basePathImage}logo_1.png';
   static const String logoSplash = '${basePathImage}logo_splash.png';
+  static const String finishedImage = '${basePathImage}finished_image.png';
 
+
+//global icons
+  static const String twoDotsIcon='${basePathIcon}two_dots_icon.png';
+  static const String threeDotsVerticalIcon='${basePathIcon}three_dots_vertical_icon.png';
+
+// animation
   static const String basePathAnimation = 'assets/animation/';
   static const String animationWelcome =
       '${basePathAnimation}animation _welcome.json';
@@ -51,6 +58,10 @@ class AppAssets {
   static const String settingIconActive =
       '${basePathIcon}setting_icon_active.png';
 
+//ACTIVITY TRACKER SCREEN icons
+static const String glassIcon= '${basePathIcon}glass_icon.png';
+static const String footIcon= '${basePathIcon}foot_icon.png';
+ 
   static const String basePathImage = 'assets/images/';
 
   //splash screen

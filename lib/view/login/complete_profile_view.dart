@@ -28,7 +28,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
             child: Column(
               children: [
                 Text(
-                  AppString.completeProfileTitle,
+                  AppStrings.completeProfileTitle,
                   style: TextStyle(
                     color: AppColor.primaryColor1,
                     fontSize: 24,
@@ -37,7 +37,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                   ),
                 ),
                 Text(
-                  AppString.completeProfileSubTitle,
+                  AppStrings.completeProfileSubTitle,
                   style: TextStyle(
                     color: AppColor.primaryColor2,
                     fontSize: 14,
@@ -101,7 +101,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                                   onChanged: (value) {},
                                   isExpanded: true,
                                   hint: Text(
-                                    AppString.chooseGenderHint,
+                                    AppStrings.chooseGenderHint,
                                     style: TextStyle(
                                       color: AppColor.primaryColor1,
                                       fontSize: 16,
@@ -122,7 +122,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                         height: media.width * 0.05,
                       ),
                       const RoundTextfield(
-                        hitText: AppString.dateOfBirthHint,
+                        hitText: AppStrings.dateOfBirthHint,
                         iconPath: AppAssets.dateIcon,
                       ),
                       SizedBox(
@@ -132,7 +132,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                         children: [
                           const Expanded(
                             child: RoundTextfield(
-                              hitText: AppString.weightHint,
+                              hitText: AppStrings.weightHint,
                               iconPath: AppAssets.weightIcon,
                             ),
                           ),
@@ -150,7 +150,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                               borderRadius: BorderRadius.circular(15),
                             ),
                             child: Text(
-                              AppString.kg,
+                              AppStrings.kg,
                               style: TextStyle(
                                 color: AppColor.white,
                                 fontSize: 12,
@@ -168,7 +168,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                         children: [
                           const Expanded(
                             child: RoundTextfield(
-                              hitText: AppString.heightHint,
+                              hitText: AppStrings.heightHint,
                               iconPath: AppAssets.heightIcon,
                             ),
                           ),
@@ -186,7 +186,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                               borderRadius: BorderRadius.circular(15),
                             ),
                             child: Text(
-                              AppString.cm,
+                              AppStrings.cm,
                               style: TextStyle(
                                 color: AppColor.white,
                                 fontSize: 12,
@@ -202,7 +202,7 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                       ),
                       NormalButton(
                         textColor: AppColor.white,
-                        text: AppString.next,
+                        text: AppStrings.next,
                         onPressed: () {
                           Navigator.push(
                             context,

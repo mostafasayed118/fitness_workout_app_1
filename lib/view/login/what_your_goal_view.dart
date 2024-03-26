@@ -13,18 +13,18 @@ class WhatYourGoalView extends StatelessWidget {
   final List<Map<String, String>> goalArray = [
     {
       'image': AppAssets.whatYourGoalImageOne,
-      'title': AppString.whatYourGoalTitleOne,
-      'subtitle': AppString.whatYourGoalSubTitleOne,
+      'title': AppStrings.whatYourGoalTitleOne,
+      'subtitle': AppStrings.whatYourGoalSubTitleOne,
     },
     {
       'image': AppAssets.whatYourGoalImageTwo,
-      'title': AppString.whatYourGoalTitleTwo,
-      'subtitle': AppString.whatYourGoalSubTitleTwo,
+      'title': AppStrings.whatYourGoalTitleTwo,
+      'subtitle': AppStrings.whatYourGoalSubTitleTwo,
     },
     {
       'image': AppAssets.whatYourGoalImageThree,
-      'title': AppString.whatYourGoalTitleThree,
-      'subtitle': AppString.whatYourGoalSubTitleThree,
+      'title': AppStrings.whatYourGoalTitleThree,
+      'subtitle': AppStrings.whatYourGoalSubTitleThree,
     },
   ];
 
@@ -117,7 +117,7 @@ class WhatYourGoalView extends StatelessWidget {
                     height: media.width * 0.03,
                   ),
                   Text(
-                    AppString.whatYourGoal,
+                    AppStrings.whatYourGoal,
                     style: TextStyle(
                       color: AppColor.primaryColor1,
                       fontSize: 32,
@@ -126,7 +126,7 @@ class WhatYourGoalView extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    AppString.whatYourGoalSub,
+                    AppStrings.whatYourGoalSub,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: AppColor.primaryColor2,
@@ -141,7 +141,7 @@ class WhatYourGoalView extends StatelessWidget {
                   ),
                   NormalButton(
                     textColor: AppColor.white,
-                    text: AppString.confirm,
+                    text: AppStrings.confirm,
                     onPressed: () {
                       Navigator.push(
                         context,

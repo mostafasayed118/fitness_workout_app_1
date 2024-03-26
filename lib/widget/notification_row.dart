@@ -1,3 +1,5 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../common/colo_extension.dart';
@@ -34,14 +36,14 @@ class NotificationRow extends StatelessWidget {
                     color: AppColor.black,
                     fontWeight: FontWeight.w500,
                     fontSize: 14,
-                    fontFamily: 'Hind'),
+                    fontFamily: AppStrings.fontFamilyHind),
               ),
               Text(
                 nObj["time"].toString(),
                 style: TextStyle(
                   color: AppColor.gray,
                   fontSize: 12,
-                  fontFamily: 'Hind',
+                  fontFamily: AppStrings.fontFamilyHind,
                 ),
               ),
             ],
@@ -51,7 +53,7 @@ class NotificationRow extends StatelessWidget {
                 //Function more option will be here
               },
               icon: Image.asset(
-                "assets/img/sub_menu.png",
+                AppAssets.threeDotsVerticalIcon,
                 width: 15,
                 height: 15,
                 fit: BoxFit.contain,

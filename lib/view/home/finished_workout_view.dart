@@ -1,3 +1,5 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:flutter/material.dart';
 
@@ -26,7 +28,7 @@ class _FinishedWorkoutViewState extends State<FinishedWorkoutView> {
                 height: 20,
               ),
               Image.asset(
-                "assets/img/Frame_finished.png",
+                AppAssets.finishedImage,
                 height: media.width * 0.8,
                 fit: BoxFit.fitHeight,
               ),
@@ -34,26 +36,26 @@ class _FinishedWorkoutViewState extends State<FinishedWorkoutView> {
                 height: 20,
               ),
               Text(
-                "Congratulations, You Have Finished Your Workout",
+                AppStrings.congratulations,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: AppColor.primaryColor1,
                   fontSize: 20,
                   fontWeight: FontWeight.w700,
-                  fontFamily: 'Khand',
+                  fontFamily: AppStrings.fontFamilyPoppins,
                 ),
               ),
               const SizedBox(
                 height: 20,
               ),
               Text(
-                "Exercises is king and nutrition is queen. Combine the two and you will have a kingdom",
+                AppStrings.quotation,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: AppColor.primaryColor4,
                   fontWeight: FontWeight.w600,
                   fontSize: 13,
-                  fontFamily: 'Hind',
+                  fontFamily: AppStrings.fontFamilyHind,
                 ),
               ),
               const SizedBox(
@@ -66,13 +68,13 @@ class _FinishedWorkoutViewState extends State<FinishedWorkoutView> {
                   color: AppColor.primaryColor4,
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
-                  fontFamily: 'Hind',
+                  fontFamily: AppStrings.fontFamilyHind,
                 ),
               ),
               const Spacer(),
               NormalButton(
                   textColor: AppColor.primaryColor1,
-                  text: 'Back To Home',
+                  text: AppStrings.backToHome,
                   onPressed: () {
                     Navigator.pop(context);
                   },
@@ -81,12 +83,6 @@ class _FinishedWorkoutViewState extends State<FinishedWorkoutView> {
                   heightSize: 60,
                   borderColor: AppColor.primaryColor1,
                   fontSize: 20),
-              // RoundButton(
-              //     title: "Back To Home",
-              //     onPressed:
-              // () {
-              //       Navigator.pop(context);
-              //     }),
               const SizedBox(
                 height: 15,
               ),

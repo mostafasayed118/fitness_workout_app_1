@@ -1,4 +1,4 @@
-class AppString {
+class AppStrings {
   //splash screen
   static const String welcomeIn = 'Welcome In';
   static const String getStarted = 'Get Started';
@@ -72,6 +72,11 @@ class AppString {
   static const String workoutProgress = "Workout Progress";
   static const String latestWorkout = "Latest Workout";
   static const String notification = "Notification";
+  static const String activityTracker = "Activity Tracker";
+
+// activity tracker screen
+  static const String footSteps = "Foot Steps";
+  static const String activityProgress = "Activity  Progress";
 
 ////////////////
   static const String searchHint = '';
@@ -106,6 +111,10 @@ class AppString {
   static const String skip = 'Skip';
   static const String welcomeBack = 'Welcome Back';
   static const String welcome = 'Welcome';
+  static const String congratulations =
+      "Congratulations, You Have Finished Your Workout";
+  static const String quotation =
+      "Exercises is king and nutrition is queen. Combine the two and you will have a kingdom";
 
   //buttons
   static const String createAccount = 'Create Account';
@@ -123,6 +132,7 @@ class AppString {
   static const String progressTracker = 'Progress Tracker';
   static const String mealPlanner = 'Meal Planner';
   static const String sleepTracker = 'Sleep Tracker';
+  static const String backToHome = 'Back To Home';
 
   static const String caloriesEstimation = 'Calories Estimation';
 
@@ -160,6 +170,15 @@ class AppString {
   static const String thursday = 'Thu';
   static const String friday = 'Fri';
   static const String saturday = 'Sat';
+static const String mondayComplete = 'Monday';
+static const String tuesdayComplete = 'Tuesday';
+static const String wednesdayComplete = 'Wednesday';
+static const String thursdayComplete = 'Thursday';
+static const String fridayComplete = 'Friday';
+static const String saturdayComplete = 'Saturday';
+static const String sundayComplete = 'Sunday';
+
+
 
   //Fonts
   static const String fontFamilyPoppins = 'Poppins';

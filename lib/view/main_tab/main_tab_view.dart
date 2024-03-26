@@ -100,7 +100,6 @@ class _MainTabViewState extends State<MainTabView> {
                 onTap: () {
                   selectTab = 1;
                   curentTab = const SelectView();
-                  // curentTab = const ActivityTrackerView();
                   if (mounted) {
                     setState(() {});
                   }

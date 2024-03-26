@@ -25,7 +25,7 @@ class WelcomeView extends StatelessWidget {
               children: [
                 const SizedBox(height: 20),
                 Text(
-                  AppString.titleWelcome,
+                  AppStrings.titleWelcome,
                   style: TextStyle(
                     color: AppColor.primaryColor1,
                     fontSize: 20,
@@ -42,7 +42,7 @@ class WelcomeView extends StatelessWidget {
                 ),
                 const SizedBox(height: 10),
                 Text(
-                  "${AppString.welcome}, Mustafa", // user name fetch from Api
+                  "${AppStrings.welcome}, Mustafa", // user name fetch from Api
                   style: TextStyle(
                     color: AppColor.primaryColor2,
                     fontSize: 30,
@@ -52,7 +52,7 @@ class WelcomeView extends StatelessWidget {
                 ),
                 const SizedBox(height: 10),
                 Text(
-                  AppString.subWelcome,
+                  AppStrings.subWelcome,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: AppColor.primaryColor1,
@@ -64,7 +64,7 @@ class WelcomeView extends StatelessWidget {
                 const SizedBox(height: 20),
                 NormalButton(
                   textColor: AppColor.white,
-                  text: AppString.goToHome,
+                  text: AppStrings.goToHome,
                   onPressed: () {
                     Navigator.push(
                       context,

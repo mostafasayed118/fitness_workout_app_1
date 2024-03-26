@@ -1,3 +1,5 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../common/colo_extension.dart';
@@ -34,14 +36,14 @@ class LatestActivityRow extends StatelessWidget {
                       color: AppColor.black,
                       fontSize: 14,
                       fontWeight: FontWeight.w700,
-                      fontFamily: 'Khand'),
+                      fontFamily: AppStrings.fontFamilyPoppins),
                 ),
                 Text(
                   wObj["time"].toString(),
                   style: TextStyle(
                     color: AppColor.gray,
                     fontSize: 12,
-                    fontFamily: 'Hind',
+                    fontFamily: AppStrings.fontFamilyHind,
                   ),
                 ),
               ],
@@ -49,7 +51,7 @@ class LatestActivityRow extends StatelessWidget {
             IconButton(
                 onPressed: () {},
                 icon: Image.asset(
-                  "assets/img/sub_menu.png",
+                  AppAssets.threeDotsVerticalIcon,
                   width: 12,
                   height: 12,
                   fit: BoxFit.contain,

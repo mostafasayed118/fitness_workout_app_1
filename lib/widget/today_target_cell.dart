@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../common/colo_extension.dart';
@@ -43,7 +44,7 @@ class TodayTargetCell extends StatelessWidget {
                     color: AppColor.primaryColor4,
                     fontWeight: FontWeight.w600,
                     fontSize: 16,
-                    fontFamily: 'Hind'),
+                    fontFamily: AppStrings.fontFamilyHind),
               ),
               Text(
                 title,
@@ -51,7 +52,7 @@ class TodayTargetCell extends StatelessWidget {
                   color: AppColor.black,
                   fontSize: 12,
                   fontWeight: FontWeight.w500,
-                  fontFamily: 'Hind',
+                  fontFamily: AppStrings.fontFamilyHind,
                 ),
               ),
             ],

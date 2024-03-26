@@ -34,7 +34,7 @@ class _SignUpViewState extends State<SignUpView> {
                   height: media.width * 0.06,
                 ),
                 Text(
-                  AppString.heyThere,
+                  AppStrings.heyThere,
                   style: TextStyle(
                     color: AppColor.primaryColor2,
                     fontSize: 16,
@@ -42,7 +42,7 @@ class _SignUpViewState extends State<SignUpView> {
                   ),
                 ),
                 Text(
-                  AppString.createAnAccount,
+                  AppStrings.createAnAccount,
                   style: TextStyle(
                     color: AppColor.primaryColor1,
                     fontSize: 25,
@@ -54,21 +54,21 @@ class _SignUpViewState extends State<SignUpView> {
                   height: media.width * 0.05,
                 ),
                 const RoundTextfield(
-                  hitText: AppString.firstNameHint,
+                  hitText: AppStrings.firstNameHint,
                   iconPath: AppAssets.userIcon,
                 ),
                 SizedBox(
                   height: media.width * 0.04,
                 ),
                 const RoundTextfield(
-                  hitText: AppString.lastNameHint,
+                  hitText: AppStrings.lastNameHint,
                   iconPath: AppAssets.userIcon,
                 ),
                 SizedBox(
                   height: media.width * 0.04,
                 ),
                 const RoundTextfield(
-                  hitText: AppString.phoneHint,
+                  hitText: AppStrings.phoneHint,
                   iconPath: AppAssets.phoneIcon,
                   keyboardType: TextInputType.phone,
                 ),
@@ -76,7 +76,7 @@ class _SignUpViewState extends State<SignUpView> {
                   height: media.width * 0.04,
                 ),
                 const RoundTextfield(
-                  hitText: AppString.emailHint,
+                  hitText: AppStrings.emailHint,
                   iconPath: AppAssets.emailIcon,
                   keyboardType: TextInputType.emailAddress,
                 ),
@@ -85,14 +85,14 @@ class _SignUpViewState extends State<SignUpView> {
                 ),
 
                 const RoundTextfield(
-                  hitText: AppString.countryhint,
+                  hitText: AppStrings.countryhint,
                   iconPath: AppAssets.countryIcon,
                 ),
                 SizedBox(
                   height: media.width * 0.04,
                 ),
                 const RoundTextfield(
-                  hitText: AppString.userNameHint,
+                  hitText: AppStrings.userNameHint,
                   iconPath: AppAssets.userIcon,
                 ),
 
@@ -100,7 +100,7 @@ class _SignUpViewState extends State<SignUpView> {
                   height: media.width * 0.04,
                 ),
                 RoundTextfield(
-                  hitText: AppString.passwordHint,
+                  hitText: AppStrings.passwordHint,
                   obscureText: true,
                   iconPath: AppAssets.passwordIcon,
                   keyboardType: TextInputType.visiblePassword,
@@ -124,7 +124,7 @@ class _SignUpViewState extends State<SignUpView> {
                   height: media.width * 0.04,
                 ),
                 RoundTextfield(
-                  hitText: AppString.confirmPasswordHint,
+                  hitText: AppStrings.confirmPasswordHint,
                   obscureText: true,
                   iconPath: AppAssets.passwordIcon,
                   keyboardType: TextInputType.visiblePassword,
@@ -180,7 +180,7 @@ class _SignUpViewState extends State<SignUpView> {
 
                 NormalButton(
                   textColor: AppColor.white,
-                  text: AppString.register,
+                  text: AppStrings.register,
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -195,7 +195,7 @@ class _SignUpViewState extends State<SignUpView> {
                   borderColor: AppColor.primaryColor1,
                   fontSize: 32,
                 ),
-               
+
                 SizedBox(
                   height: media.width * 0.04,
                 ),
@@ -208,7 +208,7 @@ class _SignUpViewState extends State<SignUpView> {
                       ),
                     ),
                     Text(
-                      AppString.or,
+                      AppStrings.or,
                       style: TextStyle(
                         color: AppColor.primaryColor2,
                         fontSize: 18,
@@ -306,7 +306,7 @@ class _SignUpViewState extends State<SignUpView> {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        AppString.alreadyHaveAccount,
+                        AppStrings.alreadyHaveAccount,
                         style: TextStyle(
                           color: AppColor.primaryColor1,
                           fontSize: 14,
@@ -315,7 +315,7 @@ class _SignUpViewState extends State<SignUpView> {
                         ),
                       ),
                       Text(
-                        AppString.login,
+                        AppStrings.login,
                         style: TextStyle(
                           color: AppColor.primaryColor2,
                           fontSize: 16,

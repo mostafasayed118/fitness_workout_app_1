@@ -77,8 +77,7 @@ class _NotificationViewState extends State<NotificationView> {
             height: 40,
             width: 40,
             alignment: Alignment.center,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10)),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
               AppAssets.rightArrowIcon,
               width: 30,
@@ -88,12 +87,12 @@ class _NotificationViewState extends State<NotificationView> {
           ),
         ),
         title: Text(
-         AppString.notification,
+          AppStrings.notification,
           style: TextStyle(
             color: AppColor.black,
             fontSize: 20,
             fontWeight: FontWeight.w700,
-            fontFamily: AppString.fontFamilyPoppins,
+            fontFamily: AppStrings.fontFamilyPoppins,
           ),
         ),
         actions: [
@@ -111,12 +110,10 @@ class _NotificationViewState extends State<NotificationView> {
               height: 40,
               width: 40,
               alignment: Alignment.center,
-              decoration: BoxDecoration(
-                  // color: TColor.lightGray,
-                  // color: TColor.primaryColor1.withOpacity(0.2), //Rahma edit
-                  borderRadius: BorderRadius.circular(10)),
+              decoration:
+                  BoxDecoration(borderRadius: BorderRadius.circular(10)),
               child: Image.asset(
-                "assets/img/not_btn_1.png",
+                AppAssets.twoDotsIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,

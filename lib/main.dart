@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: AppString.nutrifix,
+      title: AppStrings.nutrifix,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: AppColor.primaryColor1,

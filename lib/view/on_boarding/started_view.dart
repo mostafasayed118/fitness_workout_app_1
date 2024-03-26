@@ -30,7 +30,7 @@ class _StartedViewState extends State<StartedView> {
                   flex: 2,
                 ),
                 Text(
-                  AppString.welcomeIn,
+                  AppStrings.welcomeIn,
                   style: TextStyle(
                     color: AppColor.primaryColor1,
                     fontSize: 40,
@@ -39,7 +39,7 @@ class _StartedViewState extends State<StartedView> {
                   ),
                 ),
                 Text(
-                  AppString.nutrifix,
+                  AppStrings.nutrifix,
                   style: TextStyle(
                     color: AppColor.primaryColor1,
                     fontSize: 40,
@@ -63,7 +63,7 @@ class _StartedViewState extends State<StartedView> {
                           SlideAction(
                             child: NormalButton(
                               textColor: AppColor.white,
-                              text: AppString.getStarted,
+                              text: AppStrings.getStarted,
                               onPressed: () {
                                 //Go to next screen
                                 Navigator.push(

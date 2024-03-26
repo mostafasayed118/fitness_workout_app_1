@@ -29,23 +29,23 @@ class _OnBoardingViewState extends State<OnBoardingView> {
 
   List pageArea = [
     {
-      "title": AppString.onboardingTitleOne,
-      "subtitle": AppString.onboardingSubTitleOne,
+      "title": AppStrings.onboardingTitleOne,
+      "subtitle": AppStrings.onboardingSubTitleOne,
       "image": AppAssets.onboarding1
     },
     {
-      "title": AppString.onboardingTitleTwo,
-      "subtitle": AppString.onboardingSubTitleTwo,
+      "title": AppStrings.onboardingTitleTwo,
+      "subtitle": AppStrings.onboardingSubTitleTwo,
       "image": AppAssets.onboarding2
     },
     {
-      "title": AppString.onboardingTitleThree,
-      "subtitle": AppString.onboardingSubTitleThree,
+      "title": AppStrings.onboardingTitleThree,
+      "subtitle": AppStrings.onboardingSubTitleThree,
       "image": AppAssets.onboarding3
     },
     {
-      "title": AppString.onboardingTitleFour,
-      "subtitle": AppString.onboardingSubTitleFour,
+      "title": AppStrings.onboardingTitleFour,
+      "subtitle": AppStrings.onboardingSubTitleFour,
       "image": AppAssets.onboarding4
     },
   ];
@@ -72,7 +72,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
               padding: const EdgeInsets.all(16.0),
               child: TextButton(
                 child: Text(
-                  AppString.skip,
+                  AppStrings.skip,
                   style: TextStyle(
                     color: AppColor.black,
                     fontWeight: FontWeight.w500,

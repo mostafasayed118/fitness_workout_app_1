@@ -1,3 +1,5 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
@@ -19,12 +21,12 @@ class _ActivityTrackerViewState extends State<ActivityTrackerView> {
 
   List latestArr = [
     {
-      "image": "assets/img/latest_workout_2.png",
+      "image": "assets/images/latest_workout_2.png",
       "title": "Drinking 300ml Water",
       "time": "About 1 minutes ago"
     },
     {
-      "image": "assets/img/latest_workout_1.png",
+      "image": "assets/images/latest_workout_1.png",
       "title": "Eat Snack (Fitbar)",
       "time": "About 10 minutes ago"
     },
@@ -49,12 +51,9 @@ class _ActivityTrackerViewState extends State<ActivityTrackerView> {
             height: 40,
             width: 40,
             alignment: Alignment.center,
-            decoration: BoxDecoration(
-                // color: TColor.primaryColor1.withOpacity(0.2), //Rahma edit
-                // color: TColor.lightGray,
-                borderRadius: BorderRadius.circular(10)),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              "assets/img/not_butt.png",
+              AppAssets.leftArrowIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -62,12 +61,12 @@ class _ActivityTrackerViewState extends State<ActivityTrackerView> {
           ),
         ),
         title: Text(
-          "Activity Tracker",
+          AppStrings.activityTracker,
           style: TextStyle(
             color: AppColor.black,
             fontSize: 20,
             fontWeight: FontWeight.w700,
-            fontFamily: 'Hind',
+            fontFamily: AppStrings.fontFamilyHind,
           ),
         ),
         actions: [
@@ -89,7 +88,7 @@ class _ActivityTrackerViewState extends State<ActivityTrackerView> {
                   // color: TColor.lightGray,
                   borderRadius: BorderRadius.circular(10)),
               child: Image.asset(
-                "assets/img/not_btn_1.png",
+                AppAssets.twoDotsIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,
@@ -121,12 +120,12 @@ class _ActivityTrackerViewState extends State<ActivityTrackerView> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Today Target",
+                          AppStrings.todayTarget,
                           style: TextStyle(
                             color: AppColor.black,
                             fontSize: 16,
                             fontWeight: FontWeight.w700,
-                            fontFamily: 'Hind',
+                            fontFamily: AppStrings.fontFamilyHind,
                           ),
                         ),
                         SizedBox(
@@ -168,9 +167,10 @@ class _ActivityTrackerViewState extends State<ActivityTrackerView> {
                       children: [
                         Expanded(
                           child: TodayTargetCell(
-                            icon: "assets/img/glass_1.png",
-                            value: "8L",
-                            title: "Water Intake",
+                            icon: AppAssets.glassIcon,
+                            value:
+                                "8L", // this value should be dynamic based on user data in future
+                            title: AppStrings.waterIntake,
                           ),
                         ),
                         SizedBox(
@@ -178,9 +178,10 @@ class _ActivityTrackerViewState extends State<ActivityTrackerView> {
                         ),
                         Expanded(
                           child: TodayTargetCell(
-                            icon: "assets/img/foot.png",
-                            value: "2400",
-                            title: "Foot Steps",
+                            icon: AppAssets.footIcon,
+                            value:
+                                "2400", // this value should be dynamic based on user data in future
+                            title: AppStrings.footSteps,
                           ),
                         ),
                       ],
@@ -195,12 +196,12 @@ class _ActivityTrackerViewState extends State<ActivityTrackerView> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Activity  Progress",
+                    AppStrings.activityProgress,
                     style: TextStyle(
                       color: AppColor.black,
                       fontSize: 18,
                       fontWeight: FontWeight.w700,
-                      fontFamily: 'Khand',
+                      fontFamily: AppStrings.fontFamilyPoppins,
                     ),
                   ),
                   Container(
@@ -214,7 +215,7 @@ class _ActivityTrackerViewState extends State<ActivityTrackerView> {
                       ),
                       child: DropdownButtonHideUnderline(
                         child: DropdownButton(
-                          items: ["Weekly", "Monthly"]
+                          items: [AppStrings.weekly, AppStrings.monthly]
                               .map((name) => DropdownMenuItem(
                                     value: name,
                                     child: Text(
@@ -223,7 +224,8 @@ class _ActivityTrackerViewState extends State<ActivityTrackerView> {
                                           color: AppColor.gray,
                                           fontSize: 14,
                                           fontWeight: FontWeight.w500,
-                                          fontFamily: 'Hind'),
+                                          fontFamily:
+                                              AppStrings.fontFamilyHind),
                                     ),
                                   ))
                               .toList(),
@@ -231,13 +233,13 @@ class _ActivityTrackerViewState extends State<ActivityTrackerView> {
                           icon: Icon(Icons.expand_more,
                               color: AppColor.primaryColor1),
                           hint: Text(
-                            "Weekly",
+                            AppStrings.weekly,
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               color: AppColor.primaryColor1,
                               fontSize: 14,
                               fontWeight: FontWeight.w500,
-                              fontFamily: 'Hind',
+                              fontFamily: AppStrings.fontFamilyHind,
                             ),
                           ),
                         ),
@@ -267,25 +269,25 @@ class _ActivityTrackerViewState extends State<ActivityTrackerView> {
                         String weekDay;
                         switch (group.x) {
                           case 0:
-                            weekDay = 'Monday';
+                            weekDay = AppStrings.mondayComplete;
                             break;
                           case 1:
-                            weekDay = 'Tuesday';
+                            weekDay = AppStrings.tuesdayComplete;
                             break;
                           case 2:
-                            weekDay = 'Wednesday';
+                            weekDay = AppStrings.wednesdayComplete;
                             break;
                           case 3:
-                            weekDay = 'Thursday';
+                            weekDay = AppStrings.thursdayComplete;
                             break;
                           case 4:
-                            weekDay = 'Friday';
+                            weekDay = AppStrings.fridayComplete;
                             break;
                           case 5:
-                            weekDay = 'Saturday';
+                            weekDay = AppStrings.saturdayComplete;
                             break;
                           case 6:
-                            weekDay = 'Sunday';
+                            weekDay = AppStrings.sundayComplete;
                             break;
                           default:
                             throw Error();
@@ -358,24 +360,24 @@ class _ActivityTrackerViewState extends State<ActivityTrackerView> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Latest Workout",
+                    AppStrings.latestWorkout,
                     style: TextStyle(
                         color: AppColor.black,
                         fontSize: 18,
                         fontWeight: FontWeight.w700,
-                        fontFamily: 'Khand'),
+                        fontFamily: AppStrings.fontFamilyPoppins),
                   ),
                   TextButton(
                     onPressed: () {
                       //Function to go to see more page
                     },
                     child: Text(
-                      "See More",
+                      AppStrings.seeMore,
                       style: TextStyle(
                           color: AppColor.gray,
                           fontSize: 14,
                           fontWeight: FontWeight.w500,
-                          fontFamily: 'Hind'),
+                          fontFamily: AppStrings.fontFamilyHind),
                     ),
                   )
                 ],
@@ -404,30 +406,30 @@ class _ActivityTrackerViewState extends State<ActivityTrackerView> {
       color: AppColor.gray,
       fontWeight: FontWeight.w500,
       fontSize: 13,
-      fontFamily: 'Hind',
+      fontFamily: AppStrings.fontFamilyHind,
     );
     Widget text;
     switch (value.toInt()) {
       case 0:
-        text = Text('Sun', style: style);
+        text = Text(AppStrings.sunday, style: style);
         break;
       case 1:
-        text = Text('Mon', style: style);
+        text = Text(AppStrings.monday, style: style);
         break;
       case 2:
-        text = Text('Tue', style: style);
+        text = Text(AppStrings.tuesday, style: style);
         break;
       case 3:
-        text = Text('Wed', style: style);
+        text = Text(AppStrings.wednesday, style: style);
         break;
       case 4:
-        text = Text('Thu', style: style);
+        text = Text(AppStrings.thursday, style: style);
         break;
       case 5:
-        text = Text('Fri', style: style);
+        text = Text(AppStrings.friday, style: style);
         break;
       case 6:
-        text = Text('Sat', style: style);
+        text = Text(AppStrings.saturday, style: style);
         break;
       default:
         text = Text('', style: style);

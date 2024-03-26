@@ -34,7 +34,7 @@ class CreateAccount extends StatelessWidget {
                       SizedBox(height: media.width * 0.4),
                       NormalButton(
                         textColor: AppColor.white,
-                        text: AppString.createAccount,
+                        text: AppStrings.createAccount,
                         onPressed: () {
                           Navigator.push(
                             context,
@@ -52,7 +52,7 @@ class CreateAccount extends StatelessWidget {
                       SizedBox(height: media.width * 0.06),
                       NormalButton(
                         textColor: AppColor.primaryColor1,
-                        text: AppString.login,
+                        text: AppStrings.login,
                         onPressed: () {
                           Navigator.push(
                             context,
