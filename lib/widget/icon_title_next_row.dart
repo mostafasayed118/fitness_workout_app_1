@@ -1,3 +1,5 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../common/colo_extension.dart';
@@ -48,7 +50,7 @@ class IconTitleNextRow extends StatelessWidget {
                   color: AppColor.gray,
                   fontSize: 13,
                   fontWeight: FontWeight.w500,
-                  fontFamily: 'Hind',
+                  fontFamily: AppStrings.fontFamilyHind,
                 ),
               ),
             ),
@@ -61,7 +63,7 @@ class IconTitleNextRow extends StatelessWidget {
                   color: AppColor.gray,
                   fontSize: 12,
                   fontWeight: FontWeight.w500,
-                  fontFamily: 'Hind',
+                  fontFamily: AppStrings.fontFamilyHind,
                 ),
               ),
             ),
@@ -74,7 +76,7 @@ class IconTitleNextRow extends StatelessWidget {
                 height: 25,
                 alignment: Alignment.center,
                 child: Image.asset(
-                  "assets/img/p_next.png",
+                  AppAssets.rightArrowBlackIcon,
                   width: 12,
                   height: 12,
                   fit: BoxFit.contain,

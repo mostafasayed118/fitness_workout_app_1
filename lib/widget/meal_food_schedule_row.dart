@@ -1,4 +1,6 @@
 // import 'package:fitness/common/colo_extension.dart';
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../common/colo_extension.dart';
@@ -47,7 +49,7 @@ class MealFoodScheduleRow extends StatelessWidget {
                     color: AppColor.black,
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
-                    fontFamily: 'Khand',
+                    fontFamily: AppStrings.fontFamilyPoppins,
                   ),
                 ),
                 Text(
@@ -64,7 +66,7 @@ class MealFoodScheduleRow extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: Image.asset(
-              "assets/img/Icon_Next.png",
+              AppAssets.rightArrowGradinNormalIcon,
               width: 30,
               height: 30,
             ),

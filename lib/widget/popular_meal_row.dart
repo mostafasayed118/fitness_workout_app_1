@@ -1,3 +1,5 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../common/colo_extension.dart';
@@ -39,7 +41,7 @@ class PopularMealRow extends StatelessWidget {
                       color: AppColor.black,
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
-                      fontFamily: 'khand',
+                      fontFamily: AppStrings.fontFamilyPoppins,
                     ),
                   ),
                   Text(
@@ -56,7 +58,7 @@ class PopularMealRow extends StatelessWidget {
             IconButton(
               onPressed: () {},
               icon: Image.asset(
-                "assets/img/Icon_Next.png",
+                AppAssets.rightArrowGradinNormalIcon,
                 width: 25,
                 height: 25,
               ),

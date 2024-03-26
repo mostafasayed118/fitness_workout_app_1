@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
@@ -18,13 +19,13 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
   List todaySleepArr = [
     {
       "name": "Bedtime",
-      "image": "assets/img/bed.png",
+      "image": "assets/images/bed.png",
       "time": "17/02/2024 09:00 PM",
       "duration": "in 6hours 22minutes"
     },
     {
       "name": "Alarm",
-      "image": "assets/img/alaarm.png",
+      "image": "assets/images/alaarm.png",
       "time": "18/02/2024 05:10 AM",
       "duration": "in 14hours 30minutes"
     },
@@ -33,10 +34,10 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
   List findEatArr = [
     {
       "name": "Breakfast",
-      "image": "assets/img/m_3.png",
+      "image": "assets/images/m_3.png",
       "number": "120+ Foods"
     },
-    {"name": "Lunch", "image": "assets/img/m_4.png", "number": "130+ Foods"},
+    {"name": "Lunch", "image": "assets/images/m_4.png", "number": "130+ Foods"},
   ];
 
   List<int> showingTooltipOnSpots = [4];
@@ -63,7 +64,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
                 // color: TColor.lightGray,
                 borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              "assets/img/not_butt.png",
+              AppAssets.leftArrowIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -91,7 +92,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
                   // color: TColor.lightGray,
                   borderRadius: BorderRadius.circular(10)),
               child: Image.asset(
-                "assets/img/not_btn_1.png",
+              AppAssets.twoDotsIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,
@@ -256,7 +257,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
                                   width: media.width * 0.05,
                                 ),
                                 Image.asset(
-                                  "assets/img/stars.png",
+                                  "assets/images/stars.png",
                                   width: 30,
                                 )
                               ],
@@ -274,7 +275,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
                           ),
                           const Spacer(),
                           Image.asset(
-                            "assets/img/SleepGraph.png",
+                            "assets/images/SleepGraph.png",
                             width: double.maxFinite,
                           )
                         ]),
@@ -321,24 +322,7 @@ class _SleepTrackerViewState extends State<SleepTrackerView> {
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
                           ),
-                          // RoundButton(
-                          //   title: "Check",
-                          //   type: RoundButtonType.bgGradient,
-                          //   fontSize: 12,
-                          //   fontWeight: FontWeight.w400,
-                          //   onPressed: () {},
-                          // () {
-                          //   Navigator.push(
-                          //     context,
-                          //     MaterialPageRoute(
-                          //       builder: (context) =>
-                          //           const SleepScheduleView(),
-                          //     ),
-                          //   );
-                          // },
-
-                          //   elevation: 0,
-                          // ),
+                          
                         ),
                       ],
                     ),

@@ -1,4 +1,5 @@
 import 'package:fitness_workout_app_1/common/colo_extension.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 class RoundTextfield extends StatelessWidget {
@@ -40,7 +41,7 @@ class RoundTextfield extends StatelessWidget {
           focusedBorder: InputBorder.none,
           hintText: hitText,
           hintStyle: TextStyle(
-            fontFamily: 'Hind',
+            fontFamily: AppStrings.fontFamilyHind,
             fontWeight: FontWeight.w700,
             color: AppColor.primaryColor1,
           ),
@@ -60,7 +61,7 @@ class RoundTextfield extends StatelessWidget {
             color: AppColor.gray,
             fontSize: 12,
             fontWeight: FontWeight.w500,
-            fontFamily: 'Hind',
+            fontFamily: AppStrings.fontFamilyHind,
           ),
         ),
       ),

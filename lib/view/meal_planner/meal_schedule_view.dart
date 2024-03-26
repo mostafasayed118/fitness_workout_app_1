@@ -1,4 +1,5 @@
 import 'package:calendar_agenda/calendar_agenda.dart';
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_animation_progress_bar/simple_animation_progress_bar.dart';
 
@@ -24,61 +25,61 @@ class _MealScheduleViewState extends State<MealScheduleView> {
     {
       "name": "Honey Pancake",
       "time": "07:00 PM",
-      "image": "assets/img/honey_pan.png"
+      "image": "assets/images/honey_pan.png"
     },
-    {"name": "Coffee", "time": "07:30 PM", "image": "assets/img/coffee.png"},
+    {"name": "Coffee", "time": "07:30 PM", "image": "assets/images/coffee.png"},
   ];
 
   List lunchArr = [
     {
       "name": "Chicken Steak",
       "time": "01:00 PM",
-      "image": "assets/img/chicken.png"
+      "image": "assets/images/chicken.png"
     },
     {
       "name": "Milk",
       "time": "01:20 PM",
-      "image": "assets/img/glass-of-milk 1.png"
+      "image": "assets/images/glass-of-milk 1.png"
     },
   ];
   List snacksArr = [
-    {"name": "Orange", "time": "04:30pm", "image": "assets/img/orange.png"},
+    {"name": "Orange", "time": "04:30pm", "image": "assets/images/orange.png"},
     {
       "name": "Apple Pie",
       "time": "04:40 PM",
-      "image": "assets/img/apple_pie.png"
+      "image": "assets/images/apple_pie.png"
     },
   ];
   List dinnerArr = [
-    {"name": "Salad", "time": "07:10 PM", "image": "assets/img/salad.png"},
-    {"name": "Oatmeal", "time": "08:10 PM", "image": "assets/img/oatmeal.png"},
+    {"name": "Salad", "time": "07:10 PM", "image": "assets/images/salad.png"},
+    {"name": "Oatmeal", "time": "08:10 PM", "image": "assets/images/oatmeal.png"},
   ];
 
   List nutritionArr = [
     {
       "title": "Calories",
-      "image": "assets/img/burn.png",
+      "image": "assets/images/burn.png",
       "unit_name": "kCal",
       "value": "350",
       "max_value": "500",
     },
     {
       "title": "Proteins",
-      "image": "assets/img/proteins.png",
+      "image": "assets/images/proteins.png",
       "unit_name": "g",
       "value": "300",
       "max_value": "1000",
     },
     {
       "title": "Fats",
-      "image": "assets/img/egg.png",
+      "image": "assets/images/egg.png",
       "unit_name": "g",
       "value": "250",
       "max_value": "1000",
     },
     {
       "title": "Carbo",
-      "image": "assets/img/carbo.png",
+      "image": "assets/images/carbo.png",
       "unit_name": "g",
       "value": "140",
       "max_value": "1000",
@@ -112,7 +113,7 @@ class _MealScheduleViewState extends State<MealScheduleView> {
                 // color: TColor.lightGray,
                 borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              "assets/img/not_butt.png",
+              AppAssets.leftArrowIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -147,7 +148,7 @@ class _MealScheduleViewState extends State<MealScheduleView> {
                   // color: TColor.lightGray,
                   borderRadius: BorderRadius.circular(10)),
               child: Image.asset(
-                "assets/img/not_btn_1.png",
+                AppAssets.twoDotsIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,
@@ -167,14 +168,14 @@ class _MealScheduleViewState extends State<MealScheduleView> {
             leading: IconButton(
                 onPressed: () {},
                 icon: Image.asset(
-                  "assets/img/ArrowLeft.png",
+                  AppAssets.leftArrowGrayIcon,
                   width: 15,
                   height: 15,
                 )),
             training: IconButton(
                 onPressed: () {},
                 icon: Image.asset(
-                  "assets/img/ArrowRight.png",
+                AppAssets.rightArrowGrayIcon,
                   width: 15,
                   height: 15,
                 )),
@@ -385,7 +386,7 @@ class _MealScheduleViewState extends State<MealScheduleView> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Today Meal Nutritions",
+                          "Today Meal Nutrition",
                           style: TextStyle(
                             color: AppColor.black,
                             fontSize: 18,

@@ -1,4 +1,5 @@
 import 'package:animated_toggle_switch/animated_toggle_switch.dart';
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:flutter/material.dart';
 
@@ -41,7 +42,7 @@ class _SleepAddAlarmViewState extends State<SleepAddAlarmView> {
                 // color: TColor.lightGray,
                 borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              "assets/img/not_butt.png",
+             AppAssets.leftArrowIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -76,7 +77,7 @@ class _SleepAddAlarmViewState extends State<SleepAddAlarmView> {
                   // color: TColor.lightGray,
                   borderRadius: BorderRadius.circular(10)),
               child: Image.asset(
-                "assets/img/not_btn_1.png",
+                AppAssets.twoDotsIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,
@@ -93,7 +94,7 @@ class _SleepAddAlarmViewState extends State<SleepAddAlarmView> {
             height: 8,
           ),
           IconTitleNextRow(
-              icon: "assets/img/Bed_Add.png",
+              icon: "assets/images/Bed_Add.png",
               title: "Bedtime",
               time: "09:00 PM",
               color: AppColor.lightGray,
@@ -102,7 +103,7 @@ class _SleepAddAlarmViewState extends State<SleepAddAlarmView> {
             height: 10,
           ),
           IconTitleNextRow(
-              icon: "assets/img/HoursTime.png",
+              icon: "assets/images/HoursTime.png",
               title: "Hours of sleep",
               time: "8 hours | 30 minutes",
               color: AppColor.lightGray,
@@ -111,7 +112,7 @@ class _SleepAddAlarmViewState extends State<SleepAddAlarmView> {
             height: 10,
           ),
           IconTitleNextRow(
-              icon: "assets/img/Repeat.png",
+              icon: "assets/images/Repeat.png",
               title: "Repeat",
               time: "Mon to Fri",
               color: AppColor.lightGray,
@@ -136,7 +137,7 @@ class _SleepAddAlarmViewState extends State<SleepAddAlarmView> {
                   height: 30,
                   alignment: Alignment.center,
                   child: Image.asset(
-                    "assets/img/Vibrate.png",
+                    "assets/images/Vibrate.png",
                     width: 18,
                     height: 18,
                     fit: BoxFit.contain,
@@ -222,13 +223,7 @@ class _SleepAddAlarmViewState extends State<SleepAddAlarmView> {
               heightSize: 60,
               borderColor: AppColor.primaryColor1,
               fontSize: 18)
-          // RoundButton(
-          //   title: "Add",
-          //   onPressed: () {},
-          //   fontSize: 15,
-          //   fontWeight: FontWeight.bold,
-          //   elevation: 0,
-          // )
+          
           ,
           const SizedBox(
             height: 20,

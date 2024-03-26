@@ -79,7 +79,7 @@ class _NotificationViewState extends State<NotificationView> {
             alignment: Alignment.center,
             decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              AppAssets.rightArrowIcon,
+              AppAssets.leftArrowIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,

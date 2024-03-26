@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:flutter/material.dart';
 import '../../common/colo_extension.dart';
@@ -38,7 +39,7 @@ class _ComparisonViewState extends State<ComparisonView> {
                 // color: TColor.lightGray,
                 borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              "assets/img/not_butt.png",
+            AppAssets.leftArrowIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -69,7 +70,7 @@ class _ComparisonViewState extends State<ComparisonView> {
                   // color: TColor.lightGray,
                   borderRadius: BorderRadius.circular(10)),
               child: Image.asset(
-                "assets/img/not_btn_1.png",
+              AppAssets.twoDotsIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,
@@ -84,7 +85,7 @@ class _ComparisonViewState extends State<ComparisonView> {
         child: Column(
           children: [
             IconTitleNextRow(
-                icon: "assets/img/date.png",
+                icon: "assets/images/date.png",
                 title: "Select Month 1",
                 time: "May",
                 onPressed: () {},
@@ -93,7 +94,7 @@ class _ComparisonViewState extends State<ComparisonView> {
               height: 15,
             ),
             IconTitleNextRow(
-                icon: "assets/img/date.png",
+                icon: "assets/images/date.png",
                 title: "Select Month 2",
                 time: "select Month",
                 onPressed: () {},
@@ -118,23 +119,7 @@ class _ComparisonViewState extends State<ComparisonView> {
                 heightSize: 55,
                 borderColor: AppColor.primaryColor1,
                 fontSize: 16),
-            // RoundButton(
-            //   title: "Compare",
-            //   onPressed: () {
-            // Navigator.push(
-            //   context,
-            //   MaterialPageRoute(
-            //     builder: (context) => ResultView(
-            //       date1: DateTime(2024, 1, 1),
-            //       date2: DateTime(2024, 2, 1),
-            //     ),
-            //   ),
-            // );
-            //   },
-            //   fontSize: 16,
-            //   elevation: 0,
-            //   fontWeight: FontWeight.normal,
-            // ),
+           
 
             const SizedBox(
               height: 15,

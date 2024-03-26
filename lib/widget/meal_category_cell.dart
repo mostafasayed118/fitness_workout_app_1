@@ -18,17 +18,6 @@ class MealCategoryCell extends StatelessWidget {
           color: isEvent
               ? AppColor.primaryColor4.withOpacity(0.3)
               : AppColor.primaryColor7.withOpacity(0.3),
-          // gradient: LinearGradient(
-          //   colors: isEvent
-          //       ? [
-          //           TColor.primaryColor2.withOpacity(0.5),
-          //           TColor.primaryColor1.withOpacity(0.5)
-          //         ]
-          //       : [
-          //           TColor.secondaryColor2.withOpacity(0.5),
-          //           TColor.secondaryColor1.withOpacity(0.5)
-          //         ],
-          // ),
           borderRadius: BorderRadius.circular(15)),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

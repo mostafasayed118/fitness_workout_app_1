@@ -1,4 +1,5 @@
 import 'package:dotted_dashed_line/dotted_dashed_line.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../common/colo_extension.dart';
@@ -56,7 +57,7 @@ class FoodStepDetailRow extends StatelessWidget {
                   color: AppColor.black,
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
-                  fontFamily: 'khand',
+                  fontFamily: AppStrings.fontFamilyPoppins,
                 ),
               ),
               Text(

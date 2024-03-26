@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
@@ -65,7 +66,7 @@ class _ExercisesStepDetailsState extends State<ExercisesStepDetails> {
                 // color: TColor.lightGray,
                 borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              "assets/img/Close_Navs.png",
+              AppAssets.closeIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -91,7 +92,7 @@ class _ExercisesStepDetailsState extends State<ExercisesStepDetails> {
                   // color: TColor.lightGray,
                   borderRadius: BorderRadius.circular(10)),
               child: Image.asset(
-                "assets/img/not_btn_1.png",
+               AppAssets.twoDotsIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,
@@ -121,7 +122,7 @@ class _ExercisesStepDetailsState extends State<ExercisesStepDetails> {
                         ),
                         borderRadius: BorderRadius.circular(20)),
                     child: Image.asset(
-                      "assets/img/Video_Section.png",
+                      "assets/images/Video_Section.png",
                       width: media.width,
                       height: media.width * 0.43,
                       fit: BoxFit.contain,
@@ -137,7 +138,7 @@ class _ExercisesStepDetailsState extends State<ExercisesStepDetails> {
                   IconButton(
                     onPressed: () {},
                     icon: Image.asset(
-                      "assets/img/Play.png",
+                      "assets/images/Play.png",
                       width: 28,
                       height: 28,
                     ),
@@ -281,7 +282,7 @@ class _ExercisesStepDetailsState extends State<ExercisesStepDetails> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image.asset(
-                          "assets/img/burn.png",
+                          "assets/images/burn.png",
                           width: 15,
                           height: 15,
                           fit: BoxFit.contain,

@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:flutter/material.dart';
 
 import '../../common/colo_extension.dart';
@@ -22,51 +23,51 @@ class _MealFoodDetailsViewState extends State<MealFoodDetailsView> {
   List categoryArr = [
     {
       "name": "Salad",
-      "image": "assets/img/c_1.png",
+      "image": "assets/images/c_1.png",
     },
     {
       "name": "Cake",
-      "image": "assets/img/c_2.png",
+      "image": "assets/images/c_2.png",
     },
     {
       "name": "Pie",
-      "image": "assets/img/c_3.png",
+      "image": "assets/images/c_3.png",
     },
     {
       "name": "Smoothies",
-      "image": "assets/img/c_4.png",
+      "image": "assets/images/c_4.png",
     },
     {
       "name": "Salad",
-      "image": "assets/img/c_1.png",
+      "image": "assets/images/c_1.png",
     },
     {
       "name": "Cake",
-      "image": "assets/img/c_2.png",
+      "image": "assets/images/c_2.png",
     },
     {
       "name": "Pie",
-      "image": "assets/img/c_3.png",
+      "image": "assets/images/c_3.png",
     },
     {
       "name": "Smoothies",
-      "image": "assets/img/c_4.png",
+      "image": "assets/images/c_4.png",
     },
   ];
 
   List popularArr = [
     {
       "name": "Blueberry Pancake",
-      "image": "assets/img/f_1.png",
-      "b_image": "assets/img/pancake_1.png",
+      "image": "assets/images/f_1.png",
+      "b_image": "assets/images/pancake_1.png",
       "size": "Medium",
       "time": "30 mins",
       "kcal": "230 kCal"
     },
     {
       "name": "Salmon Nigiri",
-      "image": "assets/img/f_2.png",
-      "b_image": "assets/img/nigiri.png",
+      "image": "assets/images/f_2.png",
+      "b_image": "assets/images/nigiri.png",
       "size": "Medium",
       "time": "20 mins",
       "kcal": "120 kCal"
@@ -76,14 +77,14 @@ class _MealFoodDetailsViewState extends State<MealFoodDetailsView> {
   List recommendArr = [
     {
       "name": "Honey Pancake",
-      "image": "assets/img/rd_1.png",
+      "image": "assets/images/rd_1.png",
       "size": "Easy",
       "time": "30 mins",
       "kcal": "180 kCal"
     },
     {
       "name": "Canai Bread",
-      "image": "assets/img/m_4.png",
+      "image": "assets/images/m_4.png",
       "size": "Easy",
       "time": "20 mins",
       "kcal": "230 kCal"
@@ -113,7 +114,7 @@ class _MealFoodDetailsViewState extends State<MealFoodDetailsView> {
               borderRadius: BorderRadius.circular(10),
             ),
             child: Image.asset(
-              "assets/img/not_butt.png",
+              AppAssets.leftArrowIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -148,7 +149,7 @@ class _MealFoodDetailsViewState extends State<MealFoodDetailsView> {
                   // color: TColor.lightGray,
                   borderRadius: BorderRadius.circular(10)),
               child: Image.asset(
-                "assets/img/not_btn_1.png",
+               AppAssets.twoDotsIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,
@@ -183,7 +184,7 @@ class _MealFoodDetailsViewState extends State<MealFoodDetailsView> {
                       focusedBorder: InputBorder.none,
                       enabledBorder: InputBorder.none,
                       prefixIcon: Image.asset(
-                        "assets/img/search.png",
+                        "assets/images/search.png",
                         width: 25,
                         height: 25,
                       ),
@@ -202,7 +203,7 @@ class _MealFoodDetailsViewState extends State<MealFoodDetailsView> {
                   InkWell(
                     onTap: () {},
                     child: Image.asset(
-                      "assets/img/Filter.png",
+                      "assets/images/Filter.png",
                       width: 20,
                       height: 20,
                     ),

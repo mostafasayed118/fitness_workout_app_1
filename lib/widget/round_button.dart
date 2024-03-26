@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../common/colo_extension.dart';
@@ -60,7 +61,7 @@ class RoundButton extends StatelessWidget {
                   color: AppColor.white,
                   fontSize: fontSize,
                   fontWeight: fontWeight,
-                  fontFamily: 'Hind',
+                  fontFamily: AppStrings.fontFamilyHind,
                 ),
               )
             : ShaderMask(

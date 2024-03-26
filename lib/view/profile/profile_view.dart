@@ -1,4 +1,5 @@
 import 'package:animated_toggle_switch/animated_toggle_switch.dart';
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:fitness_workout_app_1/view/main_tab/main_tab_view.dart';
 import 'package:flutter/material.dart';
@@ -23,27 +24,27 @@ class _ProfileViewState extends State<ProfileView> {
 
   List accountArr = [
     {
-      "image": "assets/img/icon_profile.png",
+      "image": AppAssets.profileIcon,
       "name": "Personal Data",
       "tag": "1"
     },
     {
-      "image": "assets/img/Icon_Achievement.png",
+      "image": "assets/icons/Icon_Achievement.png",
       "name": "Achievement",
       "tag": "2"
     },
-    {"image": "assets/img/Graph.png", "name": "Activity History", "tag": "3"},
-    {"image": "assets/img/Chart.png", "name": "Workout Progress", "tag": "4"}
+    {"image": "assets/images/Graph.png", "name": "Activity History", "tag": "3"},
+    {"image": "assets/images/Chart.png", "name": "Workout Progress", "tag": "4"}
   ];
 
   List otherArr = [
-    {"image": "assets/img/Icon_Message.png", "name": "Contact Us", "tag": "5"},
+    {"image": "assets/icons/Icon_Message.png", "name": "Contact Us", "tag": "5"},
     {
-      "image": "assets/img/Shield_Done.png",
+      "image": "assets/images/Shield_Done.png",
       "name": "Privacy Policy",
       "tag": "6"
     },
-    {"image": "assets/img/dark_mode.png", "name": "Dark Mode", "tag": "7"},
+    {"image": "assets/images/dark_mode.png", "name": "Dark Mode", "tag": "7"},
   ];
   @override
   Widget build(BuildContext context) {
@@ -68,7 +69,7 @@ class _ProfileViewState extends State<ProfileView> {
                 // color: TColor.lightGray,
                 borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              "assets/img/not_butt.png",
+             AppAssets.leftArrowIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -104,7 +105,7 @@ class _ProfileViewState extends State<ProfileView> {
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Image.asset(
-                "assets/img/not_btn_1.png",
+              AppAssets.twoDotsIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,
@@ -125,7 +126,7 @@ class _ProfileViewState extends State<ProfileView> {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(30),
                     child: Image.asset(
-                      "assets/img/latest_workout_2.png",
+                      "assets/images/latest_workout_2.png",
                       width: 50,
                       height: 50,
                       fit: BoxFit.cover,
@@ -179,20 +180,8 @@ class _ProfileViewState extends State<ProfileView> {
                           heightSize: 25,
                           borderColor: AppColor.primaryColor1,
                           fontSize: 15)
-                      // RoundButton(
-                      //   title: "Edit",
-                      //   type: RoundButtonType.bgGradient,
-                      //   fontSize: 12,
-                      //   fontWeight: FontWeight.w400,
-                      // onPressed: () {
-                      //   Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //       builder: (context) => const ActivityTrackerView(),
-                      //     ),
-                      //   );
-                      // },
-                      // ),
+                     
+                      
                       )
                 ],
               ),
@@ -301,7 +290,7 @@ class _ProfileViewState extends State<ProfileView> {
                       child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Image.asset("assets/img/Icon_Notif.png",
+                            Image.asset("assets/images/Icon_Notif.png",
                                 height: 15, width: 15, fit: BoxFit.contain),
                             const SizedBox(
                               width: 15,
@@ -414,7 +403,7 @@ class _ProfileViewState extends State<ProfileView> {
                       child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Image.asset("assets/img/dark_mode.png",
+                            Image.asset("assets/images/dark_mode.png",
                                 height: 15, width: 15, fit: BoxFit.contain),
                             const SizedBox(
                               width: 15,
@@ -498,7 +487,7 @@ class _ProfileViewState extends State<ProfileView> {
                       child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Image.asset("assets/img/dark_mode.png",
+                            Image.asset("assets/images/dark_mode.png",
                                 height: 15, width: 15, fit: BoxFit.contain),
                             const SizedBox(
                               width: 15,

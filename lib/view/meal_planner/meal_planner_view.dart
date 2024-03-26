@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
@@ -21,12 +22,12 @@ class _MealPlannerViewState extends State<MealPlannerView> {
   List todayMealArr = [
     {
       "name": "Salmon Nigiri",
-      "image": "assets/img/m_1.png",
+      "image": "assets/images/m_1.png",
       "time": "28/02/2024 07:00 AM"
     },
     {
       "name": "Low fat Milk",
-      "image": "assets/img/m_2.png",
+      "image": "assets/images/m_2.png",
       "time": "29/02/2024 08:00 AM"
     },
   ];
@@ -34,10 +35,10 @@ class _MealPlannerViewState extends State<MealPlannerView> {
   List findEatArr = [
     {
       "name": "Breakfast",
-      "image": "assets/img/m_3.png",
+      "image": "assets/images/m_3.png",
       "number": "120+ Foods"
     },
-    {"name": "Lunch", "image": "assets/img/m_4.png", "number": "130+ Foods"},
+    {"name": "Lunch", "image": "assets/images/m_4.png", "number": "130+ Foods"},
   ];
 
   @override
@@ -62,7 +63,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                 // color: TColor.lightGray,
                 borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              "assets/img/not_butt.png",
+              AppAssets.leftArrowIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -97,7 +98,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                   // color: TColor.lightGray,
                   borderRadius: BorderRadius.circular(10)),
               child: Image.asset(
-                "assets/img/not_btn_1.png",
+                AppAssets.twoDotsIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,
@@ -120,7 +121,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Meal Nutritions",
+                        "Meal Nutrition",
                         style: TextStyle(
                           color: AppColor.black,
                           fontSize: 18,
@@ -312,7 +313,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                             textColor: AppColor.primaryColor1,
                             text: 'Check',
                             onPressed: () {
-                              //Go to next scrren
+                              //Go to next page
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
@@ -326,22 +327,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
                           ),
-                          // RoundButton(
-                          //   title: "Check",
-                          //   type: RoundButtonType.bgGradient,
-                          //   fontSize: 12,
-                          //   fontWeight: FontWeight.w400,
-                          //   onPressed: () {
-                          //     Navigator.push(
-                          //       context,
-                          //       MaterialPageRoute(
-                          //         builder: (context) =>
-                          //             const MealScheduleView(),
-                          //       ),
-                          //     );
-                          //   },
-                          //   elevation: 0,
-                          // ),
+                          
                         )
                       ],
                     ),
@@ -478,10 +464,7 @@ class _MealPlannerViewState extends State<MealPlannerView> {
   LineChartBarData get lineChartBarData1_1 => LineChartBarData(
         isCurved: true,
         color: AppColor.primaryColor4,
-        // gradient: LinearGradient(colors: [
-        //   TColor.primaryColor2,
-        //   TColor.primaryColor1,
-        // ]),
+      
         barWidth: 2,
         isStrokeCapRound: true,
         dotData: FlDotData(

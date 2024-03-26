@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
@@ -24,23 +25,23 @@ class _ResultViewState extends State<ResultView> {
   List imaArr = [
     {
       "title": "Front Facing",
-      "month_1_image": "assets/img/pp_1.png",
-      "month_2_image": "assets/img/pp_2.png",
+      "month_1_image": "assets/images/pp_1.png",
+      "month_2_image": "assets/images/pp_2.png",
     },
     {
       "title": "Back Facing",
-      "month_1_image": "assets/img/pp_3.png",
-      "month_2_image": "assets/img/pp_4.png",
+      "month_1_image": "assets/images/pp_3.png",
+      "month_2_image": "assets/images/pp_4.png",
     },
     {
       "title": "Left Facing",
-      "month_1_image": "assets/img/pp_5.png",
-      "month_2_image": "assets/img/pp_6.png",
+      "month_1_image": "assets/images/pp_5.png",
+      "month_2_image": "assets/images/pp_6.png",
     },
     {
       "title": "Right Facing",
-      "month_1_image": "assets/img/pp_7.png",
-      "month_2_image": "assets/img/pp_8.png",
+      "month_1_image": "assets/images/pp_7.png",
+      "month_2_image": "assets/images/pp_8.png",
     },
   ];
 
@@ -96,7 +97,7 @@ class _ResultViewState extends State<ResultView> {
                 // color: TColor.lightGray,
                 borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              "assets/img/not_butt.png",
+             AppAssets.leftArrowIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -133,7 +134,7 @@ class _ResultViewState extends State<ResultView> {
                   // color: TColor.lightGray,
                   borderRadius: BorderRadius.circular(10)),
               child: Image.asset(
-                "assets/img/Share_img.png",
+                "assets/images/Share_img.png",
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,
@@ -158,7 +159,7 @@ class _ResultViewState extends State<ResultView> {
                   // color: TColor.lightGray,
                   borderRadius: BorderRadius.circular(10)),
               child: Image.asset(
-                "assets/img/not_btn_1.png",
+                AppAssets.twoDotsIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,
@@ -429,15 +430,7 @@ class _ResultViewState extends State<ResultView> {
                       borderColor: AppColor.primaryColor1,
                       fontSize: 18,
                     )
-                    // RoundButton(
-                    //   title: "Back to Home",
-                    // onPressed: () {
-                    //   Navigator.pop(context);
-                    // },
-                    //   fontSize: 16,
-                    //   elevation: 0,
-                    //   fontWeight: FontWeight.normal,
-                    // ),
+                   
                     ,
                     const SizedBox(
                       height: 15,

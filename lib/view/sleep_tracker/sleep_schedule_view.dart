@@ -1,4 +1,5 @@
 import 'package:calendar_agenda/calendar_agenda.dart';
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:fitness_workout_app_1/widget/normal_button.dart';
 
 import 'package:flutter/material.dart';
@@ -25,13 +26,13 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
   List todaySleepArr = [
     {
       "name": "Bedtime",
-      "image": "assets/img/bed.png",
+      "image": "assets/images/bed.png",
       "time": "28/02/2024 09:00 PM",
       "duration": "in 6 hours | 22 minutes"
     },
     {
       "name": "Alarm",
-      "image": "assets/img/alaarm.png",
+      "image": "assets/images/alaarm.png",
       "time": "29/02/2024 05:10 AM",
       "duration": "in 14 hours | 30 minutes"
     },
@@ -66,7 +67,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                 // color: TColor.lightGray,
                 borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              "assets/img/not_butt.png",
+              AppAssets.leftArrowIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -101,7 +102,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                   // color: TColor.lightGray,
                   borderRadius: BorderRadius.circular(10)),
               child: Image.asset(
-                "assets/img/not_btn_1.png",
+                AppAssets.twoDotsIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,
@@ -127,10 +128,7 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                     height: media.width * 0.4,
                     decoration: BoxDecoration(
                         color: AppColor.primaryColor4.withOpacity(0.3),
-                        // gradient: LinearGradient(colors: [
-                        //   TColor.primaryColor2.withOpacity(0.4),
-                        //   TColor.primaryColor1.withOpacity(0.4)
-                        // ]),
+                        
                         borderRadius: BorderRadius.circular(20)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -173,18 +171,12 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                                 borderColor: AppColor.primaryColor1,
                                 fontSize: 14,
                               ),
-                              // RoundButton(
-                              //   title: "Learn More",
-                              //   fontSize: 12,
-                              //   onPressed: () {},
-                              //   fontWeight: FontWeight.normal,
-                              //   elevation: 0,
-                              // ),
+                             
                             ),
                           ],
                         ),
                         Image.asset(
-                          "assets/img/sleep_layer.png",
+                          "assets/images/sleep_layer.png",
                           width: media.width * 0.35,
                         )
                       ],
@@ -214,14 +206,14 @@ class _SleepScheduleViewState extends State<SleepScheduleView> {
                   leading: IconButton(
                       onPressed: () {},
                       icon: Image.asset(
-                        "assets/img/ArrowLeft.png",
+                       AppAssets.leftArrowGrayIcon,
                         width: 15,
                         height: 15,
                       )),
                   training: IconButton(
                       onPressed: () {},
                       icon: Image.asset(
-                        "assets/img/ArrowRight.png",
+                        AppAssets.rightArrowGrayIcon,
                         width: 15,
                         height: 15,
                       )),

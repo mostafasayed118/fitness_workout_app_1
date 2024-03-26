@@ -102,13 +102,7 @@ class _StartedViewState extends State<StartedView> {
                               AppAssets.rightArrowIcon,
                               height: 25,
                             ),
-                            // text: 'Get Started',
-                            // textColor: Colors.red,
-                            // textStyle: const TextStyle(
-                            //   fontSize: 24,
-                            //   fontFamily: 'Khand',
-                            //   fontWeight: FontWeight.bold,
-                            // ),
+                           
                           ),
                         ],
                       )),

@@ -11,6 +11,9 @@ class AppAssets {
 static const String threeDotsVerticalBlackIcon = '${basePathIcon}three_dots_vertical_black_icon.png';
  static const String remindersOnIcon = '${basePathIcon}reminders_on_icon.png';
   static const String remindersOffIcon = '${basePathIcon}reminders_off_icon.png';
+  static const String closeIcon = '${basePathIcon}close_icon.png';
+  static const String clockIcon = '${basePathIcon}clock_icon.png';
+  static const String favoriteIcon = '${basePathIcon}favorite_icon.png';
   // global gradient icon
 
   static const String rightArrowGradinIcon = '${basePathIcon}right_arrow_gradin_icon.png';
@@ -24,6 +27,12 @@ static const String threeDotsVerticalBlackIcon = '${basePathIcon}three_dots_vert
 // arrows
   static const String rightArrowIcon = '${basePathIcon}right_arrow_icon.png';
   static const String leftArrowIcon = '${basePathIcon}left_arrow_icon.png';
+  static const String rightArrowNormalIcon = '${basePathIcon}right_arrow_normal_icon.png';
+  static const String rightArrowGradinNormalIcon = '${basePathIcon}right_arrow_gradin_normal_icon.png';
+static const String rightArrowBlackIcon = '${basePathIcon}right_arrow_black_icon.png';
+static const String leftArrowGrayIcon = '${basePathIcon}left_arrow_gray_icon.png';
+static const String rightArrowGrayIcon = '${basePathIcon}right_arrow_gray_icon.png';
+
   // login page and register page
   static const String userIcon = '${basePathIcon}user_icon.png';
   static const String phoneIcon = '${basePathIcon}phone_icon.png';
@@ -68,6 +77,8 @@ static const String threeDotsVerticalBlackIcon = '${basePathIcon}three_dots_vert
   static const String glassIcon = '${basePathIcon}glass_icon.png';
   static const String footIcon = '${basePathIcon}foot_icon.png';
 
+
+
 //calories screen
   static const String galleryIcon = '${basePathIcon}gallery_icon.png';
 
@@ -105,9 +116,19 @@ static const String threeDotsVerticalBlackIcon = '${basePathIcon}three_dots_vert
 
   static const String splashImage = '${basePathImage}splash.jpg';
   static const String loginImage = '${basePathImage}login.png';
+
+
+
+//workout tracker screen
+  static const String personOne = '${basePathImage}person_1.png';
+  static const String personTwo = '${basePathImage}person_2.png';
+  static const String personThree = '${basePathImage}person_3.png';
+  
 }
 
 // act as  flutter developer to optimize this code according to your requirements and needs for better performance and better user experience.
 //'Poppins'
 //next_icon_p.png >> rightArrowGradinIcon
 //More_V.png >== three dots black
+//Icon_Arrow >> rightArrowNormalIcon
+//favorite_icon.png >> favoriteIcon

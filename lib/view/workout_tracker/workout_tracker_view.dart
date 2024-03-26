@@ -1,5 +1,7 @@
 // import 'package:fitness/common/colo_extension.dart';
 // import 'package:fitness/view/workout_tracker/workour_detail_view.dart';
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
@@ -22,12 +24,12 @@ class WorkoutTrackerView extends StatefulWidget {
 class _WorkoutTrackerViewState extends State<WorkoutTrackerView> {
   List latestArr = [
     {
-      "image": "assets/img/Workout_Pic.png",
+      "image": "assets/images/Workout_Pic.png",
       "title": "Fullbody Workout",
       "time": "Today, 03:00pm"
     },
     {
-      "image": "assets/img/Workout_Pic_1.png",
+      "image": "assets/images/Workout_Pic_1.png",
       "title": "Upperbody Workout",
       "time": "June 05, 02:00pm"
     },
@@ -35,19 +37,19 @@ class _WorkoutTrackerViewState extends State<WorkoutTrackerView> {
 
   List whatArr = [
     {
-      "image": "assets/img/Ellipse.png",
+      "image": "assets/images/Ellipse.png",
       "title": "Fullbody Workout",
       "exercises": "11 Exercises",
       "time": "32mins"
     },
     {
-      "image": "assets/img/lowebody_workout_1.png",
+      "image": "assets/images/lowebody_workout_1.png",
       "title": "Lowebody Workout",
       "exercises": "12 Exercises",
       "time": "40mins"
     },
     {
-      "image": "assets/img/Group_10293.png",
+      "image": "assets/images/Group_10293.png",
       "title": "AB Workout",
       "exercises": "14 Exercises",
       "time": "20mins"
@@ -85,7 +87,7 @@ class _WorkoutTrackerViewState extends State<WorkoutTrackerView> {
                       // color: TColor.lightGray,
                       borderRadius: BorderRadius.circular(10)),
                   child: Image.asset(
-                    "assets/img/not_butt.png",
+                    AppAssets.leftArrowIcon,
                     width: 30,
                     height: 30,
                     fit: BoxFit.contain,
@@ -93,13 +95,12 @@ class _WorkoutTrackerViewState extends State<WorkoutTrackerView> {
                 ),
               ),
               title: Text(
-                "Workout Tracker",
+                AppStrings.workoutTracker,
                 style: TextStyle(
-                  color: AppColor.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.w700,
-                  fontFamily: 'Khand',
-                ),
+                    color: AppColor.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w700,
+                    fontFamily: AppStrings.fontFamilyPoppins),
               ),
               actions: [
                 InkWell(
@@ -120,7 +121,7 @@ class _WorkoutTrackerViewState extends State<WorkoutTrackerView> {
                         // color: TColor.lightGray,
                         borderRadius: BorderRadius.circular(10)),
                     child: Image.asset(
-                      "assets/img/not_btn_1.png",
+                      AppAssets.twoDotsIcon,
                       width: 30,
                       height: 30,
                       fit: BoxFit.contain,
@@ -275,19 +276,19 @@ class _WorkoutTrackerViewState extends State<WorkoutTrackerView> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Daily Workout Schedule",
+                          AppStrings.daily,
                           style: TextStyle(
                               color: AppColor.black,
                               fontSize: 15,
                               fontWeight: FontWeight.w600,
-                              fontFamily: 'Hind'),
+                              fontFamily: AppStrings.fontFamilyHind),
                         ),
                         SizedBox(
                             width: 75,
                             height: 30,
                             child: NormalButton(
                               textColor: AppColor.primaryColor1,
-                              text: 'Check',
+                              text: AppStrings.check,
                               onPressed: () {
                                 Navigator.push(
                                     context,
@@ -301,25 +302,7 @@ class _WorkoutTrackerViewState extends State<WorkoutTrackerView> {
                               borderColor: AppColor.primaryColor1,
                               fontSize: 14,
                               fontWeight: FontWeight.w500,
-                            )
-                            // RoundButton(
-                            //   title: "Check",
-                            //   type:
-                            //   RoundButtonType.bgGradient,
-                            //   fontSize: 12,
-                            //   fontWeight: FontWeight.w400,
-                            //   onPressed: () {
-                            //     // Navigator.push(
-                            //     //   context,
-                            //     //   MaterialPageRoute(
-                            //     //     builder: (context) =>
-                            //     //         const ActivityTrackerView(),
-                            //     //   ),
-                            //     // );
-                            //   },
-                            //   elevation: 0,
-                            // ),
-                            )
+                            ))
                       ],
                     ),
                   ),
@@ -330,23 +313,23 @@ class _WorkoutTrackerViewState extends State<WorkoutTrackerView> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Upcoming Workout",
+                        AppStrings.upcomingWorkout,
                         style: TextStyle(
                           color: AppColor.black,
                           fontSize: 18,
                           fontWeight: FontWeight.w700,
-                          fontFamily: 'Khand',
+                          fontFamily: AppStrings.fontFamilyPoppins,
                         ),
                       ),
                       TextButton(
                         onPressed: () {},
                         child: Text(
-                          "See More",
+                          AppStrings.seeMore,
                           style: TextStyle(
                             color: AppColor.gray,
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            fontFamily: 'Hind',
+                            fontFamily: AppStrings.fontFamilyHind,
                           ),
                         ),
                       )
@@ -368,12 +351,12 @@ class _WorkoutTrackerViewState extends State<WorkoutTrackerView> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "What Do You Want to Train",
+                        AppStrings.whatDoYouWant,
                         style: TextStyle(
                           color: AppColor.black,
                           fontSize: 18,
                           fontWeight: FontWeight.w700,
-                          fontFamily: 'Khand',
+                          fontFamily: AppStrings.fontFamilyPoppins,
                         ),
                       ),
                     ],
@@ -496,7 +479,7 @@ class _WorkoutTrackerViewState extends State<WorkoutTrackerView> {
         style: TextStyle(
           color: AppColor.white,
           fontSize: 12,
-          fontFamily: 'Hind',
+          fontFamily: AppStrings.fontFamilyHind,
           fontWeight: FontWeight.w500,
         ),
         textAlign: TextAlign.center);
@@ -513,31 +496,31 @@ class _WorkoutTrackerViewState extends State<WorkoutTrackerView> {
     var style = TextStyle(
       color: AppColor.white,
       fontSize: 12,
-      fontFamily: 'Hind',
+      fontFamily: AppStrings.fontFamilyHind,
       fontWeight: FontWeight.w500,
     );
     Widget text;
     switch (value.toInt()) {
       case 1:
-        text = Text('Sun', style: style);
+        text = Text(AppStrings.sunday, style: style);
         break;
       case 2:
-        text = Text('Mon', style: style);
+        text = Text(AppStrings.monday, style: style);
         break;
       case 3:
-        text = Text('Tue', style: style);
+        text = Text(AppStrings.tuesday, style: style);
         break;
       case 4:
-        text = Text('Wed', style: style);
+        text = Text(AppStrings.wednesday, style: style);
         break;
       case 5:
-        text = Text('Thu', style: style);
+        text = Text(AppStrings.thursday, style: style);
         break;
       case 6:
-        text = Text('Fri', style: style);
+        text = Text(AppStrings.friday, style: style);
         break;
       case 7:
-        text = Text('Sat', style: style);
+        text = Text(AppStrings.saturday, style: style);
         break;
       default:
         text = const Text('');

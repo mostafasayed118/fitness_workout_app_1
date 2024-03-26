@@ -38,7 +38,7 @@ class _CaloriesEstimationScanState extends State<CaloriesEstimationScan> {
             alignment: Alignment.center,
             decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              AppAssets.twoDotsIcon,
+              AppAssets.leftArrowIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -73,7 +73,7 @@ class _CaloriesEstimationScanState extends State<CaloriesEstimationScan> {
                   // color: TColor.lightGray,
                   borderRadius: BorderRadius.circular(10)),
               child: Image.asset(
-                AppAssets.rightArrowIcon,
+                AppAssets.twoDotsIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,

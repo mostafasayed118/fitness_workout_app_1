@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:flutter/material.dart';
 
@@ -20,17 +21,6 @@ class FindEatCell extends StatelessWidget {
         color: isEvent
             ? AppColor.primaryColor4.withOpacity(0.3)
             : AppColor.primaryColor7.withOpacity(0.3),
-        // gradient: LinearGradient(
-        //   colors: isEvent
-        //       ? [
-        //           TColor.primaryColor4.withOpacity(0.5),
-        //           TColor.primaryColor1.withOpacity(0.5)
-        //         ]
-        //       : [
-        //           TColor.secondaryColor2.withOpacity(0.5),
-        //           TColor.secondaryColor1.withOpacity(0.5)
-        //         ],
-        // ),
         borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(25),
           topRight: Radius.circular(75),
@@ -80,7 +70,7 @@ class FindEatCell extends StatelessWidget {
                 height: 35,
                 child: NormalButton(
                   textColor: AppColor.white,
-                  text: 'Select',
+                  text: AppStrings.select,
                   onPressed: () {},
                   backgroundColor:
                       isEvent ? AppColor.primaryColor4 : AppColor.primaryColor1,
@@ -89,18 +79,7 @@ class FindEatCell extends StatelessWidget {
                   borderColor:
                       isEvent ? AppColor.primaryColor4 : AppColor.primaryColor1,
                   fontSize: 13,
-                )
-                // RoundButton(
-                //   fontSize: 12,
-                //   type: isEvent
-                //       ? RoundButtonType.bgGradient
-                //       : RoundButtonType.bgGradient,
-                //   title: "Select",
-                //   onPressed: () {},
-                //   fontWeight: FontWeight.w500,
-                //   elevation: 0,
-                // ),
-                ),
+                )),
           ),
         ],
       ),

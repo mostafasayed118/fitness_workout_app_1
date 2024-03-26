@@ -1,4 +1,5 @@
 // import 'package:fitness/common_widget/round_button.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:flutter/material.dart';
 
@@ -21,17 +22,6 @@ class MealRecommendCell extends StatelessWidget {
           color: isEvent
               ? AppColor.primaryColor4.withOpacity(0.3)
               : AppColor.primaryColor7.withOpacity(0.3),
-          // gradient: LinearGradient(
-          //   colors: isEvent
-          //       ? [
-          //           TColor.primaryColor2.withOpacity(0.5),
-          //           TColor.primaryColor1.withOpacity(0.5)
-          //         ]
-          //       : [
-          //           TColor.secondaryColor2.withOpacity(0.5),
-          //           TColor.secondaryColor1.withOpacity(0.5)
-          //         ],
-          // ),
           borderRadius: BorderRadius.circular(25)),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -51,7 +41,7 @@ class MealRecommendCell extends StatelessWidget {
                 color: AppColor.black,
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
-                fontFamily: 'Khand',
+                fontFamily: AppStrings.fontFamilyPoppins,
               ),
             ),
           ),
@@ -76,7 +66,7 @@ class MealRecommendCell extends StatelessWidget {
                 height: 35,
                 child: NormalButton(
                   textColor: AppColor.white,
-                  text: 'View',
+                  text: AppStrings.view,
                   onPressed: () {},
                   backgroundColor:
                       isEvent ? AppColor.primaryColor4 : AppColor.primaryColor1,
@@ -85,18 +75,7 @@ class MealRecommendCell extends StatelessWidget {
                   borderColor:
                       isEvent ? AppColor.primaryColor4 : AppColor.primaryColor1,
                   fontSize: 13,
-                )
-                //     RoundButton(
-                //   fontSize: 14,
-                //   type: isEvent
-                //       ? RoundButtonType.bgGradient
-                //       : RoundButtonType.bgGradient,
-                //   title: "View",
-                //   onPressed: () {},
-                //   elevation: 0,
-                //   fontWeight: FontWeight.w500,
-                // ),
-                ),
+                )),
           ),
         ],
       ),

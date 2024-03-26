@@ -78,6 +78,11 @@ class AppStrings {
   static const String footSteps = "Foot Steps";
   static const String activityProgress = "Activity  Progress";
 
+  //workout tracker screen
+  static const String dailyWorkout = "Daily Workout Schedule";
+  static const String upcomingWorkout = "Upcoming Workout";
+  static const String whatDoYouWant = "What Do You Want to Train";
+  static const String workoutSchedule =  "Workout Schedule";
 
 //calories screen
   static const String calorie = "Calorie";
@@ -140,6 +145,15 @@ class AppStrings {
   static const String mealPlanner = 'Meal Planner';
   static const String sleepTracker = 'Sleep Tracker';
   static const String backToHome = 'Back To Home';
+  static const String back = 'Back';
+  static const String start = 'Start';
+  static const String startWorkout = 'Start Workout';
+  static const String startWorkoutHint = 'Start Workout';
+  static const String cancel = 'Cancel';
+  static const String view = 'View';
+  static const String addFood = 'Add Food';
+  static const String select = 'Select';
+  static const String markAsDone = 'Mark As Done';
 
   static const String caloriesEstimation = 'Calories Estimation';
 

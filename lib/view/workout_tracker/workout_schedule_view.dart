@@ -1,4 +1,6 @@
 import 'package:calendar_agenda/calendar_agenda.dart';
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 import '../../common/colo_extension.dart';
@@ -32,11 +34,11 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
       "start_time": "17/02/2024 02:30 AM",
     },
     {
-      "name": "Upperbody Workout",
+      "name": "Upper Body Workout",
       "start_time": "17/02/2024 09:00 AM",
     },
     {
-      "name": "Lowerbody Workout",
+      "name": "Lower Body Workout",
       "start_time": "17/02/2024 03:00 PM",
     },
     {
@@ -44,11 +46,11 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
       "start_time": "18/02/2024 01:30 AM",
     },
     {
-      "name": "Upperbody Workout",
+      "name": "Upper Body Workout",
       "start_time": "18/02/2024 09:00 AM",
     },
     {
-      "name": "Lowerbody Workout",
+      "name": "Lower Body Workout",
       "start_time": "18/02/2024 03:00 PM",
     },
     {
@@ -56,11 +58,11 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
       "start_time": "19/02/2024 03:30 AM",
     },
     {
-      "name": "Upperbody Workout",
+      "name": "Upper Body Workout",
       "start_time": "19/02/2024 09:00 AM",
     },
     {
-      "name": "Lowerbody Workout",
+      "name": "Lower Body Workout",
       "start_time": "19/02/2024 03:00 PM",
     }
   ];
@@ -113,7 +115,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                 // color: TColor.lightGray,
                 borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              "assets/img/not_butt.png",
+              AppAssets.leftArrowIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -121,12 +123,12 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
           ),
         ),
         title: Text(
-          "Workout Schedule",
+          AppStrings.workoutSchedule,
           style: TextStyle(
             color: AppColor.black,
             fontSize: 20,
             fontWeight: FontWeight.w700,
-            fontFamily: 'Khand',
+            fontFamily: AppStrings.fontFamilyPoppins,
           ),
         ),
         actions: [
@@ -149,7 +151,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Image.asset(
-                "assets/img/not_btn_1.png",
+                AppAssets.twoDotsIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,
@@ -171,7 +173,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                   // Function to get the  Last Day position
                 },
                 icon: Image.asset(
-                  "assets/img/ArrowLeft.png",
+                  AppAssets.leftArrowGrayIcon,
                   width: 15,
                   height: 15,
                 )),
@@ -180,7 +182,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                   // Function to get the  Next Day position
                 },
                 icon: Image.asset(
-                  "assets/img/ArrowRight.png",
+                  AppAssets.rightArrowGrayIcon,
                   width: 15,
                   height: 15,
                 )),
@@ -311,7 +313,8 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                                                                         BorderRadius.circular(
                                                                             10)),
                                                             child: Image.asset(
-                                                              "assets/img/Close_Navs.png",
+                                                              AppAssets
+                                                                  .closeIcon,
                                                               width: 30,
                                                               height: 30,
                                                               fit: BoxFit
@@ -320,14 +323,16 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                                                           ),
                                                         ),
                                                         Text(
-                                                          "Workout Schedule",
+                                                          AppStrings
+                                                              .workoutSchedule,
                                                           style: TextStyle(
                                                             color:
                                                                 AppColor.black,
                                                             fontSize: 18,
                                                             fontWeight:
                                                                 FontWeight.w600,
-                                                            fontFamily: 'Khand',
+                                                            fontFamily: AppStrings
+                                                                .fontFamilyPoppins,
                                                           ),
                                                         ),
                                                         InkWell(
@@ -347,7 +352,8 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                                                                         BorderRadius.circular(
                                                                             10)),
                                                             child: Image.asset(
-                                                              "assets/img/not_btn_1.png",
+                                                              AppAssets
+                                                                  .twoDotsIcon,
                                                               width: 30,
                                                               height: 30,
                                                               fit: BoxFit
@@ -367,7 +373,8 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                                                         fontSize: 16,
                                                         fontWeight:
                                                             FontWeight.w500,
-                                                        fontFamily: 'Khand',
+                                                        fontFamily: AppStrings
+                                                            .fontFamilyPoppins,
                                                       ),
                                                     ),
                                                     const SizedBox(
@@ -375,7 +382,7 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                                                     ),
                                                     Row(children: [
                                                       Image.asset(
-                                                        "assets/img/time_workout.png",
+                                                        AppAssets.clockIcon,
                                                         height: 20,
                                                         width: 20,
                                                       ),
@@ -398,7 +405,8 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                                                     NormalButton(
                                                       textColor: AppColor
                                                           .primaryColor1,
-                                                      text: 'Mark As Done',
+                                                      text:
+                                                          AppStrings.markAsDone,
                                                       onPressed: () {
                                                         Navigator.pop(context);
                                                       },
@@ -410,15 +418,6 @@ class _WorkoutScheduleViewState extends State<WorkoutScheduleView> {
                                                           .primaryColor1,
                                                       fontSize: 20,
                                                     ),
-
-                                                    // RoundButton(
-                                                    //   title: "Mark Done",
-                                                    //   onPressed: () {},
-                                                    //   fontSize: 16,
-                                                    //   fontWeight:
-                                                    //       FontWeight.w600,
-                                                    //   elevation: 0,
-                                                    // ),
                                                   ],
                                                 ),
                                               ),

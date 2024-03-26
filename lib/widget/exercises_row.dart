@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:flutter/material.dart';
 
 import '../common/colo_extension.dart';
@@ -48,7 +49,7 @@ class ExercisesRow extends StatelessWidget {
           IconButton(
               onPressed: onPressed,
               icon: Image.asset(
-                "assets/img/Icon_Next.png",
+                AppAssets.rightArrowNormalIcon,
                 width: 24,
                 height: 24,
                 fit: BoxFit.contain,

@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:flutter/material.dart';
 
@@ -19,19 +20,19 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
     {
       "time": "2 June",
       "photo": [
-        "assets/img/pp_1.png",
-        "assets/img/pp_2.png",
-        "assets/img/pp_3.png",
-        "assets/img/pp_4.png",
+        "assets/images/pp_1.png",
+        "assets/images/pp_2.png",
+        "assets/images/pp_3.png",
+        "assets/images/pp_4.png",
       ]
     },
     {
       "time": "5 May",
       "photo": [
-        "assets/img/pp_5.png",
-        "assets/img/pp_6.png",
-        "assets/img/pp_7.png",
-        "assets/img/pp_8.png",
+        "assets/images/pp_5.png",
+        "assets/images/pp_6.png",
+        "assets/images/pp_7.png",
+        "assets/images/pp_8.png",
       ]
     }
   ];
@@ -60,7 +61,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                 // color: TColor.lightGray,
                 borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              "assets/img/not_butt.png",
+              AppAssets.leftArrowIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -95,7 +96,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                   // color: TColor.lightGray,
                   borderRadius: BorderRadius.circular(10)),
               child: Image.asset(
-                "assets/img/not_btn_1.png",
+                AppAssets.twoDotsIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,
@@ -132,7 +133,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                           height: 50,
                           alignment: Alignment.center,
                           child: Image.asset(
-                            "assets/img/date_notifi.png",
+                            "assets/images/date_notifi.png",
                             width: 30,
                             height: 30,
                           ),
@@ -221,17 +222,11 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                                     heightSize: 30,
                                     borderColor: AppColor.primaryColor1,
                                     fontSize: 12),
-                                // RoundButton(
-                                //   title: "Learn More",
-                                //   fontSize: 12,
-                                //   onPressed: () {},
-                                //   elevation: 0,
-                                //   fontWeight: FontWeight.normal,
-                                // ),
+                                
                               )
                             ]),
                         Image.asset(
-                          "assets/img/calender.png",
+                          "assets/images/calender.png",
                           width: media.width * 0.35,
                         )
                       ],
@@ -281,21 +276,7 @@ class _PhotoProgressViewState extends State<PhotoProgressView> {
                           borderColor: AppColor.primaryColor1,
                           fontSize: 12,
                         ),
-                        // RoundButton(
-                        //   title: "Compare",
-                        //   type: RoundButtonType.bgGradient,
-                        //   fontSize: 12,
-                        //   fontWeight: FontWeight.w400,
-                        //   onPressed: () {
-                        //     Navigator.push(
-                        //       context,
-                        //       MaterialPageRoute(
-                        //         builder: (context) => const ComparisonView(),
-                        //       ),
-                        //     );
-                        //   },
-                        //   elevation: 0,
-                        // ),
+                       
                       )
                     ],
                   ),

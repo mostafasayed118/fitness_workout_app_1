@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
 class NormalButton extends StatelessWidget {
@@ -60,7 +61,7 @@ class NormalButton extends StatelessWidget {
                 color: textColor,
                 fontSize: fontSize,
                 fontWeight: FontWeight.w700,
-                fontFamily: 'Hind',
+                fontFamily: AppStrings.fontFamilyHind,
               ),
               textAlign: textAlign,
             ),

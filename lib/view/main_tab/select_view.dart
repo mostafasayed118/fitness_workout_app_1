@@ -38,7 +38,7 @@ class SelectView extends StatelessWidget {
                 // color: TColor.lightGray,
                 borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              AppAssets.rightArrowIcon,
+              AppAssets.leftArrowIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,

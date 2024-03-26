@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:flutter/material.dart';
 
 import '../../common/colo_extension.dart';
@@ -20,21 +21,21 @@ class WorkoutDetailView extends StatefulWidget {
 class _WorkoutDetailViewState extends State<WorkoutDetailView> {
   List latestArr = [
     {
-      "image": "assets/img/Workout1.png",
+      "image": "assets/images/Workout1.png",
       "title": "Fullbody Workout",
       "time": "Today, 03:00pm"
     },
     {
-      "image": "assets/img/Workout2.png",
+      "image": "assets/images/Workout2.png",
       "title": "Upperbody Workout",
       "time": "June 05, 02:00pm"
     },
   ];
 
   List youArr = [
-    {"image": "assets/img/barbell.png", "title": "Barbell"},
-    {"image": "assets/img/skipping_rope.png", "title": "Skipping Rope"},
-    {"image": "assets/img/bottle.png", "title": "Bottle 1 Liters"},
+    {"image": "assets/images/barbell.png", "title": "Barbell"},
+    {"image": "assets/images/skipping_rope.png", "title": "Skipping Rope"},
+    {"image": "assets/images/bottle.png", "title": "Bottle 1 Liters"},
   ];
 
   List exercisesArr = [
@@ -42,28 +43,32 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
       "name": "Set 1",
       "set": [
         {
-          "image": "assets/img/warm_up.png",
+          "image": "assets/images/warm_up.png",
           "title": "Warm Up",
           "value": "05:00"
         },
         {
-          "image": "assets/img/jumping_jack.png",
+          "image": "assets/images/jumping_jack.png",
           "title": "Jumping Jack",
           "value": "12x"
         },
         {
-          "image": "assets/img/skipping.png",
+          "image": "assets/images/skipping.png",
           "title": "Skipping",
           "value": "15x"
         },
-        {"image": "assets/img/squats.png", "title": "Squats", "value": "20x"},
         {
-          "image": "assets/img/arm_raises.png",
+          "image": "assets/images/squats.png",
+          "title": "Squats",
+          "value": "20x"
+        },
+        {
+          "image": "assets/images/arm_raises.png",
           "title": "Arm Raises",
           "value": "00:53"
         },
         {
-          "image": "assets/img/rest_and_drink.png",
+          "image": "assets/images/rest_and_drink.png",
           "title": "Rest and Drink",
           "value": "02:00"
         },
@@ -73,28 +78,32 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
       "name": "Set 2",
       "set": [
         {
-          "image": "assets/img/incline_push_ups.png",
+          "image": "assets/images/incline_push_ups.png",
           "title": "Incline Push-Ups",
           "value": "12x"
         },
         {
-          "image": "assets/img/push_ups.png",
+          "image": "assets/images/push_ups.png",
           "title": "Push-Ups",
           "value": "15x"
         },
         {
-          "image": "assets/img/skipping.png",
+          "image": "assets/images/skipping.png",
           "title": "Skipping",
           "value": "15x"
         },
-        {"image": "assets/img/squats.png", "title": "Squats", "value": "20x"},
         {
-          "image": "assets/img/cobra_stretch.png",
+          "image": "assets/images/squats.png",
+          "title": "Squats",
+          "value": "20x"
+        },
+        {
+          "image": "assets/images/cobra_stretch.png",
           "title": "Cobra Stretch",
           "value": "20x"
         },
         {
-          "image": "assets/img/rest_and_drink.png",
+          "image": "assets/images/rest_and_drink.png",
           "title": "Rest and Drink",
           "value": "03:00"
         },
@@ -131,7 +140,7 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Image.asset(
-                    "assets/img/not_butt.png",
+                    AppAssets.leftArrowIcon,
                     width: 32,
                     height: 32,
                     fit: BoxFit.contain,
@@ -158,7 +167,7 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Image.asset(
-                      "assets/img/not_btn_1.png",
+                      AppAssets.twoDotsIcon,
                       width: 32,
                       height: 32,
                       fit: BoxFit.contain,
@@ -177,7 +186,7 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
               flexibleSpace: Align(
                 alignment: Alignment.center,
                 child: Image.asset(
-                  "assets/img/Vector_1.png",
+                  AppAssets.personOne,
                   width: media.width * 0.75,
                   height: media.width * 0.8,
                   fit: BoxFit.contain,
@@ -241,7 +250,7 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
                           TextButton(
                             onPressed: () {},
                             child: Image.asset(
-                              "assets/img/fav.png",
+                              AppAssets.favoriteIcon,
                               width: 18,
                               height: 18,
                               fit: BoxFit.contain,
@@ -253,7 +262,7 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
                         height: media.width * 0.05,
                       ),
                       IconTitleNextRow(
-                          icon: "assets/img/time.png",
+                          icon: "assets/images/time.png",
                           title: "Schedule Workout",
                           time: "2/17, 09:00 AM",
                           color: AppColor.primaryColor4.withOpacity(0.3),
@@ -270,7 +279,7 @@ class _WorkoutDetailViewState extends State<WorkoutDetailView> {
                         height: media.width * 0.03,
                       ),
                       IconTitleNextRow(
-                          icon: "assets/img/difficulity.png",
+                          icon: "assets/images/difficulity.png",
                           title: "Difficulity",
                           time: "Beginner",
                           color: AppColor.primaryColor1.withOpacity(0.3),

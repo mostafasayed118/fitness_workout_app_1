@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:fitness_workout_app_1/widget/normal_button.dart';
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
@@ -28,17 +29,17 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
 
   List ingredientsArr = [
     {
-      "image": "assets/img/flour.png",
+      "image": "assets/images/flour.png",
       "title": "Wheat Flour",
       "value": "100grm"
     },
-    {"image": "assets/img/sugar.png", "title": "Sugar", "value": "3 tbsp"},
+    {"image": "assets/images/sugar.png", "title": "Sugar", "value": "3 tbsp"},
     {
-      "image": "assets/img/baking_soda.png",
+      "image": "assets/images/baking_soda.png",
       "title": "Baking Soda",
       "value": "2tsp"
     },
-    {"image": "assets/img/eggs.png", "title": "Eggs", "value": "2 items"},
+    {"image": "assets/images/eggs.png", "title": "Eggs", "value": "2 items"},
   ];
 
   List stepArr = [
@@ -52,7 +53,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
     {
       "no": "4",
       "detail":
-          "Put the egg and milk mixture into the dry ingredients, Stir untul smooth and smooth"
+          "Put the egg and milk mixture into the dry ingredients, Stir until smooth and smooth"
     },
     {"no": "5", "detail": "Prepare all of the ingredients that needed"},
   ];
@@ -83,7 +84,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                       // color: TColor.lightGray,
                       borderRadius: BorderRadius.circular(10)),
                   child: Image.asset(
-                    "assets/img/not_butt.png",
+                    AppAssets.leftArrowIcon,
                     width: 30,
                     height: 30,
                     fit: BoxFit.contain,
@@ -109,7 +110,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                         // color: TColor.lightGray,
                         borderRadius: BorderRadius.circular(10)),
                     child: Image.asset(
-                      "assets/img/not_btn_1.png",
+                      AppAssets.twoDotsIcon,
                       width: 30,
                       height: 30,
                       fit: BoxFit.contain,
@@ -225,7 +226,7 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                             TextButton(
                               onPressed: () {},
                               child: Image.asset(
-                                "assets/img/fav.png",
+                                AppAssets.favoriteIcon,
                                 width: 20,
                                 height: 20,
                                 fit: BoxFit.contain,
@@ -499,13 +500,6 @@ class _FoodInfoDetailsViewState extends State<FoodInfoDetailsView> {
                             heightSize: 60,
                             borderColor: AppColor.primaryColor1,
                             fontSize: 20),
-                        // RoundButton(
-                        //   title: "Add to ${widget.mObj["name"]} Meal",
-                        //   onPressed: () {},
-                        //   fontSize: 16,
-                        //   fontWeight: FontWeight.w600,
-                        //   elevation: 0,
-                        // ),
                       ),
                     ],
                   ),

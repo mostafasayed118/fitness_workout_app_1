@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:fitness_workout_app_1/core/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 
@@ -43,7 +44,7 @@ class SettingRow extends StatelessWidget {
               ),
             ),
             Image.asset(
-              "assets/img/Icon_Arrow.png",
+              AppAssets.rightArrowNormalIcon,
               height: 18,
               width: 18,
               fit: BoxFit.contain,

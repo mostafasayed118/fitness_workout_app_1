@@ -1,3 +1,4 @@
+import 'package:fitness_workout_app_1/core/utils/app_assets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -39,7 +40,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
                 // color: TColor.lightGray,
                 borderRadius: BorderRadius.circular(10)),
             child: Image.asset(
-              "assets/img/Close_Navs.png",
+              AppAssets.closeIcon,
               width: 30,
               height: 30,
               fit: BoxFit.contain,
@@ -74,7 +75,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
                   // color: TColor.lightGray,
                   borderRadius: BorderRadius.circular(10)),
               child: Image.asset(
-                "assets/img/not_btn_1.png",
+               AppAssets.twoDotsIcon,
                 width: 30,
                 height: 30,
                 fit: BoxFit.contain,
@@ -90,7 +91,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
           Row(
             children: [
               Image.asset(
-                "assets/img/date.png",
+                "assets/images/date.png",
                 width: 20,
                 height: 20,
               ),
@@ -143,7 +144,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
             height: 8,
           ),
           IconTitleNextRow(
-              icon: "assets/img/choose_workout.png",
+              icon: "assets/images/choose_workout.png",
               title: "Choose Workout",
               time: "Upperbody",
               color: AppColor.gray.withOpacity(0.10),
@@ -152,7 +153,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
             height: 10,
           ),
           IconTitleNextRow(
-              icon: "assets/img/difficulity.png",
+              icon: "assets/images/difficulity.png",
               title: "Difficulity",
               time: "Beginner",
               color: AppColor.gray.withOpacity(0.10),
@@ -161,7 +162,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
             height: 10,
           ),
           IconTitleNextRow(
-              icon: "assets/img/repetitions.png",
+              icon: "assets/images/repetitions.png",
               title: "Custom Repetitions",
               time: "",
               color: AppColor.gray.withOpacity(0.10),
@@ -170,7 +171,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
             height: 10,
           ),
           IconTitleNextRow(
-              icon: "assets/img/repetitions.png",
+              icon: "assets/images/repetitions.png",
               title: "Custom Weights",
               time: "",
               color: AppColor.gray.withOpacity(0.10),
@@ -192,13 +193,7 @@ class _AddScheduleViewState extends State<AddScheduleView> {
             fontSize: 20,
           ),
 
-          // RoundButton(
-          //   title: "Save",
-          //   onPressed: () {},
-          //   fontSize: 10,
-          //   fontWeight: FontWeight.w700,
-          //   elevation: 0,
-          // ),
+          
           const SizedBox(
             height: 20,
           ),
